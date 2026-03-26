@@ -9,7 +9,7 @@
     <meta property="og:title" content="Stackcraft — Custom Software, Shipped Fast">
     <meta property="og:description" content="Solo dev studio. Web apps, AI integrations, APIs, and automation — built to spec.">
     <meta property="og:type" content="website">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80' font-family='monospace' fill='%233b82f6'>S</text></svg>">
+    <link rel="icon" href="/assets/stackcraft-icon-blue.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -511,7 +511,9 @@
     <!-- ===== NAV ===== -->
     <nav class="nav" id="nav" role="navigation">
         <div class="container">
-            <a href="#" class="nav-logo">STACKCRAFT</a>
+            <a href="#" class="nav-logo">
+                <img src="/assets/stackcraft-lockup-light.svg" alt="Stackcraft" height="28" style="display:block;">
+            </a>
             <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
                 <span></span><span></span><span></span>
             </button>
@@ -762,7 +764,10 @@
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="container">
-            <p style="font-family: 'JetBrains Mono', monospace;">&copy; 2026 Stackcraft</p>
+            <div style="display:flex;align-items:center;gap:12px;">
+                <img src="/assets/stackcraft-icon-blue.svg" alt="Stackcraft" height="20" style="display:block;opacity:0.6;">
+                <p style="font-family: 'JetBrains Mono', monospace;">&copy; 2026 Stackcraft</p>
+            </div>
             <p>Built by Eli.</p>
         </div>
     </footer>
