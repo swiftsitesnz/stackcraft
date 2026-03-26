@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Stackcraft</title>
+    <meta name="description" content="Stackcraft is a one-person dev studio run by Eli. No project managers, no ticket queues — just direct communication and quality code.">
+    <meta name="theme-color" content="#f8f9fb">
+    <link rel="icon" href="/assets/stackcraft-icon-blue.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+
+    <!-- ===== NAV ===== -->
+    <nav class="nav" id="nav" role="navigation">
+        <div class="container">
+            <a href="/" class="nav-logo">
+                <img src="/assets/stackcraft-lockup-light.svg" alt="Stackcraft" height="28">
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/work">Work</a></li>
+                <li><a href="/process">Process</a></li>
+                <li><a href="/about" class="active">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+        <div class="container">
+            <p class="section-label">About</p>
+            <h1>Solo studio. Zero overhead.</h1>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT CONTENT ===== -->
+    <section>
+        <div class="container">
+            <div class="about-content">
+                <p class="reveal">Stackcraft is a one-person dev studio run by <strong>Eli</strong>, based in New Zealand. I design, build, and ship custom software — with AI in the loop to move faster without cutting corners.</p>
+                <p class="reveal reveal-d1">No project managers. No ticket queues. No handoffs between departments. You talk directly to the person writing the code, every single time. That means faster decisions, fewer miscommunications, and software that actually matches what you asked for.</p>
+                <p class="reveal reveal-d2">I work with startups, agencies, and growing teams who need reliable software built by someone who actually gives a damn about the outcome. The kind of people who'd rather ship something real this week than sit through three rounds of discovery workshops.</p>
+                <p class="reveal reveal-d3">I've been building software professionally for years — full-stack web apps, APIs, automation pipelines, AI integrations. I pick the right tool for the job, not whatever's trending on Hacker News this week. And I write code that the next developer can actually read.</p>
+            </div>
+
+            <!-- ===== WHY STACKCRAFT ===== -->
+            <div class="differentiators">
+
+                <div class="differentiator reveal">
+                    <h3>Speed</h3>
+                    <p>No layers of approval or context-switching between teams. One person, full context, fast turnaround. Most projects ship in weeks, not months.</p>
+                </div>
+
+                <div class="differentiator reveal reveal-d1">
+                    <h3>Direct communication</h3>
+                    <p>You talk to the person building your software. Questions get answered in hours, not days. Decisions happen in Slack, not Jira tickets.</p>
+                </div>
+
+                <div class="differentiator reveal reveal-d2">
+                    <h3>AI-assisted development</h3>
+                    <p>I use AI tools throughout the development process — for code generation, testing, documentation, and research. It's a multiplier, not a replacement for good engineering.</p>
+                </div>
+
+                <div class="differentiator reveal reveal-d3">
+                    <h3>Quality code</h3>
+                    <p>Clean architecture, proper testing, clear documentation. I write code that's easy to maintain, extend, and hand off to your team when you're ready.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="reveal">Let's build something together.</h2>
+            <p class="reveal reveal-d1">Tell me about your project and I'll get back to you within 24 hours.</p>
+            <a href="/contact" class="btn-primary reveal reveal-d2">Start a project <span aria-hidden="true">&rarr;</span></a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-brand">
+                <img src="/assets/stackcraft-icon-blue.svg" alt="Stackcraft" height="20">
+                <p>&copy; 2026 Stackcraft</p>
+            </div>
+            <p>Built by Eli.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Nav scroll
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 60);
+        }, { passive: true });
+
+        // Mobile nav
+        const navToggle = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+        navToggle.addEventListener('click', () => {
+            const isActive = navToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            document.body.style.overflow = isActive ? 'hidden' : '';
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Scroll reveal
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    </script>
+
+</body>
+</html>

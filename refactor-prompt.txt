@@ -1,0 +1,82 @@
+Refactor the Stackcraft website from a single-page scroll layout to a proper multi-page site. Each section becomes its own dedicated HTML page.
+
+## CURRENT STATE
+The site is at C:\Users\eli\stackcraft\index.html — a single-page scroll site with sections: hero, services, work, process, about, contact.
+
+## WHAT TO BUILD
+
+### File structure:
+- index.html (Home / Landing)
+- services.html
+- work.html
+- process.html
+- about.html
+- contact.html
+- assets/ (already exists with logo SVGs)
+- api/contact.js (keep as-is)
+- vercel.json (update if needed)
+
+### Navigation
+- Navbar on every page with links: Home | Services | Work | Process | About | Contact
+- Active state on current page (highlight the current nav link)
+- Same sticky nav style as current site
+- Logo links back to index.html
+
+### index.html — Landing Page
+This is the hero/landing page only. Make it visually impactful:
+- Full-viewport hero section
+- Strong headline: "Custom software, shipped fast."
+- Subheadline: "Web apps, AI integrations, APIs, and automation — one developer, zero overhead."
+- Two CTAs: "Start a project" (→ contact.html) and "See our work" (→ work.html)
+- **Hero image:** Use a high-quality Unsplash photo that feels right for a dev studio. NOT a generic laptop photo. Think: abstract code on dark screen, server room with dramatic lighting, someone focused at a workstation with multiple monitors, dramatic tech infrastructure. Use a real Unsplash URL. Overlay it tastefully — could be a full-bleed background with overlay, or a split layout (text left, image right), or image below the headline. Make it feel considered and premium, not stock-photo-ish.
+- Below the hero: a brief "what we do" teaser row (4 service icons with one-line labels linking to services.html)
+- Keep the light theme (#f8f9fb bg, white cards, dark text, #3b82f6 accent)
+
+### services.html
+- Page hero: "What we build" heading + short intro paragraph
+- Full services section (same 4 cards as current: Custom Web Apps, AI Integrations, Automation & Tooling, API Development)
+- Expand each card slightly — add a bullet list of 3-4 specifics per service
+- CTA at bottom: "Ready to build? Start a project →" linking to contact.html
+
+### work.html
+- Page hero: "Recent work" heading
+- Same 4 portfolio cards as current (Internal Dashboard, Lead Gen Tool, AI Chat Integration, Booking API)
+- Add a "More coming soon" placeholder at the bottom
+- CTA: "Want to be featured here? Let's talk →" linking to contact.html
+
+### process.html
+- Page hero: "How it works"
+- Expand the 3 steps into full detail:
+  - 01 Brief — what happens, how long, what's delivered
+  - 02 Build — how development works, communication cadence, progress updates
+  - 03 Ship — testing, deployment, handover, docs
+- Add a 4th step: 04 Support — ongoing maintenance options
+- CTA at bottom
+
+### about.html
+- Page hero: "Solo studio. Zero overhead."
+- Expanded about content (3-4 paragraphs)
+- "Why Stackcraft?" section with 3-4 differentiators (speed, directness, AI-assisted, quality code)
+- CTA: "Start a project →" to contact.html
+
+### contact.html
+- Page hero: "Let's build something"
+- Same contact form (posts to /api/contact)
+- Show email: eli@stackcraft.co.nz
+- Add: "Typical response time: within 24 hours"
+
+## SHARED ELEMENTS
+- Every page shares the same nav and footer
+- Footer: © 2026 Stackcraft | icon | "Built by Eli"
+- Scroll-reveal animations on all pages
+- Consistent spacing, typography, colour system throughout
+
+## QUALITY BAR
+- This is a developer's own portfolio. It must look exceptional.
+- The hero image integration must look intentional and premium — not just slapped in
+- Real copy throughout, no lorem ipsum
+- Clean, consistent code across all pages
+- Mobile responsive
+
+When completely finished, run:
+openclaw system event --text "Done: Stackcraft site refactored to multi-page — ready to review and deploy" --mode now

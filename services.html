@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services — Stackcraft</title>
+    <meta name="description" content="Custom web apps, AI integrations, automation tools, and API development. Built from scratch by a solo dev studio.">
+    <meta name="theme-color" content="#f8f9fb">
+    <link rel="icon" href="/assets/stackcraft-icon-blue.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+
+    <!-- ===== NAV ===== -->
+    <nav class="nav" id="nav" role="navigation">
+        <div class="container">
+            <a href="/" class="nav-logo">
+                <img src="/assets/stackcraft-lockup-light.svg" alt="Stackcraft" height="28">
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/services" class="active">Services</a></li>
+                <li><a href="/work">Work</a></li>
+                <li><a href="/process">Process</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+        <div class="container">
+            <p class="section-label">Services</p>
+            <h1>What we build</h1>
+            <p>End-to-end software development for teams that need things built right the first time. No layers. No bloat. Just clean code that solves your problem.</p>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section>
+        <div class="container">
+            <div class="services-grid">
+
+                <div class="service-card reveal">
+                    <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="4" y="8" width="40" height="32" rx="3"/>
+                        <line x1="4" y1="16" x2="44" y2="16"/>
+                        <polyline points="17 26 13 30 17 34"/>
+                        <polyline points="31 26 35 30 31 34"/>
+                        <line x1="26" y1="24" x2="22" y2="36"/>
+                    </svg>
+                    <h3>Custom Web Apps</h3>
+                    <p>Full-stack applications built from scratch. Dashboards, internal tools, customer-facing platforms — whatever the problem requires.</p>
+                    <ul>
+                        <li>React, Next.js, and Vue frontends</li>
+                        <li>Node.js, Python, and Go backends</li>
+                        <li>Database design and optimisation</li>
+                        <li>Authentication, roles, and permissions</li>
+                    </ul>
+                </div>
+
+                <div class="service-card reveal reveal-d1">
+                    <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="12" y="12" width="24" height="24" rx="3"/>
+                        <circle cx="24" cy="24" r="5"/>
+                        <line x1="18" y1="4" x2="18" y2="12"/>
+                        <line x1="30" y1="4" x2="30" y2="12"/>
+                        <line x1="18" y1="36" x2="18" y2="44"/>
+                        <line x1="30" y1="36" x2="30" y2="44"/>
+                        <line x1="4" y1="18" x2="12" y2="18"/>
+                        <line x1="4" y1="30" x2="12" y2="30"/>
+                        <line x1="36" y1="18" x2="44" y2="18"/>
+                        <line x1="36" y1="30" x2="44" y2="30"/>
+                    </svg>
+                    <h3>AI Integrations</h3>
+                    <p>LLM-powered features, chat interfaces, document processing, and intelligent automation wired into your existing stack.</p>
+                    <ul>
+                        <li>GPT, Claude, and open-source LLM integrations</li>
+                        <li>RAG pipelines and knowledge base chat</li>
+                        <li>Document parsing and classification</li>
+                        <li>Custom agent workflows</li>
+                    </ul>
+                </div>
+
+                <div class="service-card reveal reveal-d2">
+                    <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M36 16A14 14 0 0 0 10 20"/>
+                        <polyline points="10 12 10 20 18 20"/>
+                        <path d="M12 32A14 14 0 0 0 38 28"/>
+                        <polyline points="38 36 38 28 30 28"/>
+                    </svg>
+                    <h3>Automation & Tooling</h3>
+                    <p>Workflows that run themselves. Data pipelines, scheduled jobs, and internal tools that eliminate the repetitive grind.</p>
+                    <ul>
+                        <li>ETL pipelines and data transformation</li>
+                        <li>Scheduled jobs and cron workflows</li>
+                        <li>Slack bots and internal utilities</li>
+                        <li>Third-party service orchestration</li>
+                    </ul>
+                </div>
+
+                <div class="service-card reveal reveal-d3">
+                    <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="8" cy="24" r="4"/>
+                        <circle cx="24" cy="10" r="4"/>
+                        <circle cx="24" cy="38" r="4"/>
+                        <circle cx="40" cy="24" r="4"/>
+                        <line x1="12" y1="22" x2="20" y2="13"/>
+                        <line x1="12" y1="26" x2="20" y2="35"/>
+                        <line x1="28" y1="13" x2="36" y2="22"/>
+                        <line x1="28" y1="35" x2="36" y2="26"/>
+                    </svg>
+                    <h3>API Development</h3>
+                    <p>Clean, documented APIs that scale. REST or GraphQL, third-party integrations, webhooks, and backend architecture.</p>
+                    <ul>
+                        <li>REST and GraphQL API design</li>
+                        <li>Third-party API integrations</li>
+                        <li>Webhook handlers and event systems</li>
+                        <li>API documentation and versioning</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="reveal">Ready to build?</h2>
+            <p class="reveal reveal-d1">Tell me what you need and I'll come back with a plan, a timeline, and a price.</p>
+            <a href="/contact" class="btn-primary reveal reveal-d2">Start a project <span aria-hidden="true">&rarr;</span></a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-brand">
+                <img src="/assets/stackcraft-icon-blue.svg" alt="Stackcraft" height="20">
+                <p>&copy; 2026 Stackcraft</p>
+            </div>
+            <p>Built by Eli.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Nav scroll
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 60);
+        }, { passive: true });
+
+        // Mobile nav
+        const navToggle = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+        navToggle.addEventListener('click', () => {
+            const isActive = navToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            document.body.style.overflow = isActive ? 'hidden' : '';
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Scroll reveal
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    </script>
+
+</body>
+</html>

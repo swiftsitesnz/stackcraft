@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Stackcraft</title>
+    <meta name="description" content="Get in touch with Stackcraft. Send a project brief and get a response within 24 hours.">
+    <meta name="theme-color" content="#f8f9fb">
+    <link rel="icon" href="/assets/stackcraft-icon-blue.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+
+    <!-- ===== NAV ===== -->
+    <nav class="nav" id="nav" role="navigation">
+        <div class="container">
+            <a href="/" class="nav-logo">
+                <img src="/assets/stackcraft-lockup-light.svg" alt="Stackcraft" height="28">
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/work">Work</a></li>
+                <li><a href="/process">Process</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+        <div class="container">
+            <p class="section-label">Contact</p>
+            <h1>Let's build something</h1>
+            <p>Describe what you need and I'll get back to you with next steps, a timeline, and a quote.</p>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section>
+        <div class="container">
+            <div class="contact-grid">
+
+                <form class="contact-form reveal" id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@company.com" required autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project brief</label>
+                        <textarea id="message" name="message" placeholder="What are you building? What problem does it solve? Any timeline constraints?" required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit" id="form-submit">Send brief</button>
+                    <div class="form-status" id="form-status" aria-live="polite"></div>
+                </form>
+
+                <div class="contact-info reveal reveal-d1">
+                    <h3>Prefer email?</h3>
+                    <p>Send the details directly and I'll get back to you within 24 hours with next steps.</p>
+                    <a href="mailto:eli@stackcraft.co.nz" class="contact-email">eli@stackcraft.co.nz</a>
+                    <p class="contact-response">Typical response time: within 24 hours</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-brand">
+                <img src="/assets/stackcraft-icon-blue.svg" alt="Stackcraft" height="20">
+                <p>&copy; 2026 Stackcraft</p>
+            </div>
+            <p>Built by Eli.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Nav scroll
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 60);
+        }, { passive: true });
+
+        // Mobile nav
+        const navToggle = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+        navToggle.addEventListener('click', () => {
+            const isActive = navToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            document.body.style.overflow = isActive ? 'hidden' : '';
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Scroll reveal
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        // Contact form
+        const form = document.getElementById('contact-form');
+        const submitBtn = document.getElementById('form-submit');
+        const statusDiv = document.getElementById('form-status');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            if (!name || !email || !message) {
+                statusDiv.textContent = 'All fields are required.';
+                statusDiv.className = 'form-status error';
+                return;
+            }
+
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                statusDiv.textContent = 'Enter a valid email address.';
+                statusDiv.className = 'form-status error';
+                return;
+            }
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            statusDiv.className = 'form-status';
+            statusDiv.style.display = 'none';
+
+            try {
+                const res = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, email, message })
+                });
+
+                const data = await res.json();
+
+                if (!res.ok) throw new Error(data.error || 'Request failed');
+
+                statusDiv.textContent = 'Message sent. I\'ll be in touch within 24 hours.';
+                statusDiv.className = 'form-status success';
+                form.reset();
+            } catch (err) {
+                statusDiv.textContent = 'Something went wrong. Try emailing me directly.';
+                statusDiv.className = 'form-status error';
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send brief';
+            }
+        });
+    </script>
+
+</body>
+</html>

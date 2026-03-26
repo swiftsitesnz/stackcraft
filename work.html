@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work — Stackcraft</title>
+    <meta name="description" content="Recent projects from Stackcraft — dashboards, AI integrations, automation tools, and APIs built for real businesses.">
+    <meta name="theme-color" content="#f8f9fb">
+    <link rel="icon" href="/assets/stackcraft-icon-blue.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+
+    <!-- ===== NAV ===== -->
+    <nav class="nav" id="nav" role="navigation">
+        <div class="container">
+            <a href="/" class="nav-logo">
+                <img src="/assets/stackcraft-lockup-light.svg" alt="Stackcraft" height="28">
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/work" class="active">Work</a></li>
+                <li><a href="/process">Process</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+        <div class="container">
+            <p class="section-label">Portfolio</p>
+            <h1>Recent work</h1>
+            <p>A selection of projects built for startups, agencies, and growing teams. Each one shipped fast and built to last.</p>
+        </div>
+    </section>
+
+    <!-- ===== WORK ===== -->
+    <section>
+        <div class="container">
+            <div class="work-grid">
+
+                <div class="work-card reveal">
+                    <img
+                        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+                        alt="Data analytics dashboard interface"
+                        class="work-card-img"
+                        loading="lazy"
+                    >
+                    <div class="work-card-body">
+                        <h3>Internal Dashboard</h3>
+                        <p>Real-time operations dashboard with live data feeds and role-based access control.</p>
+                        <div class="work-tags">
+                            <span class="work-tag">React</span>
+                            <span class="work-tag">Node.js</span>
+                            <span class="work-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card reveal reveal-d1">
+                    <img
+                        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+                        alt="Data visualization and analytics"
+                        class="work-card-img"
+                        loading="lazy"
+                    >
+                    <div class="work-card-body">
+                        <h3>Lead Generation Tool</h3>
+                        <p>Automated lead capture and scoring pipeline with CRM sync and email sequences.</p>
+                        <div class="work-tags">
+                            <span class="work-tag">Python</span>
+                            <span class="work-tag">FastAPI</span>
+                            <span class="work-tag">OpenAI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card reveal reveal-d2">
+                    <img
+                        src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80"
+                        alt="AI technology abstract"
+                        class="work-card-img"
+                        loading="lazy"
+                    >
+                    <div class="work-card-body">
+                        <h3>AI Chat Integration</h3>
+                        <p>Custom support agent trained on a proprietary knowledge base with escalation logic.</p>
+                        <div class="work-tags">
+                            <span class="work-tag">Next.js</span>
+                            <span class="work-tag">LangChain</span>
+                            <span class="work-tag">Pinecone</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card reveal reveal-d3">
+                    <img
+                        src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80"
+                        alt="Server infrastructure"
+                        class="work-card-img"
+                        loading="lazy"
+                    >
+                    <div class="work-card-body">
+                        <h3>Booking API</h3>
+                        <p>High-throughput booking engine with calendar sync, availability logic, and payment processing.</p>
+                        <div class="work-tags">
+                            <span class="work-tag">Node.js</span>
+                            <span class="work-tag">Redis</span>
+                            <span class="work-tag">Stripe API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coming-soon reveal">
+                    <p>More projects coming soon.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="reveal">Want to be featured here?</h2>
+            <p class="reveal reveal-d1">Let's build something worth showing off.</p>
+            <a href="/contact" class="btn-primary reveal reveal-d2">Let's talk <span aria-hidden="true">&rarr;</span></a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-brand">
+                <img src="/assets/stackcraft-icon-blue.svg" alt="Stackcraft" height="20">
+                <p>&copy; 2026 Stackcraft</p>
+            </div>
+            <p>Built by Eli.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Nav scroll
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 60);
+        }, { passive: true });
+
+        // Mobile nav
+        const navToggle = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+        navToggle.addEventListener('click', () => {
+            const isActive = navToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            document.body.style.overflow = isActive ? 'hidden' : '';
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Scroll reveal
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    </script>
+
+</body>
+</html>
