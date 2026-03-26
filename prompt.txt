@@ -1,0 +1,51 @@
+Build a complete, sharp, production-ready personal dev studio website for Stackcraft. This is a solo developer studio run by Eli -- custom web apps, AI integrations, automation tools, and API work. Technical, international feel. NOT a generic AI website.
+
+BRAND:
+- Name: Stackcraft
+- Tagline: "Built to spec." or "Custom software, shipped fast."
+- Tone: Sharp, confident, technical without being nerdy. Like a senior dev who doesn't waste words.
+- Colours: Dark theme. Near-black background (#0d0d0d), electric blue (#3b82f6) accent. White/light grey text.
+- Typography: Monospace or geometric sans. Something that says "I write code".
+- NOT: rounded pastel cards, gradient blobs, laptop stock photos.
+
+SECTIONS (single page scroll):
+1. Hero - strong headline, subheadline, CTA ("Start a project" -> scrolls to contact). Animated. Subtle terminal/code grid aesthetic. Not cheesy.
+2. Services - Custom Web Apps, AI Integrations, Automation & Tooling, API Development. Sharp SVG icons, 1-2 line descriptions each.
+3. Work/Portfolio - 4 placeholder project cards: "Internal Dashboard", "Lead Generation Tool", "AI Chat Integration", "Booking API". Use Unsplash images (dark/tech mood) via direct URLs. Each card: name, 1-line description, tech stack tags.
+4. How it works - 3 steps: Brief, Build, Ship. Clean numbered layout.
+5. About - Solo studio, AI-assisted, fast delivery, quality code. Short and confident. No fluff.
+6. Contact - form (name, email, project brief) POSTing to /api/contact. Also display: eli@stackcraft.co.nz
+
+ANIMATIONS:
+- Scroll-reveal on all sections (fade up + stagger) via vanilla JS Intersection Observer
+- Hero headline: typewriter effect
+- Service cards: hover lift + blue glow
+- Smooth scroll behaviour
+- No heavy libraries - pure CSS + vanilla JS only
+
+TECH:
+- Vanilla HTML + CSS + vanilla JS only. No frameworks, no build step.
+- Contact form: api/contact.js (Vercel serverless function using Resend)
+  - Uses RESEND_API_KEY environment variable
+  - FROM: Stackcraft <noreply@swiftsites.nz>
+  - TO: fadereport@gmail.com
+  - Sends auto-reply confirmation to the person who submitted
+  - Handles CORS, validates inputs, returns JSON
+- Fully mobile responsive
+- vercel.json for serverless function routing
+
+FILE STRUCTURE:
+- index.html
+- api/contact.js
+- vercel.json
+- README.md
+
+QUALITY BAR:
+- This is a developer's own portfolio -- it must look exceptional. Critically review your output.
+- No lorem ipsum anywhere. Write real, sharp copy throughout.
+- Unsplash images: use real photo URLs in format https://images.unsplash.com/photo-XXXXX?w=800&q=80
+- Clean, well-structured HTML and CSS.
+- The site should feel like it was built by someone who cares deeply about craft.
+
+When completely finished, run this exact command to notify:
+openclaw system event --text "Done: Stackcraft site built and ready to review at C:\Users\eli\stackcraft" --mode now
