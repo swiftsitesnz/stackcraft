@@ -76,6 +76,7 @@
                             <line x1="26" y1="24" x2="22" y2="36"/>
                         </svg>
                         <p>Web Apps</p>
+                        <p class="teaser-desc">Full-stack applications built from scratch</p>
                     </a>
                 </div>
                 <div class="teaser-item reveal reveal-d1">
@@ -93,6 +94,7 @@
                             <line x1="36" y1="30" x2="44" y2="30"/>
                         </svg>
                         <p>AI Integrations</p>
+                        <p class="teaser-desc">LLMs wired into your existing stack</p>
                     </a>
                 </div>
                 <div class="teaser-item reveal reveal-d2">
@@ -104,6 +106,7 @@
                             <polyline points="38 36 38 28 30 28"/>
                         </svg>
                         <p>Automation</p>
+                        <p class="teaser-desc">Workflows and pipelines that run themselves</p>
                     </a>
                 </div>
                 <div class="teaser-item reveal reveal-d3">
@@ -119,6 +122,7 @@
                             <line x1="28" y1="35" x2="36" y2="26"/>
                         </svg>
                         <p>APIs</p>
+                        <p class="teaser-desc">Clean, documented endpoints that scale</p>
                     </a>
                 </div>
             </div>
@@ -133,20 +137,46 @@
             <div class="differentiators">
                 <div class="differentiator reveal">
                     <h3>Direct communication</h3>
-                    <p>You talk to the person writing your code. No project managers, no handoffs, no telephone game. Questions get answered in hours, not days.</p>
+                    <p>You talk to the person writing your code. No project managers, no handoffs, no telephone game. Questions get answered in hours, not days. That means fewer miscommunications and software that actually matches what you asked for.</p>
                 </div>
                 <div class="differentiator reveal reveal-d1">
                     <h3>AI-assisted velocity</h3>
-                    <p>AI tools built into every step — code generation, testing, documentation. Same quality bar, faster delivery.</p>
+                    <p>AI tools built into every step — code generation, testing, documentation, and research. Same quality bar, significantly faster delivery. You get the output of a small team from a single developer who knows your project inside-out.</p>
                 </div>
                 <div class="differentiator reveal reveal-d2">
                     <h3>Fixed-price, no surprises</h3>
-                    <p>Every project gets a clear scope, timeline, and quote before work begins. You know exactly what you're paying for.</p>
+                    <p>Every project gets a clear scope, timeline, and quote before work begins. You know exactly what you're paying for. No hourly billing that spirals, no scope creep — just a straightforward agreement and a shipped product.</p>
                 </div>
                 <div class="differentiator reveal reveal-d3">
                     <h3>Built to last</h3>
-                    <p>Clean architecture, proper testing, clear docs. Code that's easy to maintain and hand off to your team when you're ready.</p>
+                    <p>Clean architecture, proper testing, clear documentation. Code that's easy to maintain, extend, and hand off to your team when you're ready. No tech debt shortcuts that cost you twice later.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RECENT WORK ===== -->
+    <section>
+        <div class="container">
+            <div class="recent-work-header">
+                <p class="section-label">Recent Work</p>
+                <a href="/work.html">View all &rarr;</a>
+            </div>
+            <div class="recent-work-grid">
+                <a href="/work.html" class="recent-work-card reveal">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80" alt="Internal Dashboard" loading="lazy">
+                    <div>
+                        <h4>Internal Dashboard</h4>
+                        <p>Real-time operations dashboard with live data feeds and role-based access.</p>
+                    </div>
+                </a>
+                <a href="/work.html" class="recent-work-card reveal reveal-d1">
+                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&q=80" alt="AI Chat Integration" loading="lazy">
+                    <div>
+                        <h4>AI Chat Integration</h4>
+                        <p>Custom support agent trained on a proprietary knowledge base.</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -167,7 +197,7 @@
                 <img src="/assets/stackcraft-icon-blue.svg" alt="Stackcraft" height="20">
                 <p>&copy; 2026 Stackcraft</p>
             </div>
-            <p>Built by Eli.</p>
+            <p>Built by <a href="https://swiftsites.nz">SwiftSites</a>.</p>
         </div>
     </footer>
 
@@ -231,7 +261,7 @@
                     revealObserver.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+        }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
         document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     </script>
 

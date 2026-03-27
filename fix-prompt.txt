@@ -1,0 +1,37 @@
+Fix the Stackcraft website at C:\Users\eli\stackcraft\ — it has too much dead whitespace and thin content. Go through every page and tighten it up.
+
+## PROBLEMS TO FIX
+
+### 1. Excessive whitespace / padding
+- Section padding is too large — reduce from 120px to 80px top/bottom throughout assets/styles.css and any inline styles
+- Gaps between elements are too large — tighten spacing throughout
+- The hero section leaves too much empty space — the content should feel grounded, not floating
+- Services row on homepage: icons + labels feel sparse — add a 1-line description under each
+- The CTA section before the footer has too much padding above and below — halve it
+
+### 2. Homepage (index.html) — add density
+- The "Why Stackcraft" section: if it only has 2 cards, add a 3rd. Each card should have a heading, 2-3 sentence paragraph, not just a short line
+- Add a mini "Recent Work" teaser section (2 portfolio cards) between services and the CTA — just thumbnail + name + 1 line, linking to /work.html
+- The hero: if it's split layout (text left, image right), make sure the image is filling its space properly and not just floating with padding around it
+
+### 3. Footer — update on ALL pages
+- Change "Built by Eli." to: "Built by <a href='https://swiftsites.nz'>SwiftSites</a>."
+- Keep the Stackcraft icon + © 2026 Stackcraft on the left
+- Add SwiftSites link on the right: "Built by SwiftSites" linking to https://swiftsites.nz
+
+### 4. Content on inner pages
+- services.html: If any service card feels thin, add a 3rd bullet point
+- process.html: Make sure each step has a full paragraph, not just 1-2 lines
+- about.html: Should have at least 3 substantial paragraphs + the differentiators section
+- work.html: 4 portfolio cards should each have image + title + description + tags — no empty cards
+
+### 5. General polish
+- Make sure scroll-reveal animations trigger early enough (rootMargin: '0px 0px -20px 0px' and threshold: 0.05) so sections don't stay invisible too long
+- Ensure consistent section spacing across all pages
+- No section should feel like it's floating in an ocean of white
+
+## QUALITY BAR
+This is a developer's portfolio site. Every section should feel purposeful and dense with value. A prospective client should scroll through and feel like there's a lot here, not that it's half-finished.
+
+When done, run:
+openclaw system event --text "Done: Stackcraft spacing and content fixes complete" --mode now
