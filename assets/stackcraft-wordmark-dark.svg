@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="220" height="28" viewBox="0 0 220 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <text x="0" y="22" font-family="'SF Mono','Fira Code','JetBrains Mono','Courier New',monospace" font-size="24" font-weight="600" letter-spacing="0.5" fill="#ffffff">stack</text>
-  <text x="105" y="22" font-family="'SF Mono','Fira Code','JetBrains Mono','Courier New',monospace" font-size="24" font-weight="600" letter-spacing="0.5" fill="#3b82f6">craft</text>
+<svg width="200" height="28" viewBox="0 0 200 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <text x="0" y="22" font-family="'SF Mono','Fira Code','JetBrains Mono','Courier New',monospace" font-size="24" font-weight="600" letter-spacing="0.5"><tspan fill="#ffffff">stack</tspan><tspan fill="#3b82f6">craft</tspan></text>
 </svg>

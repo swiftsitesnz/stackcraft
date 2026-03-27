@@ -43,7 +43,7 @@ section { padding: 120px 0; }
     font-family: 'JetBrains Mono', monospace;
 }
 .nav-links a:hover { color: #111827; }
-.nav-links a.active { color: #111827; }
+.nav-links a.active { color: #3b82f6; }
 .nav-toggle {
     display: none;
     background: none;

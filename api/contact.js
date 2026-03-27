@@ -46,7 +46,7 @@ module.exports = async function handler(req, res) {
         await Promise.all([
             resend.emails.send({
                 from: 'Stackcraft <noreply@swiftsites.nz>',
-                to: 'fadereport@gmail.com',
+                to: 'eli@stackcraft.co.nz',
                 subject: `New inquiry from ${safeName}`,
                 html: [
                     '<div style="font-family: sans-serif; color: #333; max-width: 600px;">',

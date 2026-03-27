@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="320" height="48" viewBox="0 0 320 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="280" height="48" viewBox="0 0 280 48" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect x="0" y="30" width="40" height="9" rx="2" fill="#3b82f6"/>
   <rect x="5" y="18" width="30" height="9" rx="2" fill="#60a5fa"/>
   <rect x="10" y="6" width="20" height="9" rx="2" fill="#93c5fd"/>
-  <text x="56" y="34" font-family="'SF Mono','Fira Code','JetBrains Mono','Courier New',monospace" font-size="24" font-weight="600" letter-spacing="0.5" fill="#ffffff">stack</text>
-  <text x="161" y="34" font-family="'SF Mono','Fira Code','JetBrains Mono','Courier New',monospace" font-size="24" font-weight="600" letter-spacing="0.5" fill="#3b82f6">craft</text>
+  <text x="52" y="34" font-family="'SF Mono','Fira Code','JetBrains Mono','Courier New',monospace" font-size="24" font-weight="600" letter-spacing="0.5"><tspan fill="#ffffff">stack</tspan><tspan fill="#3b82f6">craft</tspan></text>
 </svg>

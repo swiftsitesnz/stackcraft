@@ -1,0 +1,38 @@
+You are doing a thorough audit and fix pass on the Stackcraft website at C:\Users\eli\stackcraft\
+
+The site is a multi-page dev studio website for "Stackcraft" — a solo dev studio run by Eli. Pages: index.html, services.html, work.html, process.html, about.html, contact.html. Shared CSS in assets/styles.css.
+
+## YOUR JOB
+Go through every page as if you are a prospective client visiting for the first time. Fix everything that looks wrong, unprofessional, or incomplete. Do NOT ask for approval — just fix it all.
+
+## KNOWN ISSUES TO FIX
+
+1. **Logo gap** — The SVG logo files in assets/ have been updated to use tspan (no gap). Make sure the nav on every page references /assets/stackcraft-lockup-light.svg and the img tag has correct height (28px). Verify no page still has the old text-based "STACKCRAFT" logo.
+
+2. **Hero image** — Check index.html has a real, high-quality Unsplash image. If it's missing or using a broken URL, add one: https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1400&q=80 (developer at workstation, dark mood). Make it a split layout or full-bleed with dark overlay — must look premium.
+
+3. **Nav consistency** — Every page must have identical nav: Home | Services | Work | Process | About | Contact. Active page highlighted in blue. Logo links to /index.html.
+
+4. **Copy quality** — Read every heading and paragraph. Rewrite anything that sounds generic, weak, or AI-ish. Copy should be sharp, confident, and direct. No fluff.
+
+5. **CTA buttons** — Every page should have at least one clear CTA. Check they all link correctly (contact page = /contact.html).
+
+6. **Footer** — Must be consistent across all pages. © 2026 Stackcraft | icon | "Built by Eli."
+
+7. **Mobile nav** — Check there's a hamburger menu for mobile on every page.
+
+8. **Empty/thin sections** — If any section feels sparse or underdeveloped, flesh it out.
+
+9. **Form** — contact.html form should post to /api/contact, have name/email/message fields, submit button, and success/error states.
+
+10. **Page titles** — Every page should have a proper <title> tag: e.g. "Services — Stackcraft", "Work — Stackcraft" etc.
+
+11. **Meta descriptions** — Add a meta description to every page.
+
+12. **Scroll animations** — All sections should have reveal animations via Intersection Observer. Make sure they work (don't start invisible and stay invisible — threshold should be low so they trigger easily).
+
+## QUALITY BAR
+This is a developer's own portfolio. It must look exceptional and feel polished. A prospective client visiting this site should feel confident they're hiring someone who cares about quality.
+
+After fixing everything, run:
+openclaw system event --text "Done: Stackcraft full audit and fixes complete — ready to deploy" --mode now
