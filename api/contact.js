@@ -45,7 +45,7 @@ module.exports = async function handler(req, res) {
     try {
         await Promise.all([
             resend.emails.send({
-                from: 'Stackcraft <noreply@swiftsites.nz>',
+                from: 'Stackcraft <hello@stackcraft.co.nz>',
                 to: 'eli@stackcraft.co.nz',
                 subject: `New inquiry from ${safeName}`,
                 html: [
@@ -59,7 +59,7 @@ module.exports = async function handler(req, res) {
                 ].join('')
             }),
             resend.emails.send({
-                from: 'Stackcraft <noreply@swiftsites.nz>',
+                from: 'Stackcraft <hello@stackcraft.co.nz>',
                 to: email,
                 subject: 'Got your message — Stackcraft',
                 html: [
