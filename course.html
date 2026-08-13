@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethical and Legal Use of AI in Regulated Industries — Free Course</title>
+    <meta name="description" content="A free, practitioner-grounded course on using AI ethically and legally inside regulated industries — drawn from real work inside an ACC-regulated NZ healthcare supplier, not theory.">
+    <meta name="theme-color" content="#F7F5F1">
+    <meta property="og:title" content="Ethical and Legal Use of AI in Regulated Industries">
+    <meta property="og:description" content="Free, practitioner-grounded — real case studies from building AI-assisted systems inside a regulated healthcare environment, including the mistakes and how they were caught.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="/assets/stackcraft-icon-blue.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;650;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+
+    <div class="bonus-strip">
+        Free for everyone. The first <strong>100 signups</strong> also get the next course free — whatever it ends up being.
+    </div>
+
+    <!-- ===== MINIMAL NAV ===== -->
+    <nav class="course-nav">
+        <div class="container">
+            <a href="/index.html" class="nav-logo">
+                <img src="/assets/stackcraft-lockup-light.svg" alt="Stackcraft" height="26">
+            </a>
+            <a href="#signup" class="btn-secondary" style="padding:10px 22px;">Sign up free</a>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="course-hero">
+        <div class="container">
+            <p class="hero-label">Free Course · 6 Parts</p>
+            <h1 data-typewriter>Ethical and Legal Use of AI in Regulated Industries</h1>
+            <p class="lede tw-follow">A practitioner's course, not a theory course. Real case studies — including the mistakes and how they were caught — from building AI-assisted systems inside an ACC-regulated New Zealand healthcare supplier.</p>
+            <div class="credibility-line tw-follow">
+                <span class="dot"></span>
+                <span>Written and taught by Eli, Stackcraft — built for a national ACC-contracted mental healthcare supplier</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BODY ===== -->
+    <section style="padding-top:0;">
+        <div class="container">
+            <div class="course-layout">
+
+                <div>
+                    <p class="section-label">What's covered</p>
+                    <h2 class="section-title">Six parts, one every week</h2>
+                    <div class="module-list">
+                        <div class="module-item reveal">
+                            <div>
+                                <h3>Why this matters</h3>
+                                <p>The actual gap regulated industries have with AI adoption right now, and why "move fast and break things" simply doesn't apply here.</p>
+                            </div>
+                        </div>
+                        <div class="module-item reveal reveal-d1">
+                            <div>
+                                <h3>The regulatory texture</h3>
+                                <p>What "regulated" really constrains in practice — safety checks, professional registration, privacy-sensitive data, funder contract compliance. Grounded, not generic.</p>
+                            </div>
+                        </div>
+                        <div class="module-item reveal reveal-d2">
+                            <div>
+                                <h3>Human-in-the-loop, not as a slogan</h3>
+                                <p>Two real mistakes from actual AI-assisted work, caught before they mattered — and exactly what caught them.</p>
+                            </div>
+                        </div>
+                        <div class="module-item reveal reveal-d3">
+                            <div>
+                                <h3>Guardrails that actually work</h3>
+                                <p>The standing rules used day to day when working with AI on sensitive systems — practical, adoptable, not abstract policy.</p>
+                            </div>
+                        </div>
+                        <div class="module-item reveal">
+                            <div>
+                                <h3>Applied governance architecture</h3>
+                                <p>Designing real checkpoints and gates for an AI agent operating inside a business — for anyone evaluating their own AI agent deployment.</p>
+                            </div>
+                        </div>
+                        <div class="module-item reveal reveal-d1">
+                            <div>
+                                <h3>How to actually start</h3>
+                                <p>A practical checklist to bring back into your own organisation, plus what's coming next.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="signup-panel reveal" id="signup">
+                    <h3>Sign up free</h3>
+                    <p class="panel-sub">First lesson lands in your inbox right away, then one a week. No spam, unsubscribe any time.</p>
+                    <form class="signup-form" id="signup-form" novalidate>
+                        <div class="form-group">
+                            <label for="s-name">Name</label>
+                            <input type="text" id="s-name" name="name" placeholder="Your name" required autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="s-email">Email</label>
+                            <input type="email" id="s-email" name="email" placeholder="you@company.com" required autocomplete="email">
+                        </div>
+                        <button type="submit" class="form-submit" id="signup-submit">Sign up free</button>
+                        <div class="form-status" id="signup-status" aria-live="polite"></div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-brand">
+                <img src="/assets/stackcraft-icon-blue.svg" alt="Stackcraft" height="20">
+                <p>&copy; 2026 Stackcraft</p>
+            </div>
+            <div class="footer-links">
+                <p><a href="/index.html">stackcraft.co.nz</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/main.js" defer></script>
+    <script>
+        const form = document.getElementById('signup-form');
+        const submitBtn = document.getElementById('signup-submit');
+        const statusDiv = document.getElementById('signup-status');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('s-name').value.trim();
+            const email = document.getElementById('s-email').value.trim();
+
+            if (!name || !email) {
+                statusDiv.textContent = 'Name and email are required.';
+                statusDiv.className = 'form-status error';
+                return;
+            }
+
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                statusDiv.textContent = 'Enter a valid email address.';
+                statusDiv.className = 'form-status error';
+                return;
+            }
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Signing up...';
+            statusDiv.textContent = '';
+            statusDiv.className = 'form-status';
+
+            try {
+                const res = await fetch('/api/course-signup', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, email })
+                });
+
+                const data = await res.json();
+
+                if (!res.ok) throw new Error(data.error || 'Request failed');
+
+                statusDiv.textContent = data.qualifiesForBonus
+                    ? `You're in — signup #${data.signupNumber}, so the next course is free for you too. Check your inbox.`
+                    : "You're in. Check your inbox for the first lesson.";
+                statusDiv.className = 'form-status success';
+                form.reset();
+                submitBtn.textContent = 'Signed up';
+            } catch (err) {
+                statusDiv.textContent = 'Something went wrong. Try again or email eli@stackcraft.co.nz directly.';
+                statusDiv.className = 'form-status error';
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Sign up free';
+            }
+        });
+    </script>
+
+</body>
+</html>
