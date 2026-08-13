@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact — Stackcraft</title>
     <meta name="description" content="Get in touch with Stackcraft. Send a project brief and get a response within 24 hours.">
-    <meta name="theme-color" content="#f8f9fb">
+    <meta name="theme-color" content="#F7F5F1">
     <link rel="icon" href="/assets/stackcraft-icon-blue.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;650;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
@@ -38,8 +38,8 @@
     <section class="page-hero">
         <div class="container">
             <p class="section-label">Contact</p>
-            <h1>Let's build something</h1>
-            <p>Describe what you need and I'll get back to you with next steps, a timeline, and a quote.</p>
+            <h1 data-typewriter>Let's talk</h1>
+            <p class="tw-follow">Describe what you need and I'll get back to you personally with next steps, a timeline, and a quote.</p>
         </div>
     </section>
 
@@ -58,8 +58,20 @@
                         <input type="email" id="email" name="email" placeholder="you@company.com" required autocomplete="email">
                     </div>
                     <div class="form-group">
+                        <label for="helpType">What kind of help do you need?</label>
+                        <select id="helpType" name="helpType" required>
+                            <option value="" disabled selected>Select one</option>
+                            <option value="Bespoke Digital Tools">Bespoke digital tools</option>
+                            <option value="Systems Optimization & Automation">Systems optimization &amp; automation</option>
+                            <option value="Consultancy">Consultancy</option>
+                            <option value="AI Coaching">AI coaching</option>
+                            <option value="Team Cohesion Training">Team cohesion training</option>
+                            <option value="Not sure">Not sure — tell me what fits</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
                         <label for="message">Project brief</label>
-                        <textarea id="message" name="message" placeholder="What are you building? What problem does it solve? Any timeline constraints?" required></textarea>
+                        <textarea id="message" name="message" placeholder="What are you dealing with? What problem does it solve? Any timeline constraints?" required></textarea>
                     </div>
                     <button type="submit" class="form-submit" id="form-submit">Send brief</button>
                     <div class="form-status" id="form-status" aria-live="polite"></div>
@@ -83,44 +95,14 @@
                 <img src="/assets/stackcraft-icon-blue.svg" alt="Stackcraft" height="20">
                 <p>&copy; 2026 Stackcraft</p>
             </div>
-            <p>Built by <a href="https://swiftsites.nz">SwiftSites</a>.</p>
+            <div class="footer-links">
+                <p><a href="https://swiftsites.nz" target="_blank" rel="noopener">Website builds via SwiftSites</a></p>
+            </div>
         </div>
     </footer>
 
+    <script src="/assets/main.js" defer></script>
     <script>
-        // Nav scroll
-        const nav = document.getElementById('nav');
-        window.addEventListener('scroll', () => {
-            nav.classList.toggle('scrolled', window.scrollY > 60);
-        }, { passive: true });
-
-        // Mobile nav
-        const navToggle = document.getElementById('nav-toggle');
-        const navLinks = document.getElementById('nav-links');
-        navToggle.addEventListener('click', () => {
-            const isActive = navToggle.classList.toggle('active');
-            navLinks.classList.toggle('active');
-            document.body.style.overflow = isActive ? 'hidden' : '';
-        });
-        navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navToggle.classList.remove('active');
-                navLinks.classList.remove('active');
-                document.body.style.overflow = '';
-            });
-        });
-
-        // Scroll reveal
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('revealed');
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
-        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-
         // Contact form
         const form = document.getElementById('contact-form');
         const submitBtn = document.getElementById('form-submit');
@@ -131,9 +113,10 @@
 
             const name = document.getElementById('name').value.trim();
             const email = document.getElementById('email').value.trim();
+            const helpType = document.getElementById('helpType').value;
             const message = document.getElementById('message').value.trim();
 
-            if (!name || !email || !message) {
+            if (!name || !email || !helpType || !message) {
                 statusDiv.textContent = 'All fields are required.';
                 statusDiv.className = 'form-status error';
                 return;
@@ -154,7 +137,7 @@
                 const res = await fetch('/api/contact', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ name, email, message })
+                    body: JSON.stringify({ name, email, helpType, message })
                 });
 
                 const data = await res.json();

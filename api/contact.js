@@ -13,17 +13,17 @@ module.exports = async function handler(req, res) {
         return res.status(405).json({ error: 'Method not allowed' });
     }
 
-    const { name, email, message } = req.body || {};
+    const { name, email, helpType, message } = req.body || {};
 
-    if (!name || !email || !message) {
+    if (!name || !email || !helpType || !message) {
         return res.status(400).json({ error: 'All fields are required' });
     }
 
-    if (typeof name !== 'string' || typeof email !== 'string' || typeof message !== 'string') {
+    if (typeof name !== 'string' || typeof email !== 'string' || typeof helpType !== 'string' || typeof message !== 'string') {
         return res.status(400).json({ error: 'Invalid input' });
     }
 
-    if (name.length > 200 || email.length > 320 || message.length > 5000) {
+    if (name.length > 200 || email.length > 320 || helpType.length > 100 || message.length > 5000) {
         return res.status(400).json({ error: 'Input too long' });
     }
 
@@ -40,6 +40,7 @@ module.exports = async function handler(req, res) {
 
     const safeName = sanitize(name);
     const safeEmail = sanitize(email);
+    const safeHelpType = sanitize(helpType);
     const safeMessage = sanitize(message).replace(/\n/g, '<br>');
 
     try {
@@ -53,6 +54,7 @@ module.exports = async function handler(req, res) {
                     `<h2 style="color: #111;">New project inquiry</h2>`,
                     `<p><strong>Name:</strong> ${safeName}</p>`,
                     `<p><strong>Email:</strong> <a href="mailto:${safeEmail}">${safeEmail}</a></p>`,
+                    `<p><strong>Looking for:</strong> ${safeHelpType}</p>`,
                     `<p><strong>Brief:</strong></p>`,
                     `<div style="background: #f5f5f5; padding: 16px; border-radius: 6px; margin-top: 8px;">${safeMessage}</div>`,
                     '</div>'

@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Process — Stackcraft</title>
     <meta name="description" content="How Stackcraft works — from brief to build to ship. Clear steps, fast turnaround, no surprises.">
-    <meta name="theme-color" content="#f8f9fb">
+    <meta name="theme-color" content="#F7F5F1">
     <link rel="icon" href="/assets/stackcraft-icon-blue.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;650;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
@@ -38,8 +38,8 @@
     <section class="page-hero">
         <div class="container">
             <p class="section-label">Process</p>
-            <h1>How it works</h1>
-            <p>Four steps from idea to production. No mystery, no surprises — just clear communication and fast execution.</p>
+            <h1 data-typewriter>How a build engagement works</h1>
+            <p class="tw-follow">Four steps from idea to production. No mystery, no surprises — just clear communication and fast execution.</p>
         </div>
     </section>
 
@@ -52,7 +52,7 @@
                     <div class="process-num">01</div>
                     <div>
                         <h3>Brief</h3>
-                        <p>You describe what you need — the problem, the users, any constraints. I ask the right questions to fill in the gaps and make sure we're aligned before a single line of code is written.</p>
+                        <p>You describe what you need — the problem, the users, any constraints. The right questions get asked to fill in the gaps and make sure everyone's aligned before a single line of code is written.</p>
                         <p>This usually takes one or two conversations. By the end, you'll have a clear scope document, a realistic timeline, and a fixed-price quote. No hourly billing surprises.</p>
                         <div class="process-deliverables">
                             <strong>Deliverables:</strong> Scope document, timeline, fixed-price quote
@@ -64,10 +64,10 @@
                     <div class="process-num">02</div>
                     <div>
                         <h3>Build</h3>
-                        <p>Fast, iterative development. I work in short cycles and ship working previews early so you can see real progress — not slide decks or wireframes.</p>
-                        <p>You'll get daily async updates and a staging link you can check any time. If something needs to change mid-build, we adjust. No change request bureaucracy.</p>
+                        <p>Fast, iterative development. Work happens in short cycles with working previews shipped early, so you see real progress — not slide decks or wireframes.</p>
+                        <p>You'll get regular async updates and a staging link you can check any time. If something needs to change mid-build, we adjust. No change-request bureaucracy.</p>
                         <div class="process-deliverables">
-                            <strong>Communication:</strong> Daily async updates, live staging preview
+                            <strong>Communication:</strong> Regular async updates, live staging preview
                         </div>
                     </div>
                 </div>
@@ -76,8 +76,8 @@
                     <div class="process-num">03</div>
                     <div>
                         <h3>Ship</h3>
-                        <p>Before anything goes live, it gets properly tested — cross-browser, responsive, edge cases covered. I deploy to your infrastructure or set up hosting, configure DNS, and make sure monitoring is in place.</p>
-                        <p>Handover includes everything you need: source code, documentation, environment setup guides, and a walkthrough of the architecture so your team isn't guessing later.</p>
+                        <p>Before anything goes live, it gets properly tested — cross-browser, responsive, edge cases covered. Deployment happens to your infrastructure or a hosting setup gets configured, with DNS and monitoring in place.</p>
+                        <p>Handover includes everything your team needs: source code, documentation, environment setup guides, and a walkthrough of the architecture, so nobody's guessing later.</p>
                         <div class="process-deliverables">
                             <strong>Deliverables:</strong> Deployed app, source code, docs, architecture walkthrough
                         </div>
@@ -88,14 +88,18 @@
                     <div class="process-num">04</div>
                     <div>
                         <h3>Support</h3>
-                        <p>Software doesn't end at launch. I offer ongoing maintenance packages for bug fixes, performance monitoring, dependency updates, and incremental feature work.</p>
-                        <p>Whether you need a few hours a month or dedicated weekly support, I'll keep things running smoothly so you can focus on your business.</p>
+                        <p>Software doesn't end at launch. Ongoing maintenance packages cover bug fixes, performance monitoring, dependency updates, and incremental feature work.</p>
+                        <p>Whether you need a few hours a month or dedicated weekly support, things keep running smoothly so your team can focus on the business, not the software.</p>
                         <div class="process-deliverables">
                             <strong>Options:</strong> Monthly retainer, ad-hoc support, or feature sprints
                         </div>
                     </div>
                 </div>
 
+            </div>
+
+            <div class="process-note reveal">
+                <strong>Consultancy, AI coaching, and team training engagements</strong> don't follow this exact pipeline — they're scoped individually on a first call, since the work itself looks different from a software build. See <a href="/services.html#advise" style="color:var(--accent);">Advise &amp; Grow</a> for how those typically run.
             </div>
         </div>
     </section>
@@ -104,7 +108,7 @@
     <section class="cta-section">
         <div class="container">
             <h2 class="reveal">Ready to get started?</h2>
-            <p class="reveal reveal-d1">Send a brief and I'll come back with a plan within 24 hours.</p>
+            <p class="reveal reveal-d1">Send a brief and expect a plan back within 24 hours.</p>
             <a href="/contact.html" class="btn-primary reveal reveal-d2">Start a project <span aria-hidden="true">&rarr;</span></a>
         </div>
     </section>
@@ -116,44 +120,13 @@
                 <img src="/assets/stackcraft-icon-blue.svg" alt="Stackcraft" height="20">
                 <p>&copy; 2026 Stackcraft</p>
             </div>
-            <p>Built by <a href="https://swiftsites.nz">SwiftSites</a>.</p>
+            <div class="footer-links">
+                <p><a href="https://swiftsites.nz" target="_blank" rel="noopener">Website builds via SwiftSites</a></p>
+            </div>
         </div>
     </footer>
 
-    <script>
-        // Nav scroll
-        const nav = document.getElementById('nav');
-        window.addEventListener('scroll', () => {
-            nav.classList.toggle('scrolled', window.scrollY > 60);
-        }, { passive: true });
-
-        // Mobile nav
-        const navToggle = document.getElementById('nav-toggle');
-        const navLinks = document.getElementById('nav-links');
-        navToggle.addEventListener('click', () => {
-            const isActive = navToggle.classList.toggle('active');
-            navLinks.classList.toggle('active');
-            document.body.style.overflow = isActive ? 'hidden' : '';
-        });
-        navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navToggle.classList.remove('active');
-                navLinks.classList.remove('active');
-                document.body.style.overflow = '';
-            });
-        });
-
-        // Scroll reveal
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('revealed');
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
-        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-    </script>
+    <script src="/assets/main.js" defer></script>
 
 </body>
 </html>
