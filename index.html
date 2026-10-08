@@ -1,227 +1,302 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stackcraft — Bespoke Software, Systems & Automation</title>
-    <meta name="description" content="Bespoke digital tools, systems optimization, AI integrations, consultancy, and coaching — built by someone who redesigns how the process works first, then automates it.">
-    <meta name="theme-color" content="#F7F5F1">
-    <meta property="og:title" content="Stackcraft — Bespoke Software, Systems & Automation">
-    <meta property="og:description" content="Bespoke digital tools, systems optimization, and AI integration — designed around how your business actually runs.">
-    <meta property="og:type" content="website">
-    <link rel="icon" href="/assets/stackcraft-icon-blue.svg" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;650;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/styles.css">
-</head>
-<body>
-
-    <!-- ===== NAV ===== -->
-    <nav class="nav" id="nav" role="navigation">
-        <div class="container">
-            <a href="/index.html" class="nav-logo">
-                <img src="/assets/stackcraft-lockup-light.svg" alt="Stackcraft" height="28">
-            </a>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="/index.html" class="active">Home</a></li>
-                <li><a href="/services.html">Services</a></li>
-                <li><a href="/work.html">Work</a></li>
-                <li><a href="/process.html">Process</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
+<!doctype html>
+<html lang="en-NZ">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Custom software &amp; systems that work better — Stackcraft</title>
+    <meta
+      name="description"
+      content="Bespoke software, systems automation and practical AI, built directly with Eli Mitchell."
+    />
+    <meta name="theme-color" content="#102e3a" />
+    <link rel="canonical" href="https://stackcraft.co.nz/" />
+    <meta
+      property="og:title"
+      content="Custom software &amp; systems that work better — Stackcraft"
+    />
+    <meta
+      property="og:description"
+      content="Bespoke software, systems automation and practical AI, built directly with Eli Mitchell."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://stackcraft.co.nz/" />
+    <meta
+      property="og:image"
+      content="https://stackcraft.co.nz/assets/social-card.jpg"
+    />
+    <link
+      rel="icon"
+      href="/assets/stackcraft-icon-blue.svg"
+      type="image/svg+xml"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/styles.css?v=20261008" />
+    <script src="/assets/main.js?v=20261008" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap nav-bar">
+        <a href="/" class="brand" aria-label="Stackcraft home"
+          ><img
+            src="/assets/stackcraft-icon-blue.svg"
+            alt=""
+            width="32"
+            height="32"
+          /><span>stackcraft<span class="brand-dot">.</span></span></a
+        ><button
+          id="menu-toggle"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span>
+        </button>
+        <nav id="site-nav" aria-label="Main navigation">
+          <a href="/" aria-current="page">Home</a
+          ><a href="/services">Services</a><a href="/work">Work</a
+          ><a href="/process">Process</a><a href="/about">About</a
+          ><a href="/contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="home-hero wrap">
+        <div class="hero-copy">
+          <p class="eyebrow">Custom software. Connected systems.</p>
+          <h1>
+            Software built<br />around <em>your<br />business.</em>
+          </h1>
+          <p class="lede">
+            Bespoke software, automation and practical AI.<br
+              class="desktop-only"
+            />
+            Built around how your business actually runs.
+          </p>
+          <div class="actions">
+            <a class="button" href="/contact"
+              >Talk through your project<span aria-hidden="true">↗</span></a
+            ><a class="button secondary" href="/work"
+              >Explore the work<span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <p class="hero-byline">
+            <span></span>Built directly with Eli Mitchell.
+          </p>
         </div>
-    </nav>
-
-    <!-- ===== HERO ===== -->
-    <section class="hero" id="hero">
-        <div class="container">
-            <div class="hero-split">
-                <div class="hero-content reveal">
-                    <p class="hero-label">Custom Software &amp; Systems</p>
-                    <h1 class="hero-title" data-typewriter>Software built around how your business actually works.</h1>
-                    <p class="hero-sub tw-follow">Bespoke tools, systems automation, and AI integrations — designed by redesigning the process first, then building what actually fixes it. Not just code to spec.</p>
-                    <div class="hero-ctas tw-follow">
-                        <a href="/contact.html" class="btn-primary">Start a project <span aria-hidden="true">&rarr;</span></a>
-                        <a href="/work.html" class="btn-secondary">See the work</a>
-                    </div>
-                </div>
-                <div class="hero-mark reveal reveal-d2" aria-hidden="true">
-                    <svg viewBox="0 0 420 380" fill="none">
-                        <!-- static connective lines -->
-                        <line class="hm-line" x1="90" y1="80" x2="210" y2="150"/>
-                        <line class="hm-line" x1="330" y1="70" x2="210" y2="150"/>
-                        <line class="hm-line" x1="210" y1="150" x2="210" y2="240"/>
-                        <line class="hm-line" x1="210" y1="240" x2="100" y2="310"/>
-                        <line class="hm-line" x1="210" y1="240" x2="320" y2="310"/>
-                        <line class="hm-line" x1="90" y1="80" x2="60" y2="190"/>
-                        <line class="hm-line" x1="330" y1="70" x2="360" y2="190"/>
-                        <!-- live flow lines -->
-                        <line class="hm-line-live" x1="60" y1="190" x2="210" y2="240"/>
-                        <line class="hm-line-live" x1="360" y1="190" x2="210" y2="240"/>
-                        <line class="hm-line-live" x1="210" y1="150" x2="330" y2="70"/>
-                        <!-- nodes -->
-                        <circle class="hm-node" cx="90" cy="80" r="9"/>
-                        <circle class="hm-node" cx="330" cy="70" r="9"/>
-                        <circle class="hm-node" cx="60" cy="190" r="7"/>
-                        <circle class="hm-node" cx="360" cy="190" r="7"/>
-                        <circle class="hm-node-solid" cx="210" cy="150" r="13"/>
-                        <circle class="hm-node" cx="210" cy="240" r="11"/>
-                        <circle class="hm-node" cx="100" cy="310" r="8"/>
-                        <circle class="hm-node" cx="320" cy="310" r="8"/>
-                    </svg>
-                </div>
+        <div
+          class="system-art"
+          aria-label="Illustrated workflow from scattered information to a clear next step"
+        >
+          <div class="art-top">
+            <span>FROM FRICTION TO FLOW</span
+            ><span class="art-cross" aria-hidden="true">+</span>
+          </div>
+          <div class="flow-inputs">
+            <span>Spreadsheets</span><span>Inbox</span><span>Your tools</span>
+          </div>
+          <div class="flow-connectors" aria-hidden="true">
+            <i></i><i></i><i></i>
+          </div>
+          <div class="flow-core">
+            <img
+              src="/assets/stackcraft-icon-blue.svg"
+              width="38"
+              height="38"
+              alt=""
+            />
+            <div>
+              <strong>One connected workflow</strong
+              ><span>Built around your business</span>
             </div>
+            <span class="core-spark" aria-hidden="true">✳</span>
+          </div>
+          <div class="flow-line" aria-hidden="true"></div>
+          <div class="flow-output">
+            <span class="check" aria-hidden="true">✓</span>
+            <div>
+              <strong>A clear next step.</strong
+              ><span>Less chasing. Less double-handling.</span>
+            </div>
+          </div>
+          <div class="art-bottom">
+            <span>THE PROCESS COMES FIRST.</span><span>01 — 03</span>
+          </div>
         </div>
-    </section>
-
-    <!-- ===== BUILD PILLARS ===== -->
-    <section class="pillar-section">
-        <div class="container">
-            <div class="pillar-row">
-                <div class="pillar-card reveal">
-                    <p class="pillar-eyebrow">Flagship</p>
-                    <h3>Bespoke Digital Tools</h3>
-                    <p>Custom software built to solve one specific operational problem — the kind that off-the-shelf tools don't quite fit and spreadsheets can't scale. Web apps, internal dashboards, AI-powered features, or the small tool that quietly saves your team hours every week.</p>
-                    <a href="/services.html#build" class="pillar-link">See how this works &rarr;</a>
-                </div>
-                <div class="pillar-card reveal reveal-d1">
-                    <p class="pillar-eyebrow">Also core</p>
-                    <h3>Systems Optimization &amp; Automation</h3>
-                    <p>Before anything gets automated, the process itself gets looked at properly. We map how work actually moves through your business, redesign what's slow or manual, then build the automation that makes the new version run itself.</p>
-                    <a href="/services.html#build" class="pillar-link">See how this works &rarr;</a>
-                </div>
-            </div>
-
-            <!-- ===== BEYOND THE BUILD ===== -->
-            <div style="margin-top:56px;">
-                <p class="section-label" style="margin-bottom:6px;">Beyond the build</p>
-                <p style="color:var(--muted); font-size:0.95rem; max-width:560px; margin-bottom:0;">Some engagements aren't about shipping software at all.</p>
-                <div class="beyond-row">
-                    <div class="beyond-item reveal">
-                        <a href="/services.html#advise">
-                            <h4>Consultancy</h4>
-                            <p>An outside, technical eye on how your systems and processes actually hold up.</p>
-                        </a>
-                    </div>
-                    <div class="beyond-item reveal reveal-d1">
-                        <a href="/services.html#advise">
-                            <h4>AI Coaching</h4>
-                            <p>For individuals and teams who need to actually use AI well, not just have access to it.</p>
-                        </a>
-                    </div>
-                    <div class="beyond-item reveal reveal-d2">
-                        <a href="/services.html#advise">
-                            <h4>Team Cohesion Training</h4>
-                            <p>Because a great system run by a disconnected team still underperforms.</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
+      </section>
+      <div class="service-ribbon">
+        <div class="wrap">
+          <span>Custom software</span><i>✳</i><span>Systems & automation</span
+          ><i>✳</i><span>Practical AI</span>
         </div>
-    </section>
-
-    <!-- ===== WHY STACKCRAFT ===== -->
-    <section>
-        <div class="container">
-            <p class="section-label">Why Stackcraft</p>
-            <h2 class="section-title">You work with the person doing the work.</h2>
-            <div class="differentiators">
-                <div class="differentiator reveal">
-                    <h3>Direct access, not an account manager</h3>
-                    <p>You talk to the person actually building your software or running your engagement — every time. No handoffs, no telephone game, no waiting for someone to relay a decision. That's not a budget compromise, it's what senior engagements are supposed to look like.</p>
-                </div>
-                <div class="differentiator reveal reveal-d1">
-                    <h3>AI-accelerated, not AI-shortcut</h3>
-                    <p>AI tools are built into every step — code generation, testing, documentation, research. Same quality bar, considerably faster delivery. It's a multiplier on judgment, not a replacement for it.</p>
-                </div>
-                <div class="differentiator reveal reveal-d2">
-                    <h3>Fixed-price, no surprises</h3>
-                    <p>Every engagement gets a clear scope, timeline, and quote before anything starts. No hourly billing that spirals, no scope creep — a straightforward agreement and a delivered result.</p>
-                </div>
-                <div class="differentiator reveal reveal-d3">
-                    <h3>Built to last</h3>
-                    <p>Clean architecture, proper documentation, no shortcuts that cost you twice later. Software and systems that your team can actually maintain and extend once it's handed off.</p>
-                </div>
-            </div>
+      </div>
+      <section class="section wrap">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / The work</p>
+            <h2>Real problems.<br />Purpose-built solutions.</h2>
+          </div>
+          <p>
+            Tools built for the work behind the scenes.<br />Explore the
+            problem, the approach and the result.
+          </p>
         </div>
-    </section>
-
-    <!-- ===== RECENT WORK ===== -->
-    <section>
-        <div class="container">
-            <div class="recent-work-header">
-                <p class="section-label">Proven, not theoretical</p>
-                <a href="/work.html">View all &rarr;</a>
+        <article class="featured-project">
+          <a class="featured-preview" href="/work#po-validator"
+            ><img
+              src="/assets/po-validator-preview.jpg"
+              width="1440"
+              height="1000"
+              alt="PO Validator dashboard showing clean, flagged and blocked items using illustrative sample data"
+              loading="lazy"
+            /><span>Actual interface · sample data</span></a
+          >
+          <div class="featured-copy">
+            <p class="eyebrow">Featured / A Stackcraft tool</p>
+            <h3>PO Validator</h3>
+            <p>A clearer review queue.<br />Half the processing time.</p>
+            <div class="result-stat">
+              <strong>50%</strong
+              ><span>less PO processing time<br />in my workflow</span>
             </div>
-            <div class="services-grid" style="grid-template-columns: repeat(2, 1fr);">
-                <a href="/work.html" class="work-card reveal" style="grid-template-columns: 160px 1fr;">
-                    <div class="work-stat">
-                        <span class="num">~3&times;</span>
-                        <span class="label">Faster processing</span>
-                    </div>
-                    <div class="work-card-body">
-                        <p class="context">Purchase order automation — Your Focus</p>
-                        <h3>Built to replace a role</h3>
-                        <p>Cut per-item processing down to minutes and a handful of clicks, including the downstream system actions.</p>
-                    </div>
-                </a>
-                <a href="/work.html" class="work-card reveal reveal-d1" style="grid-template-columns: 160px 1fr;">
-                    <div class="work-stat">
-                        <span class="num">50%</span>
-                        <span class="label">Time saved</span>
-                    </div>
-                    <div class="work-card-body">
-                        <p class="context">Referral matching tool — Your Focus</p>
-                        <h3>From ~3 hours to under 90 minutes</h3>
-                        <p>Automated the matching logic that used to eat a team member's entire afternoon, every time.</p>
-                    </div>
-                </a>
+            <a class="text-link" href="/work#po-validator"
+              >Explore the validator ↗</a
+            >
+          </div>
+        </article>
+        <div class="project-list">
+          <a class="project-row" href="/work#purchase-order"
+            ><span class="project-no">01</span>
+            <div>
+              <p class="eyebrow">Your Focus / Automation · Integration</p>
+              <h3>Purchase-order automation</h3>
+              <p>From repetitive processing to a connected workflow.</p>
             </div>
+            <span class="project-arrow" aria-hidden="true">↗</span></a
+          ><a class="project-row" href="/work#referral-matching"
+            ><span class="project-no">02</span>
+            <div>
+              <p class="eyebrow">Your Focus / Custom tools · Workflow</p>
+              <h3>Referral matching</h3>
+              <p>Less time matching. More time moving forward.</p>
+            </div>
+            <span class="project-arrow" aria-hidden="true">↗</span></a
+          ><a class="project-row" href="/work#provider-onboarding"
+            ><span class="project-no">03</span>
+            <div>
+              <p class="eyebrow">
+                Your Focus / Web application · Process design
+              </p>
+              <h3>Provider onboarding</h3>
+              <p>A clear route through a complex process.</p>
+            </div>
+            <span class="project-arrow" aria-hidden="true">↗</span></a
+          >
         </div>
-    </section>
-
-    <!-- ===== SWIFTSITES PARTNER ===== -->
-    <section style="padding-top:0;">
-        <div class="container">
-            <div class="partner-callout reveal">
-                <span class="partner-mark">Website partner</span>
-                <div class="partner-body">
-                    <h3>Just need a website, not a bespoke build?</h3>
-                    <p>SwiftSites — Stackcraft's website-build partner — ships professional sites in days, not months. Mention Stackcraft for <strong>15% off any package</strong>.</p>
-                </div>
-                <a href="https://swiftsites.nz" class="btn-secondary" target="_blank" rel="noopener">Visit SwiftSites</a>
-            </div>
+        <a class="text-link" href="/work"
+          >Explore all projects <span>↗</span></a
+        >
+      </section>
+      <section class="dark-section">
+        <div class="wrap service-intro">
+          <div>
+            <p class="eyebrow">02 / What I do</p>
+            <h2>Find the friction.<br />Build what fixes it.</h2>
+            <p class="lede">
+              Sometimes that’s new software. Sometimes it’s a better process.
+              The starting point is understanding the difference.
+            </p>
+          </div>
+          <div class="service-stack">
+            <a href="/services#build"
+              ><span>01</span>
+              <div>
+                <h3>Bespoke digital tools</h3>
+                <p>Software for the job your existing tools can’t quite do.</p>
+              </div>
+              <b aria-hidden="true">↗</b></a
+            ><a href="/services#automation"
+              ><span>02</span>
+              <div>
+                <h3>Systems & automation</h3>
+                <p>Connect your tools. Reduce the manual steps between them.</p>
+              </div>
+              <b aria-hidden="true">↗</b></a
+            ><a href="/services#advise"
+              ><span>03</span>
+              <div>
+                <h3>Advice, AI & team development</h3>
+                <p>
+                  Make better decisions about the tools and practices you use.
+                </p>
+              </div>
+              <b aria-hidden="true">↗</b></a
+            >
+          </div>
         </div>
-    </section>
-
-    <!-- ===== CTA ===== -->
-    <section class="cta-section">
-        <div class="container">
-            <h2 class="reveal">Got a project in mind?</h2>
-            <p class="reveal reveal-d1">Tell us what you need and we'll come back with a plan, a timeline, and a price.</p>
-            <a href="/contact.html" class="btn-primary reveal reveal-d2">Start a project <span aria-hidden="true">&rarr;</span></a>
+      </section>
+      <section class="section wrap founder">
+        <img
+          class="portrait"
+          src="/assets/eli-mitchell-v2.webp"
+          alt="Eli Mitchell, the person behind Stackcraft"
+          width="900"
+          height="1125"
+          loading="lazy"
+        />
+        <div>
+          <p class="eyebrow">03 / The person behind the work</p>
+          <h2>You’ll work<br />directly with me.</h2>
+          <p class="founder-name">Eli Mitchell / Stackcraft</p>
+          <p>
+            I bring an operational perspective to software: understanding where
+            the work gets stuck before deciding what to build.
+          </p>
+          <p>
+            From the first conversation to the handover, you talk to the person
+            doing the work.
+          </p>
+          <a class="button secondary" href="/about"
+            >More about me<span aria-hidden="true">↗</span></a
+          >
         </div>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-brand">
-                <img src="/assets/stackcraft-icon-blue.svg" alt="Stackcraft" height="20">
-                <p>&copy; 2026 Stackcraft</p>
-            </div>
-            <div class="footer-links">
-                <p><a href="https://swiftsites.nz" target="_blank" rel="noopener">Website builds via SwiftSites</a></p>
-            </div>
+      </section>
+      <section class="closing">
+        <div class="wrap">
+          <p class="eyebrow">A good place to start</p>
+          <h2>What’s taking more<br />work than it should?</h2>
+          <div>
+            <p>
+              Tell me what’s getting in the way.<br />We’ll work out the right
+              next step.
+            </p>
+            <a class="button" href="/contact"
+              >Let’s talk<span aria-hidden="true">↗</span></a
+            >
+          </div>
         </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-top">
+        <a class="footer-wordmark" href="/">stackcraft<span>.</span></a>
+        <p>Better systems.<br />More room for the work that matters.</p>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>© 2026 Stackcraft · Eli Mitchell</span>
+        <div>
+          <a href="/contact">Get in touch</a><a href="/privacy">Privacy</a
+          ><a href="https://swiftsites.nz" target="_blank" rel="noopener"
+            >Websites by SwiftSites ↗</a
+          >
+        </div>
+      </div>
     </footer>
-
-    <script src="/assets/main.js" defer></script>
-
-</body>
+  </body>
 </html>

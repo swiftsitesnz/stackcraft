@@ -1,146 +1,383 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en-NZ">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Work — Stackcraft</title>
-    <meta name="description" content="Real tools, built and shipped — purchase order automation, referral matching, and provider onboarding systems built for real businesses.">
-    <meta name="theme-color" content="#F7F5F1">
-    <link rel="icon" href="/assets/stackcraft-icon-blue.svg" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;650;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/styles.css">
-</head>
-<body>
-
-    <!-- ===== NAV ===== -->
-    <nav class="nav" id="nav" role="navigation">
-        <div class="container">
-            <a href="/index.html" class="nav-logo">
-                <img src="/assets/stackcraft-lockup-light.svg" alt="Stackcraft" height="28">
-            </a>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/services.html">Services</a></li>
-                <li><a href="/work.html" class="active">Work</a></li>
-                <li><a href="/process.html">Process</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- ===== PAGE HERO ===== -->
-    <section class="page-hero">
-        <div class="container">
-            <p class="section-label">Portfolio</p>
-            <h1 data-typewriter>Real tools, shipped and running</h1>
-            <p class="tw-follow">No mockups, no placeholder case studies. These are live systems, in production, with the results to show for it.</p>
-        </div>
-    </section>
-
-    <!-- ===== WORK ===== -->
-    <section>
-        <div class="container">
-            <div class="work-grid">
-
-                <a href="/contact.html" class="work-card reveal">
-                    <div class="work-stat">
-                        <span class="num">~3&times;</span>
-                        <span class="label">Faster per item</span>
-                    </div>
-                    <div class="work-card-body">
-                        <p class="context">Purchase order automation — Your Focus</p>
-                        <h3>Built to replace a manual role</h3>
-                        <p>End-to-end automation for purchase-order processing, including the downstream system actions that used to be done by hand. Per-item processing dropped to minutes and a handful of clicks.</p>
-                        <div class="work-tags">
-                            <span class="work-tag">Process automation</span>
-                            <span class="work-tag">System integration</span>
-                            <span class="work-tag">Internal tooling</span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="/contact.html" class="work-card reveal reveal-d1">
-                    <div class="work-stat">
-                        <span class="num">50%</span>
-                        <span class="label">Time saved</span>
-                    </div>
-                    <div class="work-card-body">
-                        <p class="context">Referral matching tool — Your Focus</p>
-                        <h3>From ~3 hours to under 90 minutes</h3>
-                        <p>Automated the matching logic behind client referrals, replacing a manual process that used to consume most of an afternoon for a single team member.</p>
-                        <div class="work-tags">
-                            <span class="work-tag">Automation</span>
-                            <span class="work-tag">AI-assisted matching</span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="/contact.html" class="work-card reveal reveal-d2">
-                    <div class="work-stat">
-                        <span class="num">6</span>
-                        <span class="label">Pathways handled</span>
-                    </div>
-                    <div class="work-card-body">
-                        <p class="context">Provider onboarding system — Your Focus</p>
-                        <h3>Built inside a live regulated environment</h3>
-                        <p>A gated, sequential onboarding portal covering six distinct provider pathways — self-documenting, installable as an app, with a live admin dashboard tracking every step.</p>
-                        <div class="work-tags">
-                            <span class="work-tag">Web app</span>
-                            <span class="work-tag">PWA</span>
-                            <span class="work-tag">Regulated environment</span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="/contact.html" class="work-card reveal reveal-d3">
-                    <div class="work-stat">
-                        <span class="num">1hr</span>
-                        <span class="label">Sync cycle</span>
-                    </div>
-                    <div class="work-card-body">
-                        <p class="context">Provider records dashboard — Your Focus</p>
-                        <h3>Single source of truth, kept honest automatically</h3>
-                        <p>A live dashboard that checks core records against the source system every hour and flags exactly what's missing — no manual reconciliation required.</p>
-                        <div class="work-tags">
-                            <span class="work-tag">Dashboard</span>
-                            <span class="work-tag">Data integrity</span>
-                        </div>
-                    </div>
-                </a>
-
+    <meta
+      name="description"
+      content="Explore software and automation projects built for Your Focus: processing, referral matching, onboarding and record checks."
+    />
+    <meta name="theme-color" content="#102e3a" />
+    <link rel="canonical" href="https://stackcraft.co.nz/work" />
+    <meta property="og:title" content="Work — Stackcraft" />
+    <meta
+      property="og:description"
+      content="Explore software and automation projects built for Your Focus: processing, referral matching, onboarding and record checks."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://stackcraft.co.nz/work" />
+    <meta
+      property="og:image"
+      content="https://stackcraft.co.nz/assets/social-card.jpg"
+    />
+    <link
+      rel="icon"
+      href="/assets/stackcraft-icon-blue.svg"
+      type="image/svg+xml"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/styles.css?v=20261008" />
+    <script src="/assets/main.js?v=20261008" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap nav-bar">
+        <a href="/" class="brand" aria-label="Stackcraft home"
+          ><img
+            src="/assets/stackcraft-icon-blue.svg"
+            alt=""
+            width="32"
+            height="32"
+          /><span>stackcraft<span class="brand-dot">.</span></span></a
+        ><button
+          id="menu-toggle"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span>
+        </button>
+        <nav id="site-nav" aria-label="Main navigation">
+          <a href="/">Home</a><a href="/services">Services</a
+          ><a href="/work" aria-current="page">Work</a
+          ><a href="/process">Process</a><a href="/about">About</a
+          ><a href="/contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-head wrap">
+        <p class="eyebrow">Selected work</p>
+        <h1>Built for the work<br /><em>behind the work.</em></h1>
+        <p class="lede">
+          My own PO Validator, alongside systems built for Your Focus. Each
+          addresses a specific part of day-to-day operations.
+        </p>
+      </section>
+      <div class="wrap work-index">
+        <a href="#po-validator">✳ / PO Validator ↓</a
+        ><a href="#purchase-order">01 / Purchase-order automation ↓</a
+        ><a href="#referral-matching">02 / Referral matching ↓</a
+        ><a href="#provider-onboarding">03 / Provider onboarding ↓</a
+        ><a href="#records-dashboard">04 / Provider records dashboard ↓</a>
+      </div>
+      <section class="case-study validator-case" id="po-validator">
+        <div class="wrap">
+          <div class="case-heading">
+            <span class="big-number">✳</span>
+            <div>
+              <p class="eyebrow">Featured / A Stackcraft tool</p>
+              <h2>PO Validator</h2>
+              <p class="lede">
+                A clearer review queue. Half the processing time.
+              </p>
             </div>
-        </div>
-    </section>
-
-    <!-- ===== CTA ===== -->
-    <section class="cta-section">
-        <div class="container">
-            <h2 class="reveal">Want to be featured here?</h2>
-            <p class="reveal reveal-d1">Let's build something worth showing off.</p>
-            <a href="/contact.html" class="btn-primary reveal reveal-d2">Let's talk <span aria-hidden="true">&rarr;</span></a>
-        </div>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-brand">
-                <img src="/assets/stackcraft-icon-blue.svg" alt="Stackcraft" height="20">
-                <p>&copy; 2026 Stackcraft</p>
+          </div>
+          <div class="validator-showcase">
+            <figure>
+              <img
+                src="/assets/po-validator-preview.jpg"
+                width="1440"
+                height="1000"
+                alt="Actual PO Validator dashboard rendered with illustrative sample data"
+                loading="lazy"
+              />
+              <figcaption>
+                Actual dashboard template, rendered with illustrative sample
+                data. No client records are shown.
+              </figcaption>
+            </figure>
+            <div class="result-stat">
+              <strong>50%</strong
+              ><span>reduction in PO<br />processing time</span>
+              <p>Result from my processing workflow.</p>
             </div>
-            <div class="footer-links">
-                <p><a href="https://swiftsites.nz" target="_blank" rel="noopener">Website builds via SwiftSites</a></p>
+          </div>
+          <div class="case-copy">
+            <div>
+              <h3>The problem</h3>
+              <p>
+                Reviewing purchase-order information manually takes time,
+                especially when extracted details need to be checked before the
+                next step.
+              </p>
             </div>
+            <div>
+              <h3>The approach</h3>
+              <p>
+                A validation layer checks extracted information and organises
+                the review queue into clean, flagged and blocked items.
+                Attention can go to the exceptions that need it.
+              </p>
+            </div>
+            <div>
+              <h3>The result</h3>
+              <p>
+                The tool reduces PO processing time by 50% in my workflow, while
+                keeping a human review step for flagged items.
+              </p>
+            </div>
+          </div>
+          <a class="text-link" href="/contact?project=PO%20Validator"
+            >Discuss a similar tool ↗</a
+          >
         </div>
+      </section>
+      <section class="case-study" id="purchase-order">
+        <div class="wrap">
+          <div class="case-heading">
+            <span class="big-number">01</span>
+            <div>
+              <p class="eyebrow">Your Focus / Automation · Integration</p>
+              <h2>Purchase-order automation</h2>
+              <p class="lede">
+                From repetitive processing to a connected workflow.
+              </p>
+            </div>
+          </div>
+          <figure class="case-diagram">
+            <div>
+              <span><small>01</small>Incoming item</span
+              ><b aria-hidden="true">→</b
+              ><span><small>02</small>Processing</span
+              ><b aria-hidden="true">→</b
+              ><span><small>03</small>System actions</span>
+            </div>
+            <figcaption>
+              Workflow illustration · an explanation of the approach, not a
+              product screenshot.
+            </figcaption>
+          </figure>
+          <div class="case-copy">
+            <div>
+              <h3>The problem</h3>
+              <p>
+                Repetitive processing creates work both before and after an item
+                is handled.
+              </p>
+            </div>
+            <div>
+              <h3>The approach</h3>
+              <p>
+                Connect the processing task with the downstream system actions,
+                so less work needs to be repeated manually.
+              </p>
+            </div>
+            <div>
+              <h3>The build</h3>
+              <p>
+                A dedicated automation tool focused on reducing manual handling.
+              </p>
+            </div>
+          </div>
+          <a
+            class="text-link"
+            href="/contact?project=Purchase-order%20automation"
+            >Discuss a similar project ↗</a
+          >
+        </div>
+      </section>
+      <section class="case-study" id="referral-matching">
+        <div class="wrap">
+          <div class="case-heading">
+            <span class="big-number">02</span>
+            <div>
+              <p class="eyebrow">Your Focus / Custom tools · Workflow</p>
+              <h2>Referral matching</h2>
+              <p class="lede">Less time matching. More time moving forward.</p>
+            </div>
+          </div>
+          <figure class="case-diagram">
+            <div>
+              <span><small>01</small>Referral</span><b aria-hidden="true">→</b
+              ><span><small>02</small>Matching logic</span
+              ><b aria-hidden="true">→</b
+              ><span><small>03</small>Next step</span>
+            </div>
+            <figcaption>
+              Workflow illustration · an explanation of the approach, not a
+              product screenshot.
+            </figcaption>
+          </figure>
+          <div class="case-copy">
+            <div>
+              <h3>The problem</h3>
+              <p>
+                Matching client referrals depends on information and decision
+                logic that can be time-consuming to work through manually.
+              </p>
+            </div>
+            <div>
+              <h3>The approach</h3>
+              <p>
+                Bring that matching logic into a purpose-built tool that
+                supports a repeatable workflow.
+              </p>
+            </div>
+            <div>
+              <h3>The build</h3>
+              <p>
+                A referral-matching tool designed to reduce the time spent on
+                the manual process.
+              </p>
+            </div>
+          </div>
+          <a class="text-link" href="/contact?project=Referral%20matching"
+            >Discuss a similar project ↗</a
+          >
+        </div>
+      </section>
+      <section class="case-study" id="provider-onboarding">
+        <div class="wrap">
+          <div class="case-heading">
+            <span class="big-number">03</span>
+            <div>
+              <p class="eyebrow">
+                Your Focus / Web application · Process design
+              </p>
+              <h2>Provider onboarding</h2>
+              <p class="lede">A clear route through a complex process.</p>
+            </div>
+          </div>
+          <figure class="case-diagram">
+            <div>
+              <span><small>01</small>Choose pathway</span
+              ><b aria-hidden="true">→</b
+              ><span><small>02</small>Complete steps</span
+              ><b aria-hidden="true">→</b
+              ><span><small>03</small>Track progress</span>
+            </div>
+            <figcaption>
+              Workflow illustration · an explanation of the approach, not a
+              product screenshot.
+            </figcaption>
+          </figure>
+          <div class="case-copy">
+            <div>
+              <h3>The problem</h3>
+              <p>
+                Different provider pathways make onboarding difficult to manage
+                as one undifferentiated checklist.
+              </p>
+            </div>
+            <div>
+              <h3>The approach</h3>
+              <p>
+                Create a gated portal with separate pathways, documented steps
+                and an admin dashboard showing progress.
+              </p>
+            </div>
+            <div>
+              <h3>The build</h3>
+              <p>
+                An onboarding web application that makes the next step and
+                overall progress easier to see.
+              </p>
+            </div>
+          </div>
+          <a class="text-link" href="/contact?project=Provider%20onboarding"
+            >Discuss a similar project ↗</a
+          >
+        </div>
+      </section>
+      <section class="case-study" id="records-dashboard">
+        <div class="wrap">
+          <div class="case-heading">
+            <span class="big-number">04</span>
+            <div>
+              <p class="eyebrow">Your Focus / Dashboard · Data integrity</p>
+              <h2>Provider records dashboard</h2>
+              <p class="lede">A clearer view of what needs attention.</p>
+            </div>
+          </div>
+          <figure class="case-diagram">
+            <div>
+              <span><small>01</small>Core records</span
+              ><b aria-hidden="true">→</b
+              ><span><small>02</small>Scheduled checks</span
+              ><b aria-hidden="true">→</b
+              ><span><small>03</small>Review gaps</span>
+            </div>
+            <figcaption>
+              Workflow illustration · an explanation of the approach, not a
+              product screenshot.
+            </figcaption>
+          </figure>
+          <div class="case-copy">
+            <div>
+              <h3>The problem</h3>
+              <p>
+                Missing information in core records is difficult to spot
+                consistently through manual checking.
+              </p>
+            </div>
+            <div>
+              <h3>The approach</h3>
+              <p>
+                Check records on a schedule and surface the information that
+                needs attention in one dashboard.
+              </p>
+            </div>
+            <div>
+              <h3>The build</h3>
+              <p>A focused dashboard for record checks and follow-up.</p>
+            </div>
+          </div>
+          <a
+            class="text-link"
+            href="/contact?project=Provider%20records%20dashboard"
+            >Discuss a similar project ↗</a
+          >
+        </div>
+      </section>
+      <section class="closing">
+        <div class="wrap">
+          <p class="eyebrow">A good place to start</p>
+          <h2>What’s taking more<br />work than it should?</h2>
+          <div>
+            <p>
+              Tell me what’s getting in the way.<br />We’ll work out the right
+              next step.
+            </p>
+            <a class="button" href="/contact"
+              >Let’s talk<span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-top">
+        <a class="footer-wordmark" href="/">stackcraft<span>.</span></a>
+        <p>Better systems.<br />More room for the work that matters.</p>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>© 2026 Stackcraft · Eli Mitchell</span>
+        <div>
+          <a href="/contact">Get in touch</a><a href="/privacy">Privacy</a
+          ><a href="https://swiftsites.nz" target="_blank" rel="noopener"
+            >Websites by SwiftSites ↗</a
+          >
+        </div>
+      </div>
     </footer>
-
-    <script src="/assets/main.js" defer></script>
-
-</body>
+  </body>
 </html>

@@ -1,132 +1,170 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en-NZ">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Process — Stackcraft</title>
-    <meta name="description" content="How Stackcraft works — from brief to build to ship. Clear steps, fast turnaround, no surprises.">
-    <meta name="theme-color" content="#F7F5F1">
-    <link rel="icon" href="/assets/stackcraft-icon-blue.svg" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;650;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/styles.css">
-</head>
-<body>
-
-    <!-- ===== NAV ===== -->
-    <nav class="nav" id="nav" role="navigation">
-        <div class="container">
-            <a href="/index.html" class="nav-logo">
-                <img src="/assets/stackcraft-lockup-light.svg" alt="Stackcraft" height="28">
-            </a>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/services.html">Services</a></li>
-                <li><a href="/work.html">Work</a></li>
-                <li><a href="/process.html" class="active">Process</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
+    <meta
+      name="description"
+      content="Understand, build, ship and support. A clear process for your custom software project."
+    />
+    <meta name="theme-color" content="#102e3a" />
+    <link rel="canonical" href="https://stackcraft.co.nz/process" />
+    <meta property="og:title" content="Process — Stackcraft" />
+    <meta
+      property="og:description"
+      content="Understand, build, ship and support. A clear process for your custom software project."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://stackcraft.co.nz/process" />
+    <meta
+      property="og:image"
+      content="https://stackcraft.co.nz/assets/social-card.jpg"
+    />
+    <link
+      rel="icon"
+      href="/assets/stackcraft-icon-blue.svg"
+      type="image/svg+xml"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/styles.css?v=20261008" />
+    <script src="/assets/main.js?v=20261008" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap nav-bar">
+        <a href="/" class="brand" aria-label="Stackcraft home"
+          ><img
+            src="/assets/stackcraft-icon-blue.svg"
+            alt=""
+            width="32"
+            height="32"
+          /><span>stackcraft<span class="brand-dot">.</span></span></a
+        ><button
+          id="menu-toggle"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span>
+        </button>
+        <nav id="site-nav" aria-label="Main navigation">
+          <a href="/">Home</a><a href="/services">Services</a
+          ><a href="/work">Work</a
+          ><a href="/process" aria-current="page">Process</a
+          ><a href="/about">About</a><a href="/contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-head wrap">
+        <p class="eyebrow">The process</p>
+        <h1>Clear from the<br /><em>first conversation.</em></h1>
+        <p class="lede">
+          A straightforward route from an operational problem to a working
+          solution.
+        </p>
+      </section>
+      <div class="wrap process-list">
+        <section class="process-step">
+          <span class="big-number">01</span>
+          <div>
+            <p class="eyebrow">Understand</p>
+            <h2>Start with the problem, not a feature list.</h2>
+            <p>
+              We talk through the work, the users and the constraints. You get a
+              clear scope, proposed timeline and fixed-price quote before the
+              build starts.
+            </p>
+            <p class="deliverables">Scope · Timeline · Quote</p>
+          </div>
+        </section>
+        <section class="process-step">
+          <span class="big-number">02</span>
+          <div>
+            <p class="eyebrow">Build</p>
+            <h2>See it take shape.</h2>
+            <p>
+              Work happens in short cycles with previews and direct updates. If
+              the scope changes, we agree the effect on cost and timing before
+              the extra work begins.
+            </p>
+            <p class="deliverables">Working previews · Direct feedback</p>
+          </div>
+        </section>
+        <section class="process-step">
+          <span class="big-number">03</span>
+          <div>
+            <p class="eyebrow">Ship</p>
+            <h2>Ready for the real world.</h2>
+            <p>
+              The build is checked across relevant screen sizes and user
+              journeys, then deployed. Source code, setup notes and a
+              walkthrough support the handover.
+            </p>
+            <p class="deliverables">Deployment · Documentation · Handover</p>
+          </div>
+        </section>
+        <section class="process-step">
+          <span class="big-number">04</span>
+          <div>
+            <p class="eyebrow">Support</p>
+            <h2>Keep moving forward.</h2>
+            <p>
+              Agree the level of ongoing support you need, from ad-hoc changes
+              to maintenance or further development. Support scope and charges
+              are discussed separately.
+            </p>
+            <p class="deliverables">Maintenance · Improvements · Next steps</p>
+          </div>
+        </section>
+      </div>
+      <aside class="wrap process-aside">
+        <p>
+          Consultancy, coaching and team sessions are scoped around the
+          engagement rather than a software delivery cycle.
+        </p>
+        <a class="text-link" href="/services#advise"
+          >Explore advice & coaching ↗</a
+        >
+      </aside>
+      <section class="closing">
+        <div class="wrap">
+          <p class="eyebrow">A good place to start</p>
+          <h2>What’s taking more<br />work than it should?</h2>
+          <div>
+            <p>
+              Tell me what’s getting in the way.<br />We’ll work out the right
+              next step.
+            </p>
+            <a class="button" href="/contact"
+              >Let’s talk<span aria-hidden="true">↗</span></a
+            >
+          </div>
         </div>
-    </nav>
-
-    <!-- ===== PAGE HERO ===== -->
-    <section class="page-hero">
-        <div class="container">
-            <p class="section-label">Process</p>
-            <h1 data-typewriter>How a build engagement works</h1>
-            <p class="tw-follow">Four steps from idea to production. No mystery, no surprises — just clear communication and fast execution.</p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-top">
+        <a class="footer-wordmark" href="/">stackcraft<span>.</span></a>
+        <p>Better systems.<br />More room for the work that matters.</p>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>© 2026 Stackcraft · Eli Mitchell</span>
+        <div>
+          <a href="/contact">Get in touch</a><a href="/privacy">Privacy</a
+          ><a href="https://swiftsites.nz" target="_blank" rel="noopener"
+            >Websites by SwiftSites ↗</a
+          >
         </div>
-    </section>
-
-    <!-- ===== PROCESS STEPS ===== -->
-    <section>
-        <div class="container">
-            <div class="process-steps">
-
-                <div class="process-detail reveal">
-                    <div class="process-num">01</div>
-                    <div>
-                        <h3>Brief</h3>
-                        <p>You describe what you need — the problem, the users, any constraints. The right questions get asked to fill in the gaps and make sure everyone's aligned before a single line of code is written.</p>
-                        <p>This usually takes one or two conversations. By the end, you'll have a clear scope document, a realistic timeline, and a fixed-price quote. No hourly billing surprises.</p>
-                        <div class="process-deliverables">
-                            <strong>Deliverables:</strong> Scope document, timeline, fixed-price quote
-                        </div>
-                    </div>
-                </div>
-
-                <div class="process-detail reveal">
-                    <div class="process-num">02</div>
-                    <div>
-                        <h3>Build</h3>
-                        <p>Fast, iterative development. Work happens in short cycles with working previews shipped early, so you see real progress — not slide decks or wireframes.</p>
-                        <p>You'll get regular async updates and a staging link you can check any time. If something needs to change mid-build, we adjust. No change-request bureaucracy.</p>
-                        <div class="process-deliverables">
-                            <strong>Communication:</strong> Regular async updates, live staging preview
-                        </div>
-                    </div>
-                </div>
-
-                <div class="process-detail reveal">
-                    <div class="process-num">03</div>
-                    <div>
-                        <h3>Ship</h3>
-                        <p>Before anything goes live, it gets properly tested — cross-browser, responsive, edge cases covered. Deployment happens to your infrastructure or a hosting setup gets configured, with DNS and monitoring in place.</p>
-                        <p>Handover includes everything your team needs: source code, documentation, environment setup guides, and a walkthrough of the architecture, so nobody's guessing later.</p>
-                        <div class="process-deliverables">
-                            <strong>Deliverables:</strong> Deployed app, source code, docs, architecture walkthrough
-                        </div>
-                    </div>
-                </div>
-
-                <div class="process-detail reveal">
-                    <div class="process-num">04</div>
-                    <div>
-                        <h3>Support</h3>
-                        <p>Software doesn't end at launch. Ongoing maintenance packages cover bug fixes, performance monitoring, dependency updates, and incremental feature work.</p>
-                        <p>Whether you need a few hours a month or dedicated weekly support, things keep running smoothly so your team can focus on the business, not the software.</p>
-                        <div class="process-deliverables">
-                            <strong>Options:</strong> Monthly retainer, ad-hoc support, or feature sprints
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="process-note reveal">
-                <strong>Consultancy, AI coaching, and team training engagements</strong> don't follow this exact pipeline — they're scoped individually on a first call, since the work itself looks different from a software build. See <a href="/services.html#advise" style="color:var(--accent);">Advise &amp; Grow</a> for how those typically run.
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== CTA ===== -->
-    <section class="cta-section">
-        <div class="container">
-            <h2 class="reveal">Ready to get started?</h2>
-            <p class="reveal reveal-d1">Send a brief and expect a plan back within 24 hours.</p>
-            <a href="/contact.html" class="btn-primary reveal reveal-d2">Start a project <span aria-hidden="true">&rarr;</span></a>
-        </div>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-brand">
-                <img src="/assets/stackcraft-icon-blue.svg" alt="Stackcraft" height="20">
-                <p>&copy; 2026 Stackcraft</p>
-            </div>
-            <div class="footer-links">
-                <p><a href="https://swiftsites.nz" target="_blank" rel="noopener">Website builds via SwiftSites</a></p>
-            </div>
-        </div>
+      </div>
     </footer>
-
-    <script src="/assets/main.js" defer></script>
-
-</body>
+  </body>
 </html>
