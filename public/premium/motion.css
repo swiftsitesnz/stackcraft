@@ -1,0 +1,115 @@
+/* Progressive enhancement: every piece of content is visible before JS runs.
+   Keep this after site.css. Native scrolling and semantic links remain intact. */
+.premium-site .hero h1,
+.premium-site .hero-bottom,
+.premium-site .craft-line i { animation:none; }
+
+.premium-site.motion-ready {
+  --motion-ease:cubic-bezier(.19,1,.22,1);
+  --motion-rule:#a8422c;
+  --motion-header:#f7f5f0;
+}
+.premium-site.stack.motion-ready { --motion-rule:#397e8b; --motion-header:#edf1f1; }
+.premium-site.motion-ready .site-header {
+  background:var(--motion-header);
+  transition:background-color .7s ease,border-color .7s ease;
+}
+.motion-chapter { position:relative; transition:background-color .9s ease; }
+.premium-site .motion-chapter.motion-section-current {
+  background-color:var(--motion-section-colour);
+}
+.motion-section-line {
+  display:block;
+  position:absolute;
+  inset:0 0 auto;
+  height:2px;
+  background:linear-gradient(90deg,var(--motion-rule),transparent 86%);
+  pointer-events:none;
+  transform-origin:left center;
+  opacity:.55;
+}
+.stack .motion-section-line {
+  background:linear-gradient(90deg,#4c8ca0 0%,#4c8ca0 50%,#b8ef68 50%,#b8ef68 74%,transparent 74%);
+  height:2px;
+}
+.motion-depth {
+  --motion-x:0px; --motion-y:0px; --motion-rx:0deg; --motion-ry:0deg;
+  transform:perspective(1200px) translate3d(var(--motion-x),var(--motion-y),0) rotateX(var(--motion-rx)) rotateY(var(--motion-ry));
+  transform-origin:50% 50%;
+  transition:transform .65s var(--motion-ease);
+}
+.motion-depth.motion-pointer-active { will-change:transform; transition:transform .14s linear; }
+
+/* The frame and the phone move independently; website pixels are never warped. */
+.premium-site .device-pair { transform:none!important; }
+.desktop-device,.phone-device {
+  transform-origin:50% 80%;
+  transition:transform .75s var(--motion-ease,cubic-bezier(.19,1,.22,1)),box-shadow .75s ease;
+}
+@media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+  .project-card:hover .desktop-device,
+  .project-card:focus-within .desktop-device {
+    transform:translate3d(-1.5%,-7px,0) rotate(-1deg);
+    box-shadow:0 22px 32px #17232030;
+  }
+  .project-card:hover .phone-device,
+  .project-card:focus-within .phone-device {
+    transform:translate3d(4%,-18px,0) rotate(3deg);
+    box-shadow:0 25px 30px #17232038;
+    transition-delay:55ms;
+  }
+  .premium-site .project-preview:hover .project-open,
+  .premium-site .project-card:focus-within .project-open {
+    transform:translate(2px,-2px);
+  }
+}
+
+/* A short, finite sweep gives service rows a precise connection to the work. */
+.motion-ready .offer-row { position:relative; }
+.motion-ready .offer-row::after {
+  content:"";
+  position:absolute;
+  inset:auto 0 -1px;
+  height:2px;
+  background:var(--motion-rule);
+  transform:scaleX(0);
+  transform-origin:left;
+  transition:transform .6s var(--motion-ease);
+  pointer-events:none;
+}
+.motion-ready .offer-row:focus-within::after,
+.motion-ready .offer-row:hover::after { transform:scaleX(1); }
+
+/* Supported browsers connect a selected portfolio image to its case study.
+   No click interception, no router replacement, and no artificial loading. */
+@view-transition { navigation:auto; }
+@media (prefers-reduced-motion:no-preference) {
+  .site-header .wordmark { view-transition-name:brand-mark; }
+  .case-image>img { view-transition-name:work-preview; }
+  ::view-transition-group(brand-mark) { animation-duration:.35s; }
+  ::view-transition-group(work-preview) {
+    animation-duration:.65s;
+    animation-timing-function:cubic-bezier(.22,1,.36,1);
+  }
+  ::view-transition-old(work-preview),::view-transition-new(work-preview) {
+    height:100%; object-fit:contain;
+    animation-duration:.65s;
+  }
+  ::view-transition-old(root) { animation:motion-page-out .22s ease both; }
+  ::view-transition-new(root) { animation:motion-page-in .42s cubic-bezier(.22,1,.36,1) both; }
+}
+@keyframes motion-page-out { to { opacity:0; transform:translateY(-9px); } }
+@keyframes motion-page-in { from { opacity:.4; transform:translateY(18px); } to { opacity:1; transform:none; } }
+
+@media (prefers-reduced-motion:reduce) {
+  @view-transition { navigation:none; }
+  html { scroll-behavior:auto!important; }
+  .premium-site *, .premium-site *::before, .premium-site *::after {
+    animation:none!important; transition:none!important;
+  }
+  .motion-depth,.desktop-device,.phone-device,.device-pair {
+    transform:none!important; will-change:auto!important;
+  }
+  .motion-section-line { transform:none!important; }
+  ::view-transition-group(*),::view-transition-old(*),::view-transition-new(*) { animation:none!important; }
+}

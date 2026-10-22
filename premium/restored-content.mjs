@@ -1,0 +1,28 @@
+import copy from './restored-locales.json' with {type:'json'};
+
+const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const projects=[
+ {id:'emerald',brand:'swift',name:'Emerald Construction Management',image:'emerald-homepage-v1.webp',status:'development',url:null},
+ {id:'nz-mow-bros',brand:'swift',name:'NZ Mow Bros',image:'nz-mow-bros-v1.jpg',url:'https://nzmowbros.co.nz'},
+ {id:'stackcraft',brand:'swift',name:'Stackcraft',image:'stackcraft-earlier-v1.jpg',status:'inhouse',url:'https://stackcraft.co.nz'},
+ {id:'purchase-order-automation',brand:'stack'},
+ {id:'referral-matching',brand:'stack'},
+ {id:'provider-onboarding',brand:'stack'},
+ {id:'records-dashboard',brand:'stack'},
+];
+function dictionary(locale){if(!copy[locale])throw Error('Missing restored-content locale: '+locale);return copy[locale]}
+function title(project,d){return project.name||d.projects[project.id].title}
+function enquiry(project,d,path){return path('contact')+'?project='+encodeURIComponent(title(project,d))}
+function diagram(project,d){const item=d.projects[project.id];return `<figure class="restored-diagram"><ol>${item.steps.map((label,index)=>`<li><span aria-hidden="true">0${index+1}</span><strong>${escape(label)}</strong></li>`).join('')}</ol><figcaption>${escape(d.diagramNote)}</figcaption></figure>`}
+function image(project,d){return `<figure class="restored-image"><img src="/premium/restored/${project.image}" width="1280" height="800" loading="lazy" alt="${escape(title(project,d)+' — '+d.screenshot)}"><figcaption>${escape(project.status==='development'?d.developmentNote:project.status==='inhouse'?d.earlierNote:d.screenshot)}</figcaption></figure>`}
+export function restoredRoutes(brand){return projects.filter(p=>p.brand===brand).map(p=>'work/'+p.id)}
+export function restoredCaseTitle(locale,slug){const project=projects.find(p=>p.id===slug);return project?title(project,dictionary(locale)):null}
+export function restoredPortfolio({brand,locale,path}){
+ const d=dictionary(locale);return `<section class="restored-work"><div class="shell"><div class="restored-heading"><span class="chapter">${escape(d.moreWork)}</span><h2>${escape(brand==='swift'?d.swiftWorkTitle:d.stackWorkTitle)}</h2></div><div class="restored-projects ${brand==='stack'?'restored-projects--systems':''}">${projects.filter(p=>p.brand===brand).map(project=>{const item=d.projects[project.id];return `<article class="restored-card" id="${project.id}">${project.brand==='swift'?`<a class="restored-preview" href="${path('work/'+project.id)}">${image(project,d)}</a>`:diagram(project,d)}<div class="restored-card-copy"><p class="restored-category">${escape(item.category)}${project.status?`<span class="restored-status">${escape(d[project.status])}</span>`:''}</p><h3><a href="${path('work/'+project.id)}">${escape(title(project,d))}</a></h3><p>${escape(item.brief)}</p><a class="inline-link" href="${path('work/'+project.id)}">${escape(d.readCase)} <span aria-hidden="true">↗</span></a></div></article>`}).join('')}</div></div></section>`;
+}
+export function restoredCasePage({brand,locale,path,slug}){
+ const project=projects.find(p=>p.id===slug&&p.brand===brand);if(!project)return null;const d=dictionary(locale),item=d.projects[slug];
+ return `<section class="case-heading shell"><a class="inline-link" href="${path('work')}">${escape(d.back)}</a><span class="chapter">${brand==='swift'?'SwiftSites':'Stackcraft'} / ${escape(item.category)}</span><h1>${escape(title(project,d))}</h1>${project.status?`<p class="restored-status">${escape(d[project.status])}</p>`:''}<p class="lead">${escape(item.brief)}</p></section><div class="shell restored-case-visual">${brand==='swift'?image(project,d):diagram(project,d)}</div><section class="case-story shell"><div><span class="chapter">01</span><h2>${escape(d.approach)}</h2></div><p>${escape(item.approach)}</p><div><span class="chapter">02</span><h2>${escape(project.status==='development'?d.designDirection:d.build)}</h2></div><div><p>${escape(item.build)}</p>${project.url?`<a class="inline-link" href="${project.url}" target="_blank" rel="noopener noreferrer">${escape(d.visit)} <span aria-hidden="true">↗</span></a>`:''}</div><div><span class="chapter">03</span><h2>${escape(d.nextProject)}</h2></div><div><a class="button" href="${enquiry(project,d,path)}">${escape(d.discussSimilar)} <span aria-hidden="true">↗</span></a></div></section>`;
+}
+export function restoredFaqTopics(locale){const d=dictionary(locale);return Object.entries(d.faq).map(([id,item])=>({id,...item,service:id==='online-store'?'commerce':id==='ai-process'?'unsure':'web'}))}
+export function practicalFaq({brand,locale,path}){if(brand!=='swift')return '';const d=dictionary(locale);return `<section class="restored-faq shell" id="questions"><div><span class="chapter">${escape(d.beforeStart)}</span><h2>${escape(d.questions)}</h2></div><div class="restored-faq-list">${restoredFaqTopics(locale).map(topic=>`<details><summary>${escape(topic.question)}</summary><p>${escape(topic.answer)}</p><a class="inline-link" href="${path('contact')}?topic=${encodeURIComponent(topic.id)}&amp;service=${topic.service}">${escape(d.askAbout)} <span aria-hidden="true">↗</span></a></details>`).join('')}</div></section>`}
