@@ -1,6 +1,13 @@
 {
   "private": true,
+  "scripts": {
+    "build": "node scripts/build-static.mjs stack dist",
+    "test:api": "node --test test/api.test.cjs"
+  },
   "dependencies": {
     "resend": "^4.0.0"
+  },
+  "engines": {
+    "node": "24.x"
   }
 }

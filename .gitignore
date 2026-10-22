@@ -1,3 +1,6 @@
 .vercel
 node_modules/
 .env*
+
+/dist/
+/preview/
