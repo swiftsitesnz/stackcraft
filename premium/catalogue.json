@@ -1,0 +1,125 @@
+{
+  "version": "2026-10-22",
+  "base": "USD",
+  "offers": [
+    {
+      "id": "web",
+      "brand": "swift",
+      "min": 5000,
+      "max": 9000,
+      "unit": "projectUnit"
+    },
+    {
+      "id": "flagship",
+      "brand": "swift",
+      "min": 10000,
+      "max": 18000,
+      "unit": "projectUnit"
+    },
+    {
+      "id": "commerce",
+      "brand": "swift",
+      "min": 15000,
+      "max": 30000,
+      "plus": true,
+      "unit": "projectUnit"
+    },
+    {
+      "id": "seo",
+      "brand": "swift",
+      "min": 1500,
+      "max": 3000,
+      "unit": "auditUnit"
+    },
+    {
+      "id": "search",
+      "brand": "swift",
+      "min": 1500,
+      "max": 3500,
+      "unit": "monthUnit"
+    },
+    {
+      "id": "care",
+      "brand": "swift",
+      "min": 250,
+      "max": 750,
+      "unit": "monthUnit"
+    },
+    {
+      "id": "app",
+      "brand": "stack",
+      "min": 12000,
+      "max": 25000,
+      "unit": "projectUnit"
+    },
+    {
+      "id": "platform",
+      "brand": "stack",
+      "min": 25000,
+      "max": 50000,
+      "plus": true,
+      "unit": "projectUnit"
+    },
+    {
+      "id": "ai",
+      "brand": "stack",
+      "min": 7500,
+      "max": 20000,
+      "unit": "projectUnit"
+    },
+    {
+      "id": "consult",
+      "brand": "stack",
+      "min": 349,
+      "max": 349,
+      "unit": "hourUnit"
+    },
+    {
+      "id": "training",
+      "brand": "stack",
+      "min": 1500,
+      "max": 3500,
+      "unit": "programmeUnit"
+    },
+    {
+      "id": "ops",
+      "brand": "stack",
+      "min": 750,
+      "max": 2500,
+      "plus": true,
+      "unit": "monthUnit"
+    },
+    {
+      "id": "discovery",
+      "brand": "stack",
+      "min": 1750,
+      "max": 3500,
+      "unit": "projectUnit"
+    },
+    {
+      "id": "mobile",
+      "brand": "stack",
+      "min": 35000,
+      "max": 65000,
+      "plus": true,
+      "unit": "projectUnit"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "largerAi",
+      "brand": "stack",
+      "min": 20000,
+      "max": 40000,
+      "plus": true,
+      "unit": "programmeUnit"
+    },
+    {
+      "id": "largerDiscovery",
+      "brand": "stack",
+      "min": 3500,
+      "max": 7500,
+      "unit": "projectUnit"
+    }
+  ]
+}
