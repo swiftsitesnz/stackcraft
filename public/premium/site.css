@@ -11,7 +11,7 @@
 /* Round two: founder-led SwiftSites composition; connected-system Stackcraft motion. */
 .tax-note{display:block;font-size:12px;letter-spacing:0;color:#59665c;margin-top:5px}.visit-details{border-block:1px solid #bfc6ba;padding:18px 0;margin-bottom:24px}.visit-details summary{cursor:pointer;font-size:16px}.visit-details[open] summary{margin-bottom:24px}.hero.swift>.shell{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);column-gap:7%}.hero.swift .hero-kicker{grid-column:1/-1}.hero.swift h1{grid-column:1;font-size:clamp(54px,6.2vw,89px);margin-top:46px;align-self:end;line-height:1.04}.hero.swift .hero-bottom{grid-column:1;grid-template-columns:1fr;margin:26px 0 40px;gap:0;align-self:start}.hero.swift .hero-founder{display:none}.hero.swift .hero-copy>p{font-size:18px;max-width:570px}.hero-portrait{grid-column:2;grid-row:2/4;margin:38px 0 35px;position:relative;align-self:stretch;min-height:385px}.hero-portrait-image{width:100%;height:100%;max-height:480px;object-fit:cover;object-position:center 26%;border:1px solid #c7cbbb;border-radius:5px}.hero-portrait figcaption{position:absolute;bottom:18px;left:18px;right:18px;padding:15px 19px;background:rgba(247,245,240,.95);border:1px solid #d6d8cc;display:grid;gap:3px;font-size:12px}.hero-portrait strong{font-size:20px;font-weight:500}.hero.swift .craft-line{grid-column:1/-1;font-size:19px}.system-map{position:relative;max-width:1000px;margin:22px auto 0;padding-bottom:28px}.system-map svg{width:100%;height:auto;display:block;overflow:visible}.system-map path,.system-map circle,.system-map rect{fill:#102c36;stroke:#9ebbbb;stroke-width:2}.system-map .map-track,.system-map .map-branch{fill:none;stroke:#496c73;stroke-width:2}.system-map .map-signal{fill:none;stroke:#c2ef89;stroke-width:4;stroke-dasharray:0 680;opacity:0}.system-map.trace .map-signal{animation:signal-trace 1.3s ease-out both}.system-stage{position:absolute;bottom:0;font-size:12px;transform:translateX(-50%);color:#b6cdd0}.system-stage:nth-of-type(1){left:8%}.system-stage:nth-of-type(2){left:36%}.system-stage:nth-of-type(3){left:64%}.system-stage:nth-of-type(4){left:92%}.workflow[data-stage="0"] .system-stage[data-stage="0"],.workflow[data-stage="1"] .system-stage[data-stage="1"],.workflow[data-stage="2"] .system-stage[data-stage="2"],.workflow[data-stage="3"] .system-stage[data-stage="3"]{color:#c2ef89;font-weight:600}.stack .workflow{margin-top:0;padding-top:18px}.stack .flow-stages{margin-top:25px}.stack .hero h1{max-width:1000px}.stack .hero-bottom{margin-bottom:20px}@keyframes signal-trace{0%{stroke-dasharray:0 680;opacity:1}70%{stroke-dasharray:680 0;opacity:1}100%{stroke-dasharray:680 0;opacity:.3}}
 @media(max-width:1050px){.hero.swift>.shell{column-gap:5%;grid-template-columns:1.15fr .85fr}.hero.swift h1{font-size:clamp(50px,6.3vw,72px)}.hero-portrait{min-height:360px}.hero.swift .hero-copy>p{font-size:17px}.hero.swift .hero-actions{gap:18px}.hero-portrait figcaption{left:12px;right:12px;bottom:12px;padding:12px}}
-@media(max-width:760px){.hero.swift>.shell{grid-template-columns:1fr}.hero.swift h1{font-size:clamp(48px,10.3vw,72px);margin-top:30px;grid-column:1}.hero.swift .hero-bottom{margin:25px 0 28px}.hero-portrait{grid-column:1;grid-row:auto;min-height:0;max-width:none;margin:0 0 28px}.hero-portrait-image{height:340px;object-position:center 23%;max-height:none}.hero-portrait figcaption{left:auto;width:58%;max-width:270px}.hero.swift .craft-line{font-size:12px}.system-map{padding-bottom:22px}.system-stage{font-size:10px;max-width:24%;text-align:center}.system-map svg{height:100px}.stack .hero h1{font-size:clamp(44px,9.5vw,65px)}}
+@media(max-width:760px){.hero.swift>.shell{grid-template-columns:minmax(0,1fr)}.hero.swift h1{font-size:clamp(48px,10.3vw,72px);margin-top:30px;grid-column:1}.hero.swift .hero-bottom{margin:25px 0 28px}.hero-portrait{grid-column:1;grid-row:auto;min-height:0;max-width:none;margin:0 0 28px}.hero-portrait-image{height:340px;object-position:center 23%;max-height:none}.hero-portrait figcaption{left:auto;width:58%;max-width:270px}.hero.swift .craft-line{font-size:12px}.system-map{padding-bottom:22px}.system-stage{font-size:10px;max-width:24%;text-align:center}.system-map svg{height:100px}.stack .hero h1{font-size:clamp(44px,9.5vw,65px)}}
 @media(prefers-reduced-motion:reduce){.system-map.trace .map-signal{animation:none!important;stroke-dasharray:none;opacity:.5}}
 .preview-expand{background:transparent;border:0;border-bottom:1px solid #707968;color:#35422f;padding:10px 0 6px;font-size:13px;margin-top:8px}.project-image{transition:aspect-ratio .6s ease,transform .6s ease}.project-card.expanded .project-image{aspect-ratio:1.6;object-fit:contain}.project-card.expanded .project-preview{background:#b7c6b1}.project-card.expanded .project-image{transform:none}.hero.stack>.shell{display:grid;grid-template-columns:1.05fr .95fr;column-gap:7%;padding-bottom:40px}.hero.stack .hero-kicker{grid-column:1/-1}.hero.stack h1{grid-column:1;font-size:clamp(48px,5.4vw,78px);margin-top:45px;line-height:1.06;align-self:end}.hero.stack .hero-bottom{grid-column:1;display:block;margin:30px 0 0}.hero.stack .hero-founder{margin:35px 0 0;border-top:1px solid #36515a;padding-top:22px;max-width:420px}.hero.stack .workflow{grid-column:2;grid-row:2/4;margin:45px 0 0;padding:28px;background:#193b46;border:1px solid #3b5c65;border-radius:5px;align-self:center}.hero.stack .workflow-top{display:block;font-size:17px}.hero.stack .workflow-top small{display:block;margin-top:5px;font-size:11px}.hero.stack .system-map{margin:25px 0}.hero.stack .system-map svg{height:140px}.hero.stack .system-stage{font-size:10px}.hero.stack .flow-stages{grid-template-columns:1fr 1fr}.hero.stack .flow-stages button{border-bottom:1px solid #456069;padding:15px 12px}.hero.stack .flow-stages button:nth-child(2){border-right:0}.hero.stack .flow-stages button:nth-child(3){border-bottom:0}.hero.stack .flow-stages strong{font-size:17px}.hero.stack .flow-stages button>span{font-size:23px}.hero.stack .flow-caption{min-height:48px;font-size:14px}.hero.stack .hero-copy>p{font-size:18px}
 @media(max-width:1050px){.hero.stack>.shell{column-gap:4%;grid-template-columns:1.1fr .9fr}.hero.stack h1{font-size:clamp(43px,5.8vw,64px)}.hero.stack .workflow{padding:18px}.hero.stack .hero-actions{gap:20px}.hero.stack .flow-stages strong{font-size:15px}}
@@ -53,3 +53,62 @@ h1,h2,h3{hyphens:manual}.service-hero>.button{margin-top:24px}
 .project-card:first-child .desktop-device .project-image{aspect-ratio:1.6;object-fit:contain;height:auto}.project-preview:has(.device-pair){height:auto;min-height:0}
 
 .concept-expand{display:block;color:#dce8eb;border-color:#7c9fa9;margin-top:10px}.product-art>img{transition:filter .3s ease}.product-art:has(.concept-expand:hover)>img{filter:brightness(1.08)}@media(prefers-reduced-motion:reduce){.product-art>img{transition:none}}
+
+/* ---- Hero: the work as the hero (SwiftSites), flat UI fragment over a schematic (Stackcraft) ---- */
+.hero.swift>.shell{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);column-gap:4%}
+.hero.swift h1{font-size:clamp(44px,4.9vw,76px);margin-top:40px;align-self:end}
+.hero.swift .hero-founder{display:flex;margin:24px 0 0;border-top:1px solid var(--line);padding-top:18px;max-width:460px}
+.hero.swift .mini-portrait{width:56px;height:56px;border-radius:4px;object-position:center 20%}
+.hero.swift .hero-founder p{font-size:13px}
+.hero-price{display:block;font-size:13px;line-height:1.7;color:#55605a;margin:16px 0 0}.hero-price-item{display:block}
+.hero-price .amount{font-weight:500;color:#232823;font-size:inherit;letter-spacing:0}
+.stack .hero-price{color:#a9c2c7}.stack .hero-price .amount{color:#e5eff0}
+.hero-work{grid-column:2;grid-row:2/4;position:relative;min-height:600px;margin:34px -13% 70px 0;align-self:stretch}
+.work-row{position:absolute;inset:0}
+.work-frame{position:absolute;display:block;background:#fff;border:1px solid #cfc9bb;border-radius:4px;box-shadow:0 30px 70px -40px rgba(35,40,35,.5);overflow:hidden;transition:transform .5s ease}
+.work-frame:hover{transform:translateY(-4px)}
+.work-bar{height:20px;border-bottom:1px solid #e6e1d5;background:#faf8f3;display:flex;align-items:center;gap:5px;padding:0 9px}
+.work-bar i{width:6px;height:6px;border-radius:50%;background:#d7d1c3;display:block}
+.work-bar b{margin-left:8px;font-size:10px;font-weight:500;color:#55605a;letter-spacing:.02em}
+.work-frame img{display:block;width:100%;height:auto}
+.wf-1{left:0;top:0;width:66%;z-index:1}
+.wf-2{left:33%;top:25%;width:58%;z-index:2}
+.wf-phone{left:22%;top:50%;width:15%;border-radius:16px;z-index:3}
+.wf-phone .work-bar{height:12px;justify-content:center}.wf-phone .work-bar i{display:none}
+.work-captions{list-style:none;margin:0;padding:0;position:absolute;left:0;right:13%;bottom:-46px;display:flex;flex-wrap:wrap;gap:4px 18px;font-size:12px;color:#55605a}
+.work-captions a{color:inherit;text-decoration:none;border-bottom:1px solid currentColor}
+.hero.swift .craft-line{margin-top:48px}
+.hero.stack{position:relative}
+.hero-schematic{position:absolute;inset:0;width:100%;height:100%;color:#fff;opacity:.07;pointer-events:none}
+.hero.stack>.shell{position:relative}
+.hero-fragment{grid-column:2;grid-row:2/4;margin:38px -16% 0 0;align-self:center}
+.ui-frame{background:#fff;border:1px solid #2a5260;box-shadow:0 40px 90px -50px rgba(0,0,0,.7);overflow:hidden;border-radius:4px}
+.ui-frame .work-bar{height:26px;background:#edf1f1;border-color:#cfdcdc}
+.ui-frame img{display:block;width:100%;height:auto}
+.hero-fragment figcaption{font-size:12px;line-height:1.5;color:#a9c2c7;margin-top:12px;max-width:54ch}.hero.stack .hero-fragment.product-art figcaption{order:1;border:0;margin-top:12px}
+/* ---- Section rhythm: one deep block for the work, one for the services ---- */
+.swift .showcase-section{background:#a8422c;color:#fff}
+.swift .showcase-section .chapter,.swift .showcase-section .section-top>p,.swift .showcase-section .project-caption>span,.swift .showcase-section .project-caption p{color:#f6e3dc}
+.swift .showcase-section h1,.swift .showcase-section h2,.swift .showcase-section :is(h2,h3) a{color:#fff}
+.swift .showcase-section .project-preview,.swift .showcase-section .project-preview:has(.device-pair),.swift .showcase-section .project-card:nth-child(n) .project-preview{background:rgba(0,0,0,.16)}
+.swift .showcase-section .preview-expand{color:#fff;border-color:rgba(255,255,255,.6)}
+.swift .showcase-section .inline-link{color:#fff;border-color:#fff}
+.swift .showcase-section .showcase-all a{color:#fff}
+.swift .showcase-section h2 em,.swift .showcase-section h1 em{color:#fff}
+.swift .showcase-section .inline-link:hover,.swift .showcase-section .showcase-all a:hover,.swift .showcase-section .preview-expand:hover{color:#f6e3dc}
+.swift .services-section .inline-link:hover,.swift .services-section .package-card h3 a:hover,.swift .services-section .scope-link:hover{color:#e8c9bf}
+.swift .services-section{background:#232823;color:#f4f1ea}
+.stack .services-section{background:#143d49;color:#e5eff0;position:relative}
+.stack .services-section:before{content:"";position:absolute;left:0;top:0;width:28%;height:10px;background:#b8ef68}
+.services-section .chapter,.services-section .section-top>p,.services-section .package-group-title,.services-section .price-note,.services-section .fx-note,.services-section .package-description,.services-section .price-unit,.services-section .tax-note,.services-section .package-card details,.services-section .scope-link{color:inherit;opacity:.88}
+.services-section h2,.services-section .package-card h3 a,.services-section .amount,.services-section .package-card summary{color:inherit}
+.services-section .package-group-title{border-bottom-color:rgba(255,255,255,.22)}
+.services-section .package-card{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.16)}
+.services-section .package-price{border-color:rgba(255,255,255,.16)}
+.services-section .package-visual{border-bottom-color:rgba(255,255,255,.16)}
+.services-section .inline-link{color:inherit;border-color:currentColor}
+.services-section .button.outline{color:inherit;border-color:currentColor}
+.services-section .button.outline:hover{background:rgba(255,255,255,.1)}
+.stack .services-section .package-card h3 a:hover,.stack .services-section .inline-link:hover{color:#c2ef89}
+@media(max-width:1050px){.hero.swift>.shell{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.hero-work{min-height:520px;margin-right:-6%}.hero.swift h1{font-size:clamp(40px,4.6vw,56px)}.hero-fragment{margin-right:-8%}}
+@media(max-width:760px){.hero.swift>.shell{grid-template-columns:minmax(0,1fr)}.hero.swift h1{font-size:clamp(38px,10.5vw,52px)}.hero-schematic{display:none}.hero-work{grid-column:1;grid-row:auto;min-height:0;min-width:0;max-width:100%;margin:18px 0 0;display:block}.work-row{position:static;display:flex;align-items:flex-start;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 0 10px;-webkit-overflow-scrolling:touch}.work-frame img{height:auto}.work-frame{position:static;flex:0 0 78vw;transform:none;scroll-snap-align:start}.wf-phone{flex-basis:26vw}.work-captions{position:static;margin-top:10px;right:auto;flex-direction:column;gap:4px}.hero.swift .craft-line{margin-top:28px}.hero-fragment{margin:22px 0 0}.ui-frame .work-bar{height:22px}.stack .services-section:before{width:40%;height:8px}}
