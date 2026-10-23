@@ -24,7 +24,7 @@
 .package-price{padding:20px 0;margin-top:auto;border-block:1px solid #203b332b}
 .package-price .amount{display:block;font-size:clamp(22px,2.1vw,32px);line-height:1.35;font-weight:550;letter-spacing:-.035em;overflow-wrap:anywhere}
 .package-price .price-unit{font-size:15px}
-.package-price .tax-note{display:block;font-size:13px;margin-top:9px;opacity:.8}
+.package-price .tax-note{display:block;font-size:13px;margin-top:9px}
 .package-card details{margin:22px 0;font-size:15px;line-height:1.65}
 .package-card summary{cursor:pointer;font-size:16px;text-decoration:underline;text-underline-offset:5px}
 .package-card details p{margin:14px 0 0}
@@ -75,7 +75,7 @@
 .art-doc-dots{font-size:7px;letter-spacing:3px;color:#9aa295}
 .art-doc-body{padding:18px 20px 22px;display:grid;gap:14px}
 .art-row{display:grid;grid-template-columns:120px minmax(0,1fr);gap:12px;align-items:start}
-.art-label{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#6b7568;padding-top:3px}
+.art-label{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#55605a;padding-top:3px}
 .art-value{display:flex;flex-wrap:wrap;gap:6px;line-height:1.5}
 .art-row--strong .art-value{font-size:17px;font-weight:500}
 .art-chip{border:1px solid #c7cbbb;border-radius:999px;padding:3px 10px;font-size:12px;background:#f3f1ea}
@@ -86,14 +86,14 @@
 .art-redacted.short{width:62%}
 .art-redacted.tiny{width:48px;height:8px}
 .stack .art-redacted{background:#d5e0e2}
-.art-note{font-size:12px;color:#6b7568;width:100%;margin-top:4px;font-style:italic}
+.art-note{font-size:12px;color:#55605a;width:100%;margin-top:4px;font-style:italic}
 .art-agenda-item{display:grid;grid-template-columns:34px minmax(0,1fr);gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid #e3e3d8}
 .art-agenda-item strong{font-weight:500;font-size:15px}
 .art-agenda-item .art-redacted{grid-column:2;width:70%}
 .art-num{font-size:11px;color:#8a9185}
 .art-table{width:100%;border-collapse:collapse;font-size:13px}
 .art-table th,.art-table td{text-align:left;padding:9px 8px;border-bottom:1px solid #e3e3d8;vertical-align:top}
-.art-table thead th{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#6b7568}
+.art-table thead th{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#55605a}
 .art-table tbody th{font-weight:500}
 .art-tick{color:#5f8f3a;font-size:11px}
 .stack .art-tick{color:#3f8f5a}
@@ -104,7 +104,7 @@
 .art-badge--medium{background:#f3e3b8;color:#6a4f0c}
 .art-badge--low{background:#dfe7d2;color:#344a2a}
 .art-cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.art-cols strong{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;color:#6b7568}
+.art-cols strong{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;color:#55605a}
 .art-log-row{display:grid;grid-template-columns:48px minmax(0,1fr) 16px;gap:12px;align-items:center;padding:7px 0;border-bottom:1px solid #e3e3d8;font-size:14px}
 
 .art-diagram{background:#15343e;color:#e4eeee;border:1px solid #395963;border-radius:6px;padding:24px;display:grid;gap:18px;font-size:13px;position:relative;overflow:hidden}
@@ -149,7 +149,7 @@
 .art-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-bottom:38px}
 .art-mini{background:#fffdf8;border:1px solid #cfd3c6;border-radius:6px;padding:14px;min-height:120px;display:flex;flex-direction:column;gap:12px;box-shadow:0 12px 30px #1b2b2610}
 .stack .art-mini{background:#f6f9f9;border-color:#b9c9cc}
-.art-mini-label{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#6b7568}
+.art-mini-label{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55605a}
 .art-tree{display:grid;gap:8px;justify-items:center}
 .art-tree>i{width:40%;height:10px;background:#c54224;border-radius:2px;opacity:.75}
 .stack .art-tree>i{background:#147482}
