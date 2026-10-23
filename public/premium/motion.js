@@ -68,7 +68,8 @@
       ], { duration:1050 });
     }
   };
-  const revealElements = site.querySelectorAll('.hero-portrait,.product-art,.device-pair,.dashboard-frame,.design-art,.founder-grid>figure,.case-image');
+  // The hero portrait is the largest contentful element on the SwiftSites home page; it paints immediately instead of waiting for a reveal.
+  const revealElements = site.querySelectorAll('.product-art,.device-pair,.dashboard-frame,.design-art,.founder-grid>figure,.case-image');
   if ('IntersectionObserver' in window) {
     const revealObserver = new IntersectionObserver(entries => {
       for (const entry of entries) if (entry.isIntersecting) {
