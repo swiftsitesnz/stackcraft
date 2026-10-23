@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "node scripts/build-static.mjs stack dist",
+    "build": "node scripts/build-locales.mjs && node scripts/build-static.mjs stack dist",
     "test:api": "node --test test/api.test.cjs"
   },
   "dependencies": {
