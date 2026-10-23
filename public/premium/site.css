@@ -94,6 +94,9 @@ h1,h2,h3{hyphens:manual}.service-hero>.button{margin-top:24px}
 .swift .showcase-section .preview-expand{color:#fff;border-color:rgba(255,255,255,.6)}
 .swift .showcase-section .inline-link{color:#fff;border-color:#fff}
 .swift .showcase-section .showcase-all a{color:#fff}
+.swift .showcase-section h2 em,.swift .showcase-section h1 em{color:#fff}
+.swift .showcase-section .inline-link:hover,.swift .showcase-section .showcase-all a:hover,.swift .showcase-section .preview-expand:hover{color:#f6e3dc}
+.swift .services-section .inline-link:hover,.swift .services-section .package-card h3 a:hover,.swift .services-section .scope-link:hover{color:#e8c9bf}
 .swift .services-section{background:#232823;color:#f4f1ea}
 .stack .services-section{background:#143d49;color:#e5eff0;position:relative}
 .stack .services-section:before{content:"";position:absolute;left:0;top:0;width:28%;height:10px;background:#b8ef68}
