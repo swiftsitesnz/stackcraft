@@ -16,15 +16,15 @@
   const chapterSelector = '.hero,.showcase-section,.stack-work,.services-section,.founder-section,.process-section,.onsite-band,.service-hero,.service-detail,.service-proof,.case-heading,.case-image,.case-story,.contact-page,.page-heading,.catalogue,.restored-work,.lifecycle-section,.restored-faq';
   const chapterColours = isStack ? {
     hero:['#143d49','#e3ecec'], 'stack-work':['#c9dedd','#e0ebea'],
-    'services-section':['#e4eeea','#e8efec'], 'founder-section':['#cedfd8','#dce8e2'],
+    'services-section':['#143d49','#e4eeea'], 'founder-section':['#cedfd8','#dce8e2'],
     'process-section':['#e5ecee','#e9eff0'], 'onsite-band':['#c4d9c9','#dce8df'],
     'service-hero':['#e6eeee','#ecf2f2'], 'service-detail':['#dde8e8','#e6eeee'], 'service-proof':['#d3e2e0','#e0ebea'],
     'case-heading':['#e6eeee','#ecf2f2'], 'case-image':['#cfdfdf','#dde8e8'], 'case-story':['#e3ecec','#e9f0f0'],
     'contact-page':['#e3ecea','#e9f0ee'], 'page-heading':['#e6eeee','#ecf2f2'], catalogue:['#dfe9e8','#e6eeee'],
     'restored-work':['#d6e3e2','#e0ebea'], 'lifecycle-section':['#d9e6e2','#e3ece9'], 'restored-faq':['#e3ecec','#e9f0f0'],
   } : {
-    hero:['#f2ebdf','#f7f2e9'], 'showcase-section':['#e3d9c8','#eee6da'],
-    'services-section':['#f3efe5','#f7f3ea'], 'founder-section':['#dce3cd','#e8ecdf'],
+    hero:['#f2ebdf','#f7f2e9'], 'showcase-section':['#a8422c','#f6ece7'],
+    'services-section':['#232823','#f7f5f0'], 'founder-section':['#dce3cd','#e8ecdf'],
     'process-section':['#eee7d9','#f4eee4'], 'onsite-band':['#cbd4b8','#e4e9d8'],
     'service-hero':['#f4efe4','#f8f4ec'], 'service-detail':['#ebe4d6','#f2ede2'], 'service-proof':['#e2d9c8','#ece5d8'],
     'case-heading':['#f4efe4','#f8f4ec'], 'case-image':['#dedcc9','#ebe8da'], 'case-story':['#f0ebe0','#f6f2ea'],
