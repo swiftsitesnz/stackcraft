@@ -6,7 +6,7 @@
 .premium-site .project-card .preview-expand{grid-column:1;grid-row:2;justify-self:start;margin:0}
 .premium-site .project-card .project-caption{grid-column:2;grid-row:1;align-self:center;margin:0;padding:12px 0}
 .premium-site .project-card:nth-child(n+2) .project-caption p{display:block}
-.premium-site .project-card .project-caption h3{font-size:clamp(26px,2.5vw,40px);line-height:1.15;margin:16px 0}
+.premium-site .project-card .project-caption :is(h2,h3){font-size:clamp(26px,2.5vw,40px);line-height:1.15;margin:16px 0}
 .premium-site .project-card .project-caption p{font-size:18px;line-height:1.6;max-width:38ch;margin:0}
 .premium-site .project-card .device-pair{padding:32px 22px;gap:18px;align-items:end}
 .premium-site .project-card .desktop-device{width:77%;flex:none}
@@ -42,7 +42,7 @@
 .stack .dashboard-frame img{aspect-ratio:1.5;object-fit:contain;width:100%;height:auto}
 @media(min-width:1001px) and (max-width:1250px){.header-inner{gap:20px}.site-header nav{gap:16px}.preferences{gap:8px}.nav-cta{padding:14px 16px}}
 @media(max-width:1000px){.package-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.premium-site .project-card,.premium-site .project-card:first-child{grid-template-columns:1fr}.premium-site .project-card .project-caption{grid-column:1;grid-row:3;padding:8px 0 0}.premium-site .project-card .project-caption p{max-width:60ch}.premium-site .project-card .device-pair{padding:30px}.premium-site .project-card{row-gap:10px}}
-@media(max-width:600px){.package-grid,.stack .package-grid{grid-template-columns:1fr}.package-card{padding:24px}.package-description{min-height:0}.package-price .amount{font-size:29px}.premium-site .project-gallery{gap:32px}.premium-site .project-card,.premium-site .project-card:first-child{padding-bottom:30px}.premium-site .project-card .device-pair{padding:22px 12px;gap:10px}.premium-site .project-card .project-caption h3{font-size:28px}.premium-site .project-card .project-caption p{font-size:16px}.wordmark .stack-brand-icon{width:32px;height:32px;margin-right:7px}.location{gap:18px}.travel-terms{scroll-margin-top:100px}}
+@media(max-width:600px){.package-grid,.stack .package-grid{grid-template-columns:1fr}.package-card{padding:24px}.package-description{min-height:0}.package-price .amount{font-size:29px}.premium-site .project-gallery{gap:32px}.premium-site .project-card,.premium-site .project-card:first-child{padding-bottom:30px}.premium-site .project-card .device-pair{padding:22px 12px;gap:10px}.premium-site .project-card .project-caption :is(h2,h3){font-size:28px}.premium-site .project-card .project-caption p{font-size:16px}.wordmark .stack-brand-icon{width:32px;height:32px;margin-right:7px}.location{gap:18px}.travel-terms{scroll-margin-top:100px}}
 
 
 /* Imagery batch (2026-10-22): service openers, proof modules, built artefacts, case galleries,
@@ -175,7 +175,7 @@
 .premium-site .project-card:nth-child(n+2){grid-template-columns:1fr;row-gap:10px;padding-bottom:36px}
 .premium-site .project-card:nth-child(n+2) .project-caption{grid-column:1;grid-row:3;padding:6px 0 0;align-self:start}
 .premium-site .project-card:nth-child(n+2) .preview-expand{grid-row:2}
-.premium-site .project-card:nth-child(n+2) .project-caption h3{font-size:28px;margin:10px 0}
+.premium-site .project-card:nth-child(n+2) .project-caption :is(h2,h3){font-size:28px;margin:10px 0}
 .premium-site .project-card:nth-child(n+2) .project-caption p{font-size:16px}
 .showcase-all{margin-top:34px}
 
