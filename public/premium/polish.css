@@ -471,3 +471,8 @@
  position:static;align-self:flex-start;max-width:100%;margin:0;padding:0;
  background:transparent;color:#dfebed;font-size:12px;line-height:1.5;
 }
+
+/* The Stackcraft hero starts lime; its hover must visibly change, not another lime. */
+.premium-site.stack .hero .button:not(:disabled):is(:hover,:focus-visible) {
+ background-color:#f7fbf2;color:#12313b;border-color:#f7fbf2;
+}
