@@ -1,0 +1,473 @@
+/* Shared SwiftSites / Stackcraft finish. Load after motion.css. */
+.premium-site {
+  --control-hover-bg: #943b25;
+  --control-hover-ink: #fffaf5;
+  --link-hover: #87341f;
+  --link-hover-bg: #f0ddd2;
+  --focus-ring: #a23e23;
+  --card-hover-bg: #f1e0d5;
+  --card-hover-border: #a64a2f;
+  --stage-paper: #fffdf8;
+  --stage-tint: #eee4d8;
+  --stage-line: #c0aa99;
+  --stage-accent: #a84329;
+}
+.premium-site.stack {
+  --control-hover-bg: #176170;
+  --control-hover-ink: #ffffff;
+  --link-hover: #155968;
+  --link-hover-bg: #d1e7e3;
+  --focus-ring: #187283;
+  --card-hover-bg: #d6e9e5;
+  --card-hover-border: #267381;
+  --stage-paper: #f9fcfb;
+  --stage-tint: #d4e3e1;
+  --stage-line: #9eb7b9;
+  --stage-accent: #216a78;
+}
+
+/* Dark sections inherit their own interaction palette, including text links. */
+.premium-site :is(.services-section, .footer),
+.premium-site.swift .showcase-section,
+.premium-site.stack .hero {
+  --control-hover-bg: #f2d3bd;
+  --control-hover-ink: #38241b;
+  --link-hover: #ffe1c9;
+  --link-hover-bg: #ffffff14;
+  --focus-ring: #f2ba8f;
+  --card-hover-bg: #46362c;
+  --card-hover-border: #e4ac86;
+}
+.premium-site.stack :is(.services-section, .footer, .hero) {
+  --control-hover-bg: #c3f18d;
+  --control-hover-ink: #12313b;
+  --link-hover: #d4f6ab;
+  --focus-ring: #c3f18d;
+  --card-hover-bg: #245664;
+  --card-hover-border: #b8e98a;
+}
+
+/* Colour changes are immediate feedback; motion stays small and optional. */
+.premium-site :is(.button, .nav-cta, .menu-button, .preview-expand, .lightbox-close, .project-open, .inline-link, .scope-link, .travel-terms-link, .preferences select, .enquiry-form select, .flow-stages button) {
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+.premium-site :is(.button, .nav-cta, .menu-button, .preview-expand, .lightbox-close, .project-open, .flow-stages button):not(:disabled):not([aria-disabled="true"]):is(:hover, :focus-visible) {
+  background-color: var(--control-hover-bg);
+  color: var(--control-hover-ink);
+  border-color: var(--control-hover-bg);
+  text-decoration: none;
+}
+.premium-site .button.outline:not(:disabled):not([aria-disabled="true"]):is(:hover, :focus-visible) {
+  background-color: var(--control-hover-bg);
+  color: var(--control-hover-ink);
+  border-color: var(--control-hover-bg);
+}
+.premium-site :is(.inline-link, .scope-link, .travel-terms-link):not([aria-disabled="true"]):is(:hover, :focus-visible) {
+  background-color: var(--link-hover-bg);
+  color: var(--link-hover);
+  border-color: currentColor;
+  box-shadow: 0 0 0 5px var(--link-hover-bg);
+}
+.premium-site :is(.site-header nav > a:not(.nav-cta), .footer-links a, .lifecycle a, .package-card h3 a):not([aria-disabled="true"]):is(:hover, :focus-visible) {
+  color: var(--link-hover);
+  text-decoration: underline;
+  text-underline-offset: .25em;
+}
+.premium-site :is(.preferences select, .enquiry-form select):not(:disabled):is(:hover, :focus-visible) {
+  border-color: var(--focus-ring);
+  background-color: var(--link-hover-bg);
+  color: inherit;
+}
+.premium-site .visit-details summary:is(:hover, :focus-visible) {
+  background-color: var(--link-hover-bg);
+  color: var(--link-hover);
+}
+.premium-site :is(a, button, summary, input, textarea, select):focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 5px;
+}
+.premium-site :is(button:disabled, .button[aria-disabled="true"]) {
+  cursor: not-allowed;
+  opacity: .58;
+  transform: none;
+}
+.premium-site button:disabled {
+  pointer-events: none;
+}
+
+/* Keep all card content together; long neighbours must not create empty panels. */
+.package-grid {
+  align-items: start;
+  gap: 24px;
+}
+.package-card {
+  min-width: 0;
+  transition: background-color .22s ease, border-color .22s ease, box-shadow .22s ease, transform .22s ease;
+}
+.package-card .package-description {
+  min-height: 0;
+  margin-bottom: 0;
+}
+.package-card .package-price {
+  margin-top: 24px;
+}
+.package-card .package-actions {
+  row-gap: 12px;
+}
+.package-visual--diagram {
+  display: flex;
+  align-items: stretch;
+  aspect-ratio: 1.6;
+  padding: 22px;
+  background: #102f3a;
+}
+.package-visual--diagram .art-diagram {
+  width: 100%;
+  min-height: 270px;
+  align-content: center;
+  padding: 20px;
+}
+.package-visual--diagram .art-flow {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px 16px;
+}
+.package-visual--diagram .art-flow li {
+  padding: 10px 6px;
+}
+.package-visual--diagram .art-flow li + li::before {
+  display: none;
+}
+.premium-site .package-card:is(:hover, :focus-within) {
+  background-color: var(--card-hover-bg);
+  border-color: var(--card-hover-border);
+  box-shadow: 0 12px 24px #12252316;
+}
+.premium-site .services-section .package-card:is(:hover, :focus-within) {
+  background-color: var(--card-hover-bg);
+  border-color: var(--card-hover-border);
+  box-shadow: 0 14px 26px #07181428;
+}
+.package-card summary {
+  padding: 6px 8px;
+  margin-inline: -8px;
+  border-radius: 2px;
+  transition: background-color .2s ease, color .2s ease;
+}
+.premium-site .package-card summary:is(:hover, :focus-visible),
+.premium-site .package-card details[open] summary {
+  background-color: var(--link-hover-bg);
+  color: var(--link-hover);
+}
+.services-action {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  margin-top: 26px;
+}
+.services-action .button.outline {
+  margin-top: 0;
+}
+.services-section .fx-credit {
+  display: inline-block;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Informational stages have visible boundaries, without clickable behaviour. */
+.process-list {
+  gap: 18px;
+  margin: 30px 0 0;
+}
+.process-list li {
+  min-width: 0;
+  padding: 24px;
+  background: var(--stage-paper);
+  border: 1px solid var(--stage-line);
+  border-top: 4px solid var(--stage-accent);
+  border-radius: 3px;
+}
+.process-list li:nth-child(even) {
+  background: var(--stage-tint);
+}
+.process-list li > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  min-height: 32px;
+  padding: 3px 8px;
+  background: var(--stage-accent);
+  color: #fff;
+  border-radius: 2px;
+  font-size: 13px;
+  letter-spacing: .04em;
+}
+.process-list h3 {
+  margin: 23px 0 13px;
+  font-size: clamp(20px, 1.7vw, 24px);
+  line-height: 1.2;
+}
+.process-list p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Give the FAQ heading its own gutter and each question a readable surface. */
+.restored-faq {
+  padding: clamp(24px, 3.5vw, 48px);
+  margin-block: 56px;
+  gap: clamp(28px, 5vw, 64px);
+  border: 1px solid var(--stage-line);
+  border-radius: 4px;
+  align-items: start;
+}
+.restored-faq > div {
+  min-width: 0;
+}
+.restored-faq > div:first-child {
+  padding-top: 8px;
+}
+.restored-faq h2 {
+  font-size: clamp(32px, 3.7vw, 48px);
+  overflow-wrap: break-word;
+}
+.restored-faq-list {
+  display: grid;
+  gap: 12px;
+}
+.restored-faq-list details,
+.restored-faq-list details:last-child {
+  padding: 0 22px;
+  background: var(--stage-paper);
+  border: 1px solid var(--stage-line);
+  border-left: 4px solid var(--stage-accent);
+  border-radius: 3px;
+  transition: background-color .2s ease, border-color .2s ease;
+}
+.restored-faq-list summary {
+  padding: 22px 34px 22px 0;
+  font-size: 19px;
+}
+.restored-faq-list summary::after {
+  top: 22px;
+  right: 0;
+  color: var(--stage-accent);
+}
+.restored-faq-list details:is(:hover, :focus-within, [open]) {
+  background: var(--link-hover-bg);
+  border-color: var(--stage-accent);
+}
+.restored-faq-list details[open] summary {
+  color: var(--link-hover);
+  border-bottom: 1px solid var(--stage-line);
+}
+.restored-faq-list details > p {
+  margin-top: 18px;
+}
+.restored-faq-list .inline-link {
+  margin-bottom: 22px;
+}
+
+/* The arrow is a marker; every part of the travel message shares one text edge. */
+.location:has(.location-copy) {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  align-items: start;
+  gap: 18px;
+}
+.location .location-orbit {
+  font-size: 42px;
+  margin-top: 3px;
+}
+.location .location-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+}
+.location-copy p {
+  max-width: 45ch;
+  margin: 16px 0 0;
+}
+.location-copy .travel-terms-link {
+  margin-top: 12px;
+}
+.location-copy .inline-link {
+  margin-top: 18px;
+}
+
+/* Removing the former location strip also removes its old grid row. */
+.hero.swift h1 {
+  margin-top: 10px;
+}
+.hero.swift .hero-work {
+  grid-row: 1 / 3;
+  margin-top: 8px;
+}
+
+/* A real website detail supports the explainer instead of a vacant right half. */
+.guide-teaser-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+  align-items: center;
+  gap: clamp(28px, 5vw, 72px);
+}
+.guide-teaser-grid > div,
+.guide-teaser-grid > figure {
+  min-width: 0;
+}
+.guide-teaser-grid h2 {
+  font-size: clamp(34px, 3.8vw, 54px);
+}
+.guide-visual {
+  position: relative;
+  padding: 22px;
+  background: var(--stage-tint);
+  border: 1px solid var(--stage-line);
+  border-radius: 4px;
+  box-shadow: 9px 9px 0 var(--stage-paper);
+}
+.guide-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--stage-line);
+  border-radius: 3px;
+}
+.guide-journey {
+  width: min(250px, 80%);
+  margin: 0 auto 20px;
+  color: var(--stage-accent);
+}
+.guide-journey svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.guide-visual figcaption {
+  margin-top: 14px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: inherit;
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .premium-site .package-card:is(:hover, :focus-within) {
+    transform: translateY(-5px);
+  }
+  .premium-site :is(.nav-cta, .menu-button, .preview-expand):not(:disabled):not([aria-disabled="true"]):hover {
+    transform: translateY(-2px);
+  }
+}
+@media (max-width: 1050px) {
+  .process-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .guide-teaser-grid {
+    gap: 28px;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+  }
+  .guide-visual {
+    padding: 14px;
+  }
+}
+@media (max-width: 760px) {
+  .hero.swift h1 {
+    margin-top: 10px;
+  }
+  .hero.swift .hero-work {
+    grid-column: 1;
+    grid-row: auto;
+    margin: 18px 0 0;
+  }
+  .guide-teaser-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
+  }
+  .guide-visual {
+    width: 100%;
+    max-width: 560px;
+    justify-self: center;
+    box-shadow: 5px 5px 0 var(--stage-paper);
+  }
+  .restored-faq {
+    grid-template-columns: minmax(0, 1fr);
+    margin-block: 36px;
+  }
+}
+@media (max-width: 600px) {
+  .package-visual--diagram {
+    aspect-ratio: auto;
+    padding: 14px;
+  }
+  .package-visual--diagram .art-diagram {
+    min-height: 0;
+    padding: 16px;
+  }
+  .package-visual--diagram .art-flow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+  .process-list {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+  .process-list li {
+    padding: 22px;
+  }
+  .process-list h3 {
+    font-size: 23px;
+    margin-top: 18px;
+  }
+  .restored-faq {
+    padding: 22px 18px;
+    gap: 26px;
+  }
+  .restored-faq-list details,
+  .restored-faq-list details:last-child {
+    padding-inline: 16px;
+  }
+  .restored-faq-list summary {
+    font-size: 18px;
+    padding-block: 19px;
+  }
+  .restored-faq-list summary::after {
+    top: 19px;
+  }
+  .location:has(.location-copy) {
+    grid-template-columns: 26px minmax(0, 1fr);
+    gap: 12px;
+  }
+  .location .location-orbit {
+    font-size: 31px;
+  }
+  .location-copy strong {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+  .location-copy p {
+    font-size: 16px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .premium-site :is(.package-card, .button, .nav-cta, .menu-button, .preview-expand):is(:hover, :focus-within, :focus-visible) {
+    transform: none;
+  }
+}
+
+/* The image link owns the circular affordance, including keyboard focus. */
+.premium-site .project-preview:is(:hover,:focus-visible) .project-open {
+ background-color:var(--control-hover-bg);color:var(--control-hover-ink);
+}
+.premium-site .hero-work .work-frame:is(:hover,:focus-visible) {
+ border-color:var(--card-hover-border);box-shadow:0 0 0 3px var(--card-hover-border),0 18px 36px #12252326;
+}
+
+/* Captions stay below diagrams, including longer translated labels. */
+.package-visual--diagram{flex-direction:column;gap:12px}
+.package-visual--diagram .art-diagram{flex:1}
+.premium-site .package-card .package-visual--diagram figcaption {
+ position:static;align-self:flex-start;max-width:100%;margin:0;padding:0;
+ background:transparent;color:#dfebed;font-size:12px;line-height:1.5;
+}

@@ -8,6 +8,7 @@
   const pointer = window.matchMedia('(hover: hover) and (pointer: fine)');
   const isStack = site.classList.contains('stack');
   const activeAnimations = new Set();
+  const elementAnimations = new WeakMap();
   const observers = [];
   const cleanups = [];
   const seen = new WeakSet();
@@ -37,15 +38,18 @@
   };
   const animate = (element, frames, options = {}) => {
     if (reduce.matches || !element?.animate) return;
+    elementAnimations.get(element)?.cancel();
     const animation = element.animate(frames, {
       duration:950, easing:'cubic-bezier(.22,1,.36,1)', ...options,
     });
     activeAnimations.add(animation);
+    elementAnimations.set(element, animation);
     animation.finished.catch(() => {}).finally(() => activeAnimations.delete(animation));
   };
   site.classList.add('motion-ready');
 
-  // One entry per image, not a repeating scroll loop. Text is never hidden.
+  // Most artwork enters once. Marked product previews re-arm only after they
+  // fully leave the viewport, so scrolling around the threshold cannot flicker.
   const reveal = element => {
     if (seen.has(element)) return;
     seen.add(element);
@@ -61,7 +65,7 @@
       ], { duration:1150, delay:80 });
     } else {
       // Keep accompanying captions readable throughout the artwork reveal.
-      const artwork = element.querySelector(':scope>img') || element;
+      const artwork = element.querySelector(':scope>img') || element.querySelector(':scope>.ui-frame') || element;
       animate(artwork, [
         { clipPath:isStack?'inset(0 15% 9% 0 round 4px)':'inset(10% 0 0 0 round 4px)', transform:'translate3d(0,24px,0)' },
         { clipPath:'inset(0 0 0 0 round 4px)', transform:'translate3d(0,0,0)' },
@@ -72,10 +76,17 @@
   const revealElements = site.querySelectorAll('.product-art,.device-pair,.dashboard-frame,.design-art,.founder-grid>figure,.case-image');
   if ('IntersectionObserver' in window) {
     const revealObserver = new IntersectionObserver(entries => {
-      for (const entry of entries) if (entry.isIntersecting) {
-        reveal(entry.target); revealObserver.unobserve(entry.target);
+      for (const entry of entries) {
+        const repeat = entry.target.hasAttribute('data-reveal-repeat');
+        if (!entry.isIntersecting) {
+          if (repeat) seen.delete(entry.target);
+          continue;
+        }
+        if (entry.intersectionRatio < .13) continue;
+        reveal(entry.target);
+        if (!repeat) revealObserver.unobserve(entry.target);
       }
-    }, { rootMargin:'0px 0px -7% 0px', threshold:.13 });
+    }, { threshold:[0, .13] });
     revealElements.forEach(element => revealObserver.observe(element));
     observers.push(revealObserver);
   }
