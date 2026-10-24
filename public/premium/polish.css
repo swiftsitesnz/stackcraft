@@ -481,3 +481,33 @@
 .hero.stack h1{margin-top:38px}
 .hero.stack .hero-fragment{grid-row:1/3;margin-top:8px}
 @media(max-width:760px){.hero.stack .hero-fragment{margin-top:26px}}
+
+/* Keep Eli in the existing founder strip, with a portrait large enough to recognise. */
+.premium-site .hero .hero-founder {
+  max-width: 600px;
+  gap: 22px;
+  align-items: center;
+}
+.premium-site .hero .hero-founder .mini-portrait {
+  width: 120px;
+  height: 150px;
+  flex: 0 0 120px;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 6px;
+}
+.premium-site .hero .hero-founder > div { min-width: 0; }
+.premium-site .hero .hero-founder strong { font-size: 18px; line-height: 1.4; }
+.premium-site .hero .hero-founder p { font-size: 15px; line-height: 1.6; margin-top: 8px; }
+.premium-site .package-visual--ai { aspect-ratio: 3 / 2; }
+.premium-site .package-visual--ai img { width: 100%; height: 100%; object-fit: contain; }
+@media (max-width: 600px) {
+  .premium-site .hero .hero-founder { gap: 18px; }
+  .premium-site .hero .hero-founder .mini-portrait { width: 100px; height: 125px; flex-basis: 100px; }
+  .premium-site .hero .hero-founder strong { font-size: 16px; }
+  .premium-site .hero .hero-founder p { font-size: 14px; line-height: 1.55; }
+}
+@media (max-width: 360px) {
+  .premium-site .hero .hero-founder { gap: 14px; }
+  .premium-site .hero .hero-founder .mini-portrait { width: 88px; height: 110px; flex-basis: 88px; }
+}
