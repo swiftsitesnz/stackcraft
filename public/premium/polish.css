@@ -559,3 +559,19 @@
 @media (max-width:760px){.premium-site .business-guide section .guide-art{grid-column:1}.premium-site .guide-channels{grid-template-columns:1fr 1fr}.premium-site .guide-stats{padding:24px 20px;margin-top:36px}.premium-site .guide-channels>div:last-child{grid-column:1/-1}}
 .premium-site .guide-stat{display:flex;flex-direction:column}
 .premium-site .guide-stat a{margin-top:auto;align-self:flex-start}
+
+/* 25/10 S7/T7: hover and focus feedback on the controls that had none; two Stackcraft greys lifted above 4.5:1 */
+.premium-site .field :is(input,textarea):not(:disabled){transition:border-color .2s,background .2s,box-shadow .2s}
+.premium-site .field :is(input,textarea):not(:disabled):is(:hover,:focus-visible){border-color:var(--focus-ring);background:#fff;box-shadow:0 0 0 3px color-mix(in srgb,var(--focus-ring) 18%,transparent)}
+.premium-site .dashboard-frame{transition:background .3s,box-shadow .3s}
+.premium-site .dashboard-frame:is(:hover,:focus-visible){background:#a6bdbe;box-shadow:0 14px 34px rgba(12,41,49,.28)}
+.premium-site .project-preview{transition:background .35s,box-shadow .35s,transform .35s}
+.premium-site .project-card:is(:hover,:focus-within) .project-preview{box-shadow:0 16px 36px rgba(20,30,20,.18);transform:translateY(-3px)}
+.premium-site .wordmark{transition:opacity .2s}
+.premium-site .wordmark:is(:hover,:focus-visible){opacity:.72}
+.premium-site :is(.fx-credit,.form-note a,.chat-disclaimer a,.legal a,.guide-stat a,.guide-sources a,.travel-terms-link,.scope-link,.restored-constraint a):is(:hover,:focus-visible){text-decoration-thickness:2px;text-underline-offset:4px}
+.premium-site .footer :is(.fx-credit,.legal a):is(:hover,:focus-visible){color:#fff}
+.premium-site.swift .showcase-section :is(.inline-link,.showcase-all a,.preview-expand):is(:hover,:focus-visible){color:#fbeee8;border-color:#fbeee8;text-decoration-thickness:2px}
+.premium-site.stack .case-image figcaption{color:#3f4b48}
+.premium-site .field>span:not(.field-error){color:#4f5a52}
+@media (prefers-reduced-motion:reduce){.premium-site .project-card:is(:hover,:focus-within) .project-preview{transform:none}}
