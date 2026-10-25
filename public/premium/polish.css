@@ -581,3 +581,6 @@
 .premium-site .not-found .chapter{letter-spacing:.12em}
 .premium-site .not-found p{max-width:60ch;font-size:19px;line-height:1.7;margin-top:18px}
 .premium-site .not-found .hero-actions{margin-top:30px}
+
+/* 25/10 T9: on phones the Stackcraft hero shows the product fragment before the founder strip */
+@media (max-width:760px){.premium-site .hero.stack>.shell{display:flex;flex-direction:column}.premium-site .hero.stack .hero-bottom{display:contents}.premium-site .hero.stack .hero-founder{order:2;margin-top:26px}.premium-site .hero.stack .hero-fragment{order:1;margin-top:26px}.premium-site .hero.stack .hero-founder .mini-portrait{width:72px;height:90px;flex-basis:72px}}
