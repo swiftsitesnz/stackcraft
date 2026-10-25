@@ -601,5 +601,6 @@
 .premium-site .lifecycle-mini{height:150px;overflow:hidden;border-radius:6px;margin-bottom:16px;pointer-events:none;background:#eef3f2}
 .premium-site .lifecycle-mini-inner{width:200%;transform:scale(.5);transform-origin:top left}
 .premium-site .lifecycle-mini .art-doc{box-shadow:none;border-radius:6px 6px 0 0}
-@media (max-width:1050px){.premium-site .metric-meta{grid-template-columns:1fr;gap:12px}}
+@media (max-width:1200px){.premium-site .metric-meta{grid-template-columns:1fr;gap:12px}}
+.premium-site.stack .services-section .services-action .button:not(.outline):is(:hover,:focus-visible){background:#d4f6ab;border-color:#d4f6ab}
 @media (max-width:760px){.premium-site .lifecycle-mini{height:120px}.premium-site .lifecycle-mini-inner{width:220%;transform:scale(.4545)}.premium-site .metric-meta{grid-column:1/-1}}
