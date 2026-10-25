@@ -60,5 +60,5 @@ Set in your Vercel project settings:
 - Validator 50% processing-time reduction: supplied directly by Eli on 8 October 2026; described as the result in his workflow, not a universal guarantee.
 - Other project descriptions derive from the previous published site. Diagrams are explicitly labelled as workflow illustrations, not screenshots.
 - Baseline commit: `02be145`; rollback archive retained outside this repository.
-- Run `node --test tests/contact.test.js` for provider failure, validation and success regression checks. These tests stub email delivery and send nothing externally.
+- Run `npm run test:api` for the contact handler checks (provider failure, validation and success). These tests stub email delivery and send nothing externally.
 - Real inbox delivery must be checked separately; local tests do not establish delivery.
