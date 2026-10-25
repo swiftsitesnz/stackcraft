@@ -34,3 +34,4 @@ html[lang="ru"]{--font-dm-sans:Manrope,"DM Sans",Arial,sans-serif;--font-instrum
 html[lang="vi"] body,html[lang="ru"] body{letter-spacing:0}
 html[lang="vi"] :is(h1,h2,h3),html[lang="ru"] :is(h1,h2,h3){letter-spacing:-.02em}
 @media(max-width:900px){html[lang="ru"] .section-top h2{font-size:clamp(30px,4.2vw,40px)}}
+@media(max-width:420px){html[lang="vi"] .package-price .amount{font-size:19px}}
