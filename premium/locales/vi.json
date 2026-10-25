@@ -405,5 +405,8 @@
   "artefactHandover": "Ghi chú bàn giao",
   "viewWorkStack": "Xem các hệ thống",
   "validatorDecision": "Công cụ phân loại, gắn cờ và chặn; con người vẫn là người quyết định.",
-  "aiImageAlt": "Ý tưởng tích hợp AI: yêu cầu mới đến được chuyển thành bản nháp đã duyệt, hồ sơ khách hàng được cập nhật và nhiệm vụ được giao cho nhân viên."
+  "aiImageAlt": "Ý tưởng tích hợp AI: yêu cầu mới đến được chuyển thành bản nháp đã duyệt, hồ sơ khách hàng được cập nhật và nhiệm vụ được giao cho nhân viên.",
+  "notFoundTitle": "Không tìm thấy trang",
+  "notFoundText": "Địa chỉ có thể đã thay đổi hoặc không tồn tại. Các mục chính nằm trong menu phía trên.",
+  "notFoundHome": "Về trang chủ"
 }

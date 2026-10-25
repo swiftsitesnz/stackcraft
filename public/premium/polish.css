@@ -575,3 +575,9 @@
 .premium-site.stack .case-image figcaption{color:#3f4b48}
 .premium-site .field>span:not(.field-error){color:#4f5a52}
 @media (prefers-reduced-motion:reduce){.premium-site .project-card:is(:hover,:focus-within) .project-preview{transform:none}}
+
+/* 25/10 S14/T6: branded 404 */
+.premium-site .not-found{min-height:46vh;padding-block:80px 60px}
+.premium-site .not-found .chapter{letter-spacing:.12em}
+.premium-site .not-found p{max-width:60ch;font-size:19px;line-height:1.7;margin-top:18px}
+.premium-site .not-found .hero-actions{margin-top:30px}

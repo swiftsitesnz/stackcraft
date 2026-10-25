@@ -405,5 +405,8 @@
   "artefactHandover": "Handover notes",
   "viewWorkStack": "Explore the systems",
   "validatorDecision": "The tool sorts, flags and blocks; a person still decides.",
-  "aiImageAlt": "AI integration concept: an incoming enquiry becomes a reviewed draft, an updated customer record and an assigned staff task."
+  "aiImageAlt": "AI integration concept: an incoming enquiry becomes a reviewed draft, an updated customer record and an assigned staff task.",
+  "notFoundTitle": "Page not found",
+  "notFoundText": "The address may have changed or never existed. The main sections are in the menu above.",
+  "notFoundHome": "Back to the homepage"
 }
