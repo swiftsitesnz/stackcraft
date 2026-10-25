@@ -210,7 +210,7 @@
 @media(max-width:600px){.package-visual{margin:-24px -24px 18px}.art-doc-body{padding:14px 14px 18px}.art-doc-head{padding:12px 14px}}
 
 /* Phone: practical questions sit directly after the work, before the catalogue. */
-@media(max-width:760px){.swift #main{display:flex;flex-direction:column}.swift #main>.hero{order:-3}.swift #main>.showcase-section{order:-2}.swift #main>.restored-faq{order:-1}}
+@media(max-width:760px){.swift #main{display:flex;flex-direction:column}.swift #main>.hero{order:-3}.swift #main>.showcase-section{order:-2}}
 
 /* QA pass 1: heading fit in the two-column opener, swipeable proof rows on phones, meta spacing. */
 @media(min-width:1051px){.service-hero--visual h1{font-size:clamp(44px,4.6vw,72px);overflow-wrap:normal;hyphens:manual}}
