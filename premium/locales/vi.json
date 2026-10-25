@@ -61,7 +61,7 @@
   "validatorApproach": "Một lớp xác thực phân loại hàng đợi thành các mục hợp lệ, cần kiểm tra và bị chặn. Trạng thái rõ ràng hỗ trợ quy trình kiểm tra, đồng thời giữ lại vai trò đánh giá của con người.",
   "validatorResult": "Theo Eli, thời gian hành chính cho quy trình này giảm 50%. Thời gian xử lý đơn đặt hàng đã được theo dõi qua nhiều nhân sự đảm nhiệm vai trò này trong nhiều năm; sau khi công cụ được đưa vào sử dụng, cùng khối lượng công việc chỉ mất một nửa thời gian. Kết quả áp dụng cho lần triển khai này; các quy trình khác cần được đánh giá riêng.",
   "reported": "Theo ghi nhận của Eli cho quy trình này; chưa được kiểm chứng độc lập.",
-  "sampleData": "Hình minh họa là ý tưởng giao diện thiết kế sau, dùng dữ liệu mẫu, không phải màn hình đã bàn giao. Không có hồ sơ khách hàng.",
+  "sampleData": "Hình minh họa là ý tưởng giao diện thực hiện sau đó, dùng dữ liệu mẫu, không phải màn hình đã bàn giao. Không có hồ sơ khách hàng.",
   "swiftServicesTitle": "Website, thương mại điện tử và hỗ trợ lâu dài.",
   "swiftServicesIntro": "Chiến lược, thiết kế hình ảnh và phát triển cần được bàn cùng nhau. Chọn sự hỗ trợ phù hợp với doanh nghiệp.",
   "stackServicesTitle": "Xây dựng điều giúp công việc tiến lên.",
