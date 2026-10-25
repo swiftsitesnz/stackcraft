@@ -522,3 +522,6 @@
 .premium-site .scene-figure--crop-top img{aspect-ratio:1536/934;object-position:50% 100%}
 .premium-site .scene-figure figcaption.figure-note{font-size:12px;line-height:1.5;padding:12px 16px;margin:0;color:#b9d0d4;background:#0c2931}
 @media (max-width:600px){.premium-site .package-visual figcaption.figure-note{padding:8px 24px 0}}
+
+/* 25/10 FIX 5: a three-card Stackcraft package grid is three-up at desktop, never 2+1 */
+@media (min-width:1001px){.premium-site.stack .package-grid:has(> :nth-child(3):last-child){grid-template-columns:repeat(3,minmax(0,1fr))}}
