@@ -42,3 +42,5 @@
 @media(min-width:1050px){.restored-case-visual--split{display:grid;grid-template-columns:minmax(0,720px) minmax(280px,1fr);gap:48px;align-items:start}.restored-case-visual--split .restored-diagram{margin:0}.restored-case-visual--split .restored-diagram strong{font-size:clamp(18px,1.7vw,24px)}.restored-case-visual--split .ri-flow,.restored-case-visual--split .ri-progress{gap:26px}.restored-case-visual--split .restored-diagram li+li:before{top:44px;left:-20px}.restored-case-aside .restored-constraint--fact{margin-top:0;font-size:17px;line-height:1.6;max-width:none}}
 @media(max-width:1049px){.restored-case-aside .restored-constraint--fact{margin-top:18px}}
 .ri-matrix-head span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media(max-width:1049px){.ri-matrix-head span{font-size:9.5px;letter-spacing:0}}
+@media(max-width:480px){.ri-matrix-head span{font-size:9px}}
