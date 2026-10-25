@@ -511,3 +511,14 @@
   .premium-site .hero .hero-founder { gap: 14px; }
   .premium-site .hero .hero-founder .mini-portrait { width: 88px; height: 110px; flex-basis: 88px; }
 }
+
+/* 25/10 FIX 1: visible concept disclosure on every generated render, FlowDesk nav cropped */
+.premium-site .package-visual figcaption.figure-note{position:static;left:auto;bottom:auto;background:none;border-radius:0;margin:0;padding:9px 30px 0;font-size:11px;letter-spacing:.02em;line-height:1.5;color:#55605a}
+.premium-site.stack .package-visual figcaption.figure-note{color:#b9d0d4}
+.premium-site .package-visual--concept{padding-bottom:10px}
+.premium-site .package-visual--ai{aspect-ratio:auto}
+.premium-site .package-visual--concept img{aspect-ratio:1536/934}
+.premium-site .package-visual--ai img{height:auto;object-fit:cover;object-position:50% 100%}
+.premium-site .scene-figure--crop-top img{aspect-ratio:1536/934;object-position:50% 100%}
+.premium-site .scene-figure figcaption.figure-note{font-size:12px;line-height:1.5;padding:12px 16px;margin:0;color:#b9d0d4;background:#0c2931}
+@media (max-width:600px){.premium-site .package-visual figcaption.figure-note{padding:8px 24px 0}}
