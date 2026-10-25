@@ -584,3 +584,22 @@
 
 /* 25/10 T9: on phones the Stackcraft hero shows the product fragment before the founder strip */
 @media (max-width:760px){.premium-site .hero.stack>.shell{display:flex;flex-direction:column}.premium-site .hero.stack .hero-bottom{display:contents}.premium-site .hero.stack .hero-copy{margin-top:30px}.premium-site .hero.stack .hero-founder{order:2;margin-top:26px}.premium-site .hero.stack .hero-fragment{order:1;margin-top:26px}.premium-site .hero.stack .hero-founder .mini-portrait{width:72px;height:90px;flex-basis:72px}}
+
+/* 25/10 S12/T8: composition. Compact founder section tightened; process intro; pricing row with a filled action; Stackcraft hero schematic legible; work meta rows; lifecycle artefact minis */
+.premium-site .founder-section--compact{padding:56px 0}
+@media (min-width:761px){.premium-site .founder-section--compact .founder-grid{grid-template-columns:minmax(0,.32fr) minmax(0,.68fr);gap:6%;align-items:start}.premium-site .founder-section--compact .founder-grid figure{max-width:200px}.premium-site .founder-section--compact .portrait{max-height:250px}.premium-site .founder-section--compact .founder-grid h2{max-width:none}}
+@media (min-width:1051px){.premium-site .founder-section--compact .location-copy{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:28px;row-gap:6px;align-items:baseline}.premium-site .founder-section--compact .location-copy strong{grid-row:1}.premium-site .founder-section--compact .location-copy p{grid-row:1;margin:0;max-width:none}.premium-site .founder-section--compact .location-copy>a{grid-column:2;margin-top:4px}}
+.premium-site .process-section .section-top>p{max-width:560px;margin-top:18px;font-size:18px;line-height:1.6}
+.premium-site .services-action{justify-content:flex-start;gap:14px 20px}
+.premium-site .services-section .services-action .button:not(.outline){background:#f7f5f0;color:#232823;border-color:#f7f5f0}
+.premium-site.stack .services-section .services-action .button:not(.outline){background:#b8ef68;color:#0c2931;border-color:#b8ef68}
+.premium-site .hero-schematic{opacity:.11}
+.premium-site .metric-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:28px 0 0;padding-top:20px;border-top:1px solid #bfd0d2}
+.premium-site .metric-meta dt{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#4b6368;margin-bottom:6px}
+.premium-site .metric-meta dd{margin:0;font-size:14px;line-height:1.45;color:#12313b}
+.premium-site .lifecycle li{display:flex;flex-direction:column}
+.premium-site .lifecycle-mini{height:150px;overflow:hidden;border-radius:6px;margin-bottom:16px;pointer-events:none;background:#eef3f2}
+.premium-site .lifecycle-mini-inner{width:200%;transform:scale(.5);transform-origin:top left}
+.premium-site .lifecycle-mini .art-doc{box-shadow:none;border-radius:6px 6px 0 0}
+@media (max-width:1050px){.premium-site .metric-meta{grid-template-columns:1fr;gap:12px}}
+@media (max-width:760px){.premium-site .lifecycle-mini{height:120px}.premium-site .lifecycle-mini-inner{width:220%;transform:scale(.4545)}.premium-site .metric-meta{grid-column:1/-1}}
