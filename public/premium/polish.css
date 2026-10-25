@@ -525,3 +525,14 @@
 
 /* 25/10 FIX 5: a three-card Stackcraft package grid is three-up at desktop, never 2+1 */
 @media (min-width:1001px){.premium-site.stack .package-grid:has(> :nth-child(3):last-child){grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* 25/10 FIX 6: headings and prices never break mid-word; no 2+1 grids at tablet widths; evaluation sheet scrolls on small phones */
+.premium-site .amount{white-space:nowrap}
+.premium-site .amount.amount--long{white-space:normal}
+@media (max-width:360px){.premium-site .amount{font-size:18px}.premium-site .service-investment .amount{font-size:26px}.premium-site .case-heading h1,.premium-site .service-hero h1,.premium-site .stack-work h2{font-size:34px}}
+@media (min-width:761px) and (max-width:1050px){.premium-site .service-hero--visual h1{font-size:clamp(32px,4.4vw,44px)}}
+@media (max-width:1000px){.premium-site.swift .package-grid:has(> :nth-child(3):last-child){grid-template-columns:1fr}}
+@media (min-width:761px) and (max-width:1050px){.premium-site .proof-grid--three{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:420px){.premium-site .art-doc--eval .art-doc-body{overflow-x:auto;-webkit-overflow-scrolling:touch}.premium-site .art-doc--eval .art-table{min-width:400px}}
+@media (max-width:360px){.premium-site h1{font-size:34px}}
+@media (max-width:1000px){.premium-site .package-grid:has(> :nth-child(3):last-child){grid-template-columns:1fr}}

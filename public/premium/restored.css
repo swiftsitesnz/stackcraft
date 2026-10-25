@@ -33,3 +33,12 @@
 @media(max-width:650px){.ri-queue{grid-template-columns:repeat(3,1fr)}.ri-reviewer{grid-column:1/-1}.ri-flow,.ri-progress{grid-template-columns:1fr 1fr}.ri-flow li+li:before{display:none}}
 /* 25/10 FIX 5: a single remaining restored card lays out image-left, copy-right instead of leaving half the row empty */
 @media(min-width:761px){.restored-projects:has(> .restored-card:only-child){grid-template-columns:1fr}.restored-projects:has(> .restored-card:only-child)>.restored-card{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:44px;align-items:center}.restored-projects:has(> .restored-card:only-child) .restored-card-copy{padding-top:0}}
+/* 25/10 FIX 6: diagram layout and word breaks */
+.restored-diagram ol.ri-flow,.restored-diagram ol.ri-progress{grid-template-columns:repeat(4,minmax(0,1fr))}
+.restored-diagram strong,.ri-flow strong,.ri-progress strong,.ri-matrix-head span,.ri-reviewer,.ri-col strong{overflow-wrap:normal;hyphens:none}
+.ri-matrix-head span{letter-spacing:.03em}
+@media(max-width:1049px){.restored-diagram ol.ri-flow,.restored-diagram ol.ri-progress{grid-template-columns:1fr;gap:8px}.restored-diagram ol.ri-flow li+li:before,.restored-diagram ol.ri-progress li+li:before{display:none}.ri-flow li,.ri-progress li{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:baseline;column-gap:12px;padding-top:10px}.ri-flow li span{margin:0}.ri-flow b{grid-column:2;height:7px;margin-top:4px}.ri-progress li i{margin:0;align-self:center}}
+@media(max-width:480px){.ri-matrix-head,.ri-matrix-row{grid-template-columns:1.2fr repeat(3,minmax(0,1fr));gap:6px}.ri-matrix-head span{font-size:10px}.ri-queue{grid-template-columns:repeat(3,minmax(0,1fr))}.ri-reviewer{grid-column:1/-1}}
+@media(min-width:1050px){.restored-case-visual--split{display:grid;grid-template-columns:minmax(0,720px) minmax(280px,1fr);gap:48px;align-items:start}.restored-case-visual--split .restored-diagram{margin:0}.restored-case-visual--split .restored-diagram strong{font-size:clamp(18px,1.7vw,24px)}.restored-case-visual--split .ri-flow,.restored-case-visual--split .ri-progress{gap:26px}.restored-case-visual--split .restored-diagram li+li:before{top:44px;left:-20px}.restored-case-aside .restored-constraint--fact{margin-top:0;font-size:17px;line-height:1.6;max-width:none}}
+@media(max-width:1049px){.restored-case-aside .restored-constraint--fact{margin-top:18px}}
+.ri-matrix-head span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
