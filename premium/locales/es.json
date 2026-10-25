@@ -405,5 +405,8 @@
   "artefactHandover": "Notas de entrega",
   "viewWorkStack": "Ver los sistemas",
   "validatorDecision": "La herramienta clasifica, marca y bloquea; una persona sigue decidiendo.",
-  "aiImageAlt": "Concepto de integración de IA: una consulta entrante se convierte en un borrador revisado, una ficha de cliente actualizada y una tarea asignada al equipo."
+  "aiImageAlt": "Concepto de integración de IA: una consulta entrante se convierte en un borrador revisado, una ficha de cliente actualizada y una tarea asignada al equipo.",
+  "notFoundTitle": "Página no encontrada",
+  "notFoundText": "La dirección puede haber cambiado o no existir. Las secciones principales están en el menú superior.",
+  "notFoundHome": "Volver a la página de inicio"
 }

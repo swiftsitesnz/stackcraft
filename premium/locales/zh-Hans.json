@@ -405,5 +405,8 @@
   "artefactHandover": "交付说明",
   "viewWorkStack": "查看系统案例",
   "validatorDecision": "工具负责分类、标记与拦截；决定仍由人做出。",
-  "aiImageAlt": "AI 集成概念：一条新咨询转化为经审核的草稿、已更新的客户记录和分配给员工的任务。"
+  "aiImageAlt": "AI 集成概念：一条新咨询转化为经审核的草稿、已更新的客户记录和分配给员工的任务。",
+  "notFoundTitle": "找不到页面",
+  "notFoundText": "该地址可能已更改或不存在。主要栏目见上方菜单。",
+  "notFoundHome": "返回首页"
 }
