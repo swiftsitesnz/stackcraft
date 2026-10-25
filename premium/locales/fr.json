@@ -408,5 +408,6 @@
   "aiImageAlt": "Concept d’intégration de l’IA : une demande reçue devient un brouillon relu, une fiche client mise à jour et une tâche attribuée à un membre de l’équipe.",
   "notFoundTitle": "Page introuvable",
   "notFoundText": "L’adresse a peut-être changé ou n’a jamais existé. Les rubriques principales sont dans le menu ci-dessus.",
-  "notFoundHome": "Retour à l’accueil"
+  "notFoundHome": "Retour à l’accueil",
+  "processIntro": "Quatre étapes, les mêmes pour chaque projet. Vous validez chacune avant que la suivante commence."
 }

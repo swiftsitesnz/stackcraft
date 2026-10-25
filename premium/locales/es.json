@@ -408,5 +408,6 @@
   "aiImageAlt": "Concepto de integración de IA: una consulta entrante se convierte en un borrador revisado, una ficha de cliente actualizada y una tarea asignada al equipo.",
   "notFoundTitle": "Página no encontrada",
   "notFoundText": "La dirección puede haber cambiado o no existir. Las secciones principales están en el menú superior.",
-  "notFoundHome": "Volver a la página de inicio"
+  "notFoundHome": "Volver a la página de inicio",
+  "processIntro": "Cuatro etapas, las mismas en cada proyecto. Ves cada una antes de que empiece la siguiente."
 }
