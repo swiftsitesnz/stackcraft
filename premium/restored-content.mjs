@@ -3,7 +3,6 @@ import copy from './restored-locales.json' with {type:'json'};
 const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const projects=[
  {id:'emerald',brand:'swift',name:'Emerald Construction Management',image:'emerald-homepage-v1.webp',status:'development',url:null},
- {id:'stackcraft',brand:'swift',name:'Stackcraft',image:'stackcraft-earlier-v1.jpg',status:'inhouse',url:'https://stackcraft.co.nz'},
  {id:'purchase-order-automation',brand:'stack'},
  {id:'referral-matching',brand:'stack'},
  {id:'provider-onboarding',brand:'stack'},

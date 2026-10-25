@@ -1,1226 +1,1172 @@
 {
- "en": {
-  "moreWork": "More work",
-  "swiftWorkTitle": "Different businesses. Individual decisions.",
-  "stackWorkTitle": "Systems built around the work.",
-  "development": "In development",
-  "inhouse": "In-house studio project",
-  "developmentNote": "Design preview. This website is in development.",
-  "earlierNote": "An earlier Stackcraft website design, shown as an in-house studio project.",
-  "screenshot": "Website screenshot",
-  "diagramNote": "Workflow illustration explaining the approach; not a product screenshot.",
-  "readCase": "Explore the project",
-  "back": "Back to work",
-  "approach": "The approach",
-  "build": "The build",
-  "designDirection": "The design direction",
-  "visit": "Visit the website",
-  "nextProject": "Your next project",
-  "discussSimilar": "Discuss a similar project",
-  "beforeStart": "Before we start",
-  "questions": "A few practical questions.",
-  "askAbout": "Ask about this",
-  "projects": {
-   "emerald": {
-    "category": "Construction consultancy · Waiheke & Auckland",
-    "brief": "A website in development for a construction management and consultancy business, with two core services and its local ties at the centre.",
-    "approach": "Retain Emerald’s existing mark and wordmark. Integrate architectural and coastal imagery, and present selected projects in the context of the founder’s career experience.",
-    "build": "A design direction with clear Project Management and Consultancy services, contextual project information and a dedicated project-enquiry page."
-   },
-   "stackcraft": {
-    "category": "Digital products · International",
-    "brief": "A separate identity and website for custom software, automation and integration work, shown as an in-house studio project.",
-    "approach": "Organise the offer around the tools a business might need. Explain each service and provide a direct route into a project enquiry.",
-    "build": "Visual identity, a multi-page website and a contact journey for the studio’s software practice. The image shows an earlier design."
-   },
-   "purchase-order-automation": {
-    "title": "Purchase-order automation",
-    "category": "Healthcare provider network · Automation",
-    "brief": "Repetitive processing created work before and after each item was handled.",
-    "approach": "Connect the processing task with downstream system actions, reducing the need to repeat the same manual steps.",
-    "build": "A dedicated automation tool focused on reducing manual handling.",
-    "constraint": "The client's case-management system has no API, so the tool works from the system's own exports, never writes to live records, and a staff member confirms every flagged item before anything changes.",
-    "steps": [
-     "Incoming item",
-     "Processing",
-     "System actions"
-    ],
-    "illustration": [
-     "Clean",
-     "Flagged",
-     "Blocked",
-     "Reviewer"
-    ]
-   },
-   "referral-matching": {
-    "title": "Referral matching",
-    "category": "Healthcare provider network · Custom tools",
-    "brief": "Matching referrals involved information and decision logic that took time to work through manually.",
-    "approach": "Bring the matching logic into a purpose-built tool that supports a repeatable workflow.",
-    "build": "A referral-matching tool designed to reduce time spent on the manual process.",
-    "constraint": "Matching had to respect funder contract rules and provider availability held in a system without an API; the tool reads exports and ranks candidates, and the coordinator makes the final call.",
-    "steps": [
-     "Referral",
-     "Matching logic",
-     "Next step"
-    ],
-    "illustration": [
-     "Referral",
-     "Candidates",
-     "Review",
-     "Confirmed"
-    ]
-   },
-   "provider-onboarding": {
-    "title": "Provider onboarding",
-    "category": "Healthcare provider network · Web application",
-    "brief": "Different provider pathways made onboarding difficult to manage as one undifferentiated checklist.",
-    "approach": "Create a gated portal with separate pathways, documented steps and an admin dashboard showing progress.",
-    "build": "An onboarding web application that makes the next step and overall progress easier to see.",
-    "constraint": "Six distinct pathways with different document and vetting requirements, built inside the client's existing Microsoft 365 tenant, with individual logins and every upload treated as atomic.",
-    "steps": [
-     "Choose pathway",
-     "Complete steps",
-     "Track progress"
-    ],
-    "illustration": [
-     "Invited",
-     "Documents",
-     "Checks",
-     "Active"
-    ]
-   },
-   "records-dashboard": {
-    "title": "Provider records dashboard",
-    "category": "Healthcare provider network · Data integrity",
-    "brief": "Missing information in core records was difficult to spot consistently through manual checking.",
-    "approach": "Check records on a schedule and surface the information needing attention in one dashboard.",
-    "build": "A focused dashboard for record checks and follow-up.",
-    "constraint": "Checks run on a schedule against records the tool cannot edit, and each flag routes to the record's owner for the fix rather than changing data automatically.",
-    "steps": [
-     "Core records",
-     "Scheduled checks",
-     "Review gaps"
-    ],
-    "illustration": [
-     "Record",
-     "Complete",
-     "Missing",
-     "Follow-up"
-    ]
-   }
+  "en": {
+    "moreWork": "More work",
+    "swiftWorkTitle": "Different businesses. Individual decisions.",
+    "stackWorkTitle": "Systems built around the work.",
+    "development": "In development",
+    "inhouse": "In-house studio project",
+    "developmentNote": "Design preview. This website is in development.",
+    "earlierNote": "An earlier Stackcraft website design, shown as an in-house studio project.",
+    "screenshot": "Website screenshot",
+    "diagramNote": "Workflow illustration explaining the approach; not a product screenshot.",
+    "readCase": "Explore the project",
+    "back": "Back to work",
+    "approach": "The approach",
+    "build": "The build",
+    "designDirection": "The design direction",
+    "visit": "Visit the website",
+    "nextProject": "Your next project",
+    "discussSimilar": "Discuss a similar project",
+    "beforeStart": "Before we start",
+    "questions": "A few practical questions.",
+    "askAbout": "Ask about this",
+    "projects": {
+      "emerald": {
+        "category": "Construction consultancy · Waiheke & Auckland",
+        "brief": "A website in development for a construction management and consultancy business, with two core services and its local ties at the centre.",
+        "approach": "Retain Emerald’s existing mark and wordmark. Integrate architectural and coastal imagery, and present selected projects in the context of the founder’s career experience.",
+        "build": "A design direction with clear Project Management and Consultancy services, contextual project information and a dedicated project-enquiry page."
+      },
+      "purchase-order-automation": {
+        "title": "Purchase-order automation",
+        "category": "Healthcare provider network · Automation",
+        "brief": "Repetitive processing created work before and after each item was handled.",
+        "approach": "Connect the processing task with downstream system actions, reducing the need to repeat the same manual steps.",
+        "build": "A dedicated automation tool focused on reducing manual handling.",
+        "constraint": "The client's case-management system has no API, so the tool works from the system's own exports, never writes to live records, and a staff member confirms every flagged item before anything changes.",
+        "steps": [
+          "Incoming item",
+          "Processing",
+          "System actions"
+        ],
+        "illustration": [
+          "Clean",
+          "Flagged",
+          "Blocked",
+          "Reviewer"
+        ]
+      },
+      "referral-matching": {
+        "title": "Referral matching",
+        "category": "Healthcare provider network · Custom tools",
+        "brief": "Matching referrals involved information and decision logic that took time to work through manually.",
+        "approach": "Bring the matching logic into a purpose-built tool that supports a repeatable workflow.",
+        "build": "A referral-matching tool designed to reduce time spent on the manual process.",
+        "constraint": "Matching had to respect funder contract rules and provider availability held in a system without an API; the tool reads exports and ranks candidates, and the coordinator makes the final call.",
+        "steps": [
+          "Referral",
+          "Matching logic",
+          "Next step"
+        ],
+        "illustration": [
+          "Referral",
+          "Candidates",
+          "Review",
+          "Confirmed"
+        ]
+      },
+      "provider-onboarding": {
+        "title": "Provider onboarding",
+        "category": "Healthcare provider network · Web application",
+        "brief": "Different provider pathways made onboarding difficult to manage as one undifferentiated checklist.",
+        "approach": "Create a gated portal with separate pathways, documented steps and an admin dashboard showing progress.",
+        "build": "An onboarding web application that makes the next step and overall progress easier to see.",
+        "constraint": "Six distinct pathways with different document and vetting requirements, built inside the client's existing Microsoft 365 tenant, with individual logins and every upload treated as atomic.",
+        "steps": [
+          "Choose pathway",
+          "Complete steps",
+          "Track progress"
+        ],
+        "illustration": [
+          "Invited",
+          "Documents",
+          "Checks",
+          "Active"
+        ]
+      },
+      "records-dashboard": {
+        "title": "Provider records dashboard",
+        "category": "Healthcare provider network · Data integrity",
+        "brief": "Missing information in core records was difficult to spot consistently through manual checking.",
+        "approach": "Check records on a schedule and surface the information needing attention in one dashboard.",
+        "build": "A focused dashboard for record checks and follow-up.",
+        "constraint": "Checks run on a schedule against records the tool cannot edit, and each flag routes to the record's owner for the fix rather than changing data automatically.",
+        "steps": [
+          "Core records",
+          "Scheduled checks",
+          "Review gaps"
+        ],
+        "illustration": [
+          "Record",
+          "Complete",
+          "Missing",
+          "Follow-up"
+        ]
+      }
+    },
+    "faq": {
+      "online-store": {
+        "question": "Can you build a bespoke online store?",
+        "answer": "Yes. Product structure, storefront, checkout, payments and delivery are scoped around your business. Platform choice follows the requirements. Complex integrations and fully custom commerce need separate discovery; platform subscriptions and transaction fees are separate.",
+        "draft": "I’d like to discuss a bespoke online store, platform options and what the setup would include."
+      },
+      "self-editing": {
+        "question": "Can I update the website myself?",
+        "answer": "An editing system and training can be included in the quote; they are not automatic inclusions in every package. You can also request ongoing Care or separately scoped changes. Ownership, access and handover are documented in the project agreement.",
+        "draft": "I’d like to discuss updating website content myself, including an editing system and training."
+      },
+      "existing-website": {
+        "question": "Can you replace my existing website?",
+        "answer": "Yes. Share the link and what is not working. We can assess a rebuild or focused changes, with domain access, existing email, important URLs and search redirects included in the migration scope before switching.",
+        "draft": "I’d like to discuss updating or replacing an existing website and how to plan the migration."
+      },
+      "ai-process": {
+        "question": "How do you use AI?",
+        "answer": "AI is part of the design and development toolkit for exploring ideas and implementing work. Design decisions, human review and testing remain part of the process.",
+        "draft": "I’d like to understand how AI fits into your design, development, review and testing process."
+      }
+    },
+    "illustrationNote": "Illustration of the approach with sample states. Not a product screenshot.",
+    "confidentialNote": "Client identity and records stay confidential. The illustration shows the approach, not the delivered interface."
   },
-  "faq": {
-   "online-store": {
-    "question": "Can you build a bespoke online store?",
-    "answer": "Yes. Product structure, storefront, checkout, payments and delivery are scoped around your business. Platform choice follows the requirements. Complex integrations and fully custom commerce need separate discovery; platform subscriptions and transaction fees are separate.",
-    "draft": "I’d like to discuss a bespoke online store, platform options and what the setup would include."
-   },
-   "self-editing": {
-    "question": "Can I update the website myself?",
-    "answer": "An editing system and training can be included in the quote; they are not automatic inclusions in every package. You can also request ongoing Care or separately scoped changes. Ownership, access and handover are documented in the project agreement.",
-    "draft": "I’d like to discuss updating website content myself, including an editing system and training."
-   },
-   "existing-website": {
-    "question": "Can you replace my existing website?",
-    "answer": "Yes. Share the link and what is not working. We can assess a rebuild or focused changes, with domain access, existing email, important URLs and search redirects included in the migration scope before switching.",
-    "draft": "I’d like to discuss updating or replacing an existing website and how to plan the migration."
-   },
-   "ai-process": {
-    "question": "How do you use AI?",
-    "answer": "AI is part of the design and development toolkit for exploring ideas and implementing work. Design decisions, human review and testing remain part of the process.",
-    "draft": "I’d like to understand how AI fits into your design, development, review and testing process."
-   }
+  "fr": {
+    "moreWork": "Autres projets",
+    "swiftWorkTitle": "Chaque entreprise mérite ses propres choix.",
+    "stackWorkTitle": "Des systèmes conçus autour du travail réel.",
+    "development": "En développement",
+    "inhouse": "Projet interne du studio",
+    "developmentNote": "Aperçu de conception. Ce site est en développement.",
+    "earlierNote": "Un ancien design du site Stackcraft, présenté comme projet interne du studio.",
+    "screenshot": "Capture du site",
+    "diagramNote": "Schéma expliquant l’approche, et non capture du produit.",
+    "readCase": "Découvrir le projet",
+    "back": "Retour aux projets",
+    "approach": "L’approche",
+    "build": "La réalisation",
+    "designDirection": "La direction du design",
+    "visit": "Voir le site",
+    "nextProject": "Votre prochain projet",
+    "discussSimilar": "Discuter d’un projet similaire",
+    "beforeStart": "Avant de commencer",
+    "questions": "Quelques questions pratiques.",
+    "askAbout": "En parler",
+    "projects": {
+      "emerald": {
+        "category": "Conseil en construction · Waiheke et Auckland",
+        "brief": "Un site en développement pour une entreprise de gestion et de conseil en construction, centré sur ses deux activités principales et son ancrage local.",
+        "approach": "Conserver le symbole et le logotype d’Emerald. Intégrer des images architecturales et côtières, en replaçant les projets dans le parcours professionnel du fondateur.",
+        "build": "Une direction de design présentant clairement la gestion de projet et le conseil, des projets contextualisés et une page de demande dédiée."
+      },
+      "purchase-order-automation": {
+        "title": "Automatisation des bons de commande",
+        "category": "Réseau de prestataires de santé · Automatisation",
+        "brief": "Les traitements répétitifs créaient du travail avant et après la gestion de chaque élément.",
+        "approach": "Relier le traitement aux actions suivantes du système pour limiter la répétition des étapes manuelles.",
+        "build": "Un outil d’automatisation dédié à la réduction des manipulations manuelles.",
+        "constraint": "Le système de gestion des dossiers du client n’a pas d’API : l’outil travaille à partir des exports du système lui-même, n’écrit jamais dans les dossiers actifs, et un membre de l’équipe confirme chaque élément signalé avant toute modification.",
+        "steps": [
+          "Élément entrant",
+          "Traitement",
+          "Actions du système"
+        ],
+        "illustration": [
+          "Conforme",
+          "Signalé",
+          "Bloqué",
+          "Relecteur"
+        ]
+      },
+      "referral-matching": {
+        "title": "Mise en correspondance des orientations",
+        "category": "Réseau de santé · Outils sur mesure",
+        "brief": "La mise en correspondance des orientations reposait sur des informations et des règles longues à examiner manuellement.",
+        "approach": "Intégrer cette logique dans un outil dédié, au service d’un processus reproductible.",
+        "build": "Un outil de mise en correspondance conçu pour réduire le temps consacré au traitement manuel.",
+        "constraint": "L’appariement devait respecter les règles contractuelles du financeur et les disponibilités des prestataires, conservées dans un système sans API ; l’outil lit les exports et classe les candidats, et la coordinatrice tranche.",
+        "steps": [
+          "Orientation",
+          "Règles de correspondance",
+          "Étape suivante"
+        ],
+        "illustration": [
+          "Orientation",
+          "Candidats",
+          "Revue",
+          "Confirmé"
+        ]
+      },
+      "provider-onboarding": {
+        "title": "Intégration des prestataires",
+        "category": "Réseau de santé · Application web",
+        "brief": "Des parcours différents rendaient l’intégration difficile à gérer avec une liste de contrôle unique.",
+        "approach": "Créer un portail à accès contrôlé avec des parcours distincts, des étapes documentées et un tableau de bord administratif.",
+        "build": "Une application d’intégration rendant plus visibles l’étape suivante et l’avancement global.",
+        "constraint": "Six parcours distincts aux exigences documentaires et de vérification différentes, construits dans le tenant Microsoft 365 existant du client, avec des identifiants individuels et chaque dépôt traité de façon atomique.",
+        "steps": [
+          "Choisir un parcours",
+          "Suivre les étapes",
+          "Suivre l’avancement"
+        ],
+        "illustration": [
+          "Invité",
+          "Documents",
+          "Vérifications",
+          "Actif"
+        ]
+      },
+      "records-dashboard": {
+        "title": "Tableau de bord des dossiers prestataires",
+        "category": "Réseau de santé · Intégrité des données",
+        "brief": "Les informations manquantes dans les dossiers principaux étaient difficiles à repérer régulièrement par des vérifications manuelles.",
+        "approach": "Vérifier les dossiers selon un calendrier et regrouper les points nécessitant une attention dans un tableau de bord.",
+        "build": "Un tableau de bord ciblé pour vérifier les dossiers et assurer le suivi.",
+        "constraint": "Les contrôles s’exécutent selon un calendrier sur des dossiers que l’outil ne peut pas modifier, et chaque signalement est adressé au responsable du dossier pour correction plutôt que de changer les données automatiquement.",
+        "steps": [
+          "Dossiers principaux",
+          "Contrôles planifiés",
+          "Examiner les lacunes"
+        ],
+        "illustration": [
+          "Dossier",
+          "Complet",
+          "Manquant",
+          "À suivre"
+        ]
+      }
+    },
+    "faq": {
+      "online-store": {
+        "question": "Pouvez-vous créer une boutique en ligne sur mesure ?",
+        "answer": "Oui. Catalogue, boutique, paiement et livraison sont définis selon votre activité. Le choix de plateforme suit les besoins. Les intégrations complexes et le commerce entièrement personnalisé nécessitent un cadrage distinct ; abonnements et frais de transaction sont séparés.",
+        "draft": "Je souhaite discuter d’une boutique en ligne sur mesure, des plateformes possibles et du périmètre de la mise en place."
+      },
+      "self-editing": {
+        "question": "Puis-je mettre le site à jour moi-même ?",
+        "answer": "Un outil d’édition et une formation peuvent figurer au devis ; ils ne sont pas inclus automatiquement dans chaque offre. Une maintenance ou des modifications ponctuelles sont aussi possibles. Propriété, accès et transfert sont précisés dans l’accord de projet.",
+        "draft": "Je souhaite discuter de la mise à jour autonome du contenu, avec un outil d’édition et une formation."
+      },
+      "existing-website": {
+        "question": "Pouvez-vous remplacer mon site actuel ?",
+        "answer": "Oui. Partagez le lien et les problèmes rencontrés. Nous pouvons évaluer une refonte ou des améliorations ciblées, en prévoyant avant le changement les accès au domaine, les emails existants, les URL importantes et les redirections.",
+        "draft": "Je souhaite discuter de la mise à jour ou du remplacement d’un site existant et de la préparation de sa migration."
+      },
+      "ai-process": {
+        "question": "Comment utilisez-vous l’IA ?",
+        "answer": "L’IA fait partie des outils de conception et de développement pour explorer des idées et réaliser le travail. Les décisions de design, la vérification humaine et les tests restent intégrés au processus.",
+        "draft": "Je souhaite comprendre la place de l’IA dans votre conception, votre développement, vos vérifications et vos tests."
+      }
+    },
+    "illustrationNote": "Illustration de l’approche avec des états fictifs. Ce n’est pas une capture du produit.",
+    "confidentialNote": "L’identité et les données du client restent confidentielles. L’illustration montre l’approche, pas l’interface livrée."
   },
-  "illustrationNote": "Illustration of the approach with sample states. Not a product screenshot.",
-  "confidentialNote": "Client identity and records stay confidential. The illustration shows the approach, not the delivered interface."
- },
- "fr": {
-  "moreWork": "Autres projets",
-  "swiftWorkTitle": "Chaque entreprise mérite ses propres choix.",
-  "stackWorkTitle": "Des systèmes conçus autour du travail réel.",
-  "development": "En développement",
-  "inhouse": "Projet interne du studio",
-  "developmentNote": "Aperçu de conception. Ce site est en développement.",
-  "earlierNote": "Un ancien design du site Stackcraft, présenté comme projet interne du studio.",
-  "screenshot": "Capture du site",
-  "diagramNote": "Schéma expliquant l’approche, et non capture du produit.",
-  "readCase": "Découvrir le projet",
-  "back": "Retour aux projets",
-  "approach": "L’approche",
-  "build": "La réalisation",
-  "designDirection": "La direction du design",
-  "visit": "Voir le site",
-  "nextProject": "Votre prochain projet",
-  "discussSimilar": "Discuter d’un projet similaire",
-  "beforeStart": "Avant de commencer",
-  "questions": "Quelques questions pratiques.",
-  "askAbout": "En parler",
-  "projects": {
-   "emerald": {
-    "category": "Conseil en construction · Waiheke et Auckland",
-    "brief": "Un site en développement pour une entreprise de gestion et de conseil en construction, centré sur ses deux activités principales et son ancrage local.",
-    "approach": "Conserver le symbole et le logotype d’Emerald. Intégrer des images architecturales et côtières, en replaçant les projets dans le parcours professionnel du fondateur.",
-    "build": "Une direction de design présentant clairement la gestion de projet et le conseil, des projets contextualisés et une page de demande dédiée."
-   },
-   "stackcraft": {
-    "category": "Produits numériques · International",
-    "brief": "Une identité et un site distincts pour les logiciels sur mesure, l’automatisation et l’intégration, présentés comme projet interne.",
-    "approach": "Organiser l’offre autour des outils dont une entreprise peut avoir besoin. Expliquer chaque service et offrir un accès direct à une demande de projet.",
-    "build": "Identité visuelle, site multipage et parcours de contact pour l’activité logicielle du studio. L’image montre un ancien design."
-   },
-   "purchase-order-automation": {
-    "title": "Automatisation des bons de commande",
-    "category": "Réseau de prestataires de santé · Automatisation",
-    "brief": "Les traitements répétitifs créaient du travail avant et après la gestion de chaque élément.",
-    "approach": "Relier le traitement aux actions suivantes du système pour limiter la répétition des étapes manuelles.",
-    "build": "Un outil d’automatisation dédié à la réduction des manipulations manuelles.",
-    "constraint": "Le système de gestion des dossiers du client n’a pas d’API : l’outil travaille à partir des exports du système lui-même, n’écrit jamais dans les dossiers actifs, et un membre de l’équipe confirme chaque élément signalé avant toute modification.",
-    "steps": [
-     "Élément entrant",
-     "Traitement",
-     "Actions du système"
-    ],
-    "illustration": [
-     "Conforme",
-     "Signalé",
-     "Bloqué",
-     "Relecteur"
-    ]
-   },
-   "referral-matching": {
-    "title": "Mise en correspondance des orientations",
-    "category": "Réseau de santé · Outils sur mesure",
-    "brief": "La mise en correspondance des orientations reposait sur des informations et des règles longues à examiner manuellement.",
-    "approach": "Intégrer cette logique dans un outil dédié, au service d’un processus reproductible.",
-    "build": "Un outil de mise en correspondance conçu pour réduire le temps consacré au traitement manuel.",
-    "constraint": "L’appariement devait respecter les règles contractuelles du financeur et les disponibilités des prestataires, conservées dans un système sans API ; l’outil lit les exports et classe les candidats, et la coordinatrice tranche.",
-    "steps": [
-     "Orientation",
-     "Règles de correspondance",
-     "Étape suivante"
-    ],
-    "illustration": [
-     "Orientation",
-     "Candidats",
-     "Revue",
-     "Confirmé"
-    ]
-   },
-   "provider-onboarding": {
-    "title": "Intégration des prestataires",
-    "category": "Réseau de santé · Application web",
-    "brief": "Des parcours différents rendaient l’intégration difficile à gérer avec une liste de contrôle unique.",
-    "approach": "Créer un portail à accès contrôlé avec des parcours distincts, des étapes documentées et un tableau de bord administratif.",
-    "build": "Une application d’intégration rendant plus visibles l’étape suivante et l’avancement global.",
-    "constraint": "Six parcours distincts aux exigences documentaires et de vérification différentes, construits dans le tenant Microsoft 365 existant du client, avec des identifiants individuels et chaque dépôt traité de façon atomique.",
-    "steps": [
-     "Choisir un parcours",
-     "Suivre les étapes",
-     "Suivre l’avancement"
-    ],
-    "illustration": [
-     "Invité",
-     "Documents",
-     "Vérifications",
-     "Actif"
-    ]
-   },
-   "records-dashboard": {
-    "title": "Tableau de bord des dossiers prestataires",
-    "category": "Réseau de santé · Intégrité des données",
-    "brief": "Les informations manquantes dans les dossiers principaux étaient difficiles à repérer régulièrement par des vérifications manuelles.",
-    "approach": "Vérifier les dossiers selon un calendrier et regrouper les points nécessitant une attention dans un tableau de bord.",
-    "build": "Un tableau de bord ciblé pour vérifier les dossiers et assurer le suivi.",
-    "constraint": "Les contrôles s’exécutent selon un calendrier sur des dossiers que l’outil ne peut pas modifier, et chaque signalement est adressé au responsable du dossier pour correction plutôt que de changer les données automatiquement.",
-    "steps": [
-     "Dossiers principaux",
-     "Contrôles planifiés",
-     "Examiner les lacunes"
-    ],
-    "illustration": [
-     "Dossier",
-     "Complet",
-     "Manquant",
-     "À suivre"
-    ]
-   }
+  "es": {
+    "moreWork": "Más proyectos",
+    "swiftWorkTitle": "Cada empresa, sus propias decisiones.",
+    "stackWorkTitle": "Sistemas diseñados para el trabajo real.",
+    "development": "En desarrollo",
+    "inhouse": "Proyecto interno del estudio",
+    "developmentNote": "Vista previa del diseño. Este sitio está en desarrollo.",
+    "earlierNote": "Un diseño anterior del sitio de Stackcraft, presentado como proyecto interno del estudio.",
+    "screenshot": "Captura del sitio web",
+    "diagramNote": "Diagrama que explica el enfoque; no es una captura del producto.",
+    "readCase": "Explorar el proyecto",
+    "back": "Volver a proyectos",
+    "approach": "El enfoque",
+    "build": "La solución",
+    "designDirection": "La dirección del diseño",
+    "visit": "Visitar el sitio",
+    "nextProject": "Tu próximo proyecto",
+    "discussSimilar": "Hablar de un proyecto similar",
+    "beforeStart": "Antes de empezar",
+    "questions": "Algunas preguntas prácticas.",
+    "askAbout": "Consultar sobre esto",
+    "projects": {
+      "emerald": {
+        "category": "Consultoría de construcción · Waiheke y Auckland",
+        "brief": "Un sitio en desarrollo para una empresa de gestión y consultoría de construcción, centrado en sus dos servicios principales y su conexión local.",
+        "approach": "Conservar el símbolo y el logotipo de Emerald. Integrar imágenes arquitectónicas y costeras y presentar proyectos dentro de la experiencia profesional del fundador.",
+        "build": "Una propuesta de diseño con servicios claros de Gestión de Proyectos y Consultoría, proyectos contextualizados y una página específica de consultas."
+      },
+      "purchase-order-automation": {
+        "title": "Automatización de órdenes de compra",
+        "category": "Red de proveedores sanitarios · Automatización",
+        "brief": "El procesamiento repetitivo generaba trabajo antes y después de gestionar cada elemento.",
+        "approach": "Conectar el procesamiento con las acciones posteriores del sistema para reducir la repetición de tareas manuales.",
+        "build": "Una herramienta de automatización centrada en reducir la gestión manual.",
+        "constraint": "El sistema de gestión de casos del cliente no tiene API, así que la herramienta trabaja con las exportaciones del propio sistema, nunca escribe en registros activos y una persona del equipo confirma cada elemento marcado antes de cualquier cambio.",
+        "steps": [
+          "Elemento entrante",
+          "Procesamiento",
+          "Acciones del sistema"
+        ],
+        "illustration": [
+          "Correcto",
+          "Marcado",
+          "Bloqueado",
+          "Revisor"
+        ]
+      },
+      "referral-matching": {
+        "title": "Asignación de derivaciones",
+        "category": "Red sanitaria · Herramientas a medida",
+        "brief": "La asignación de derivaciones dependía de información y reglas que requerían tiempo al revisarse manualmente.",
+        "approach": "Incorporar la lógica de asignación en una herramienta específica que apoye un proceso repetible.",
+        "build": "Una herramienta de asignación diseñada para reducir el tiempo dedicado al proceso manual.",
+        "constraint": "El emparejamiento debía respetar las reglas del contrato con el financiador y la disponibilidad de proveedores guardada en un sistema sin API; la herramienta lee exportaciones y clasifica candidatos, y la coordinadora toma la decisión final.",
+        "steps": [
+          "Derivación",
+          "Reglas de asignación",
+          "Siguiente paso"
+        ],
+        "illustration": [
+          "Derivación",
+          "Candidatos",
+          "Revisión",
+          "Confirmado"
+        ]
+      },
+      "provider-onboarding": {
+        "title": "Incorporación de proveedores",
+        "category": "Red sanitaria · Aplicación web",
+        "brief": "Las distintas vías de incorporación eran difíciles de gestionar con una única lista de comprobación.",
+        "approach": "Crear un portal con acceso controlado, recorridos diferenciados, pasos documentados y un panel de administración con el progreso.",
+        "build": "Una aplicación que hace más visibles el siguiente paso y el avance general de la incorporación.",
+        "constraint": "Seis itinerarios distintos con requisitos documentales y de verificación diferentes, construidos dentro del tenant de Microsoft 365 existente del cliente, con accesos individuales y cada carga tratada como atómica.",
+        "steps": [
+          "Elegir recorrido",
+          "Completar pasos",
+          "Seguir el progreso"
+        ],
+        "illustration": [
+          "Invitado",
+          "Documentos",
+          "Verificaciones",
+          "Activo"
+        ]
+      },
+      "records-dashboard": {
+        "title": "Panel de registros de proveedores",
+        "category": "Red sanitaria · Integridad de datos",
+        "brief": "La información ausente en registros principales era difícil de detectar de forma constante mediante revisiones manuales.",
+        "approach": "Revisar los registros periódicamente y reunir en un panel la información que necesita atención.",
+        "build": "Un panel específico para comprobación y seguimiento de registros.",
+        "constraint": "Las comprobaciones se ejecutan según un calendario sobre registros que la herramienta no puede editar, y cada aviso se dirige al responsable del registro para corregirlo en lugar de cambiar datos automáticamente.",
+        "steps": [
+          "Registros principales",
+          "Revisiones programadas",
+          "Revisar carencias"
+        ],
+        "illustration": [
+          "Registro",
+          "Completo",
+          "Falta",
+          "Seguimiento"
+        ]
+      }
+    },
+    "faq": {
+      "online-store": {
+        "question": "¿Puedes crear una tienda online a medida?",
+        "answer": "Sí. Catálogo, tienda, pago y entrega se definen según tu negocio. La plataforma se elige a partir de los requisitos. Las integraciones complejas y el comercio totalmente personalizado requieren análisis específico; las suscripciones y comisiones se presupuestan aparte.",
+        "draft": "Me gustaría hablar de una tienda online a medida, las opciones de plataforma y lo que incluiría la configuración."
+      },
+      "self-editing": {
+        "question": "¿Puedo actualizar el sitio yo mismo?",
+        "answer": "El presupuesto puede incluir un editor de contenido y formación; no vienen automáticamente con todos los paquetes. También puedes contratar mantenimiento o cambios puntuales. La propiedad, los accesos y la entrega se documentan en el acuerdo del proyecto.",
+        "draft": "Me gustaría hablar de actualizar el contenido por mi cuenta, con un editor y formación."
+      },
+      "existing-website": {
+        "question": "¿Puedes sustituir mi sitio actual?",
+        "answer": "Sí. Comparte el enlace y lo que no funciona. Podemos valorar una reconstrucción o cambios concretos, incluyendo antes de la migración el acceso al dominio, el correo existente, las URL importantes y las redirecciones de búsqueda.",
+        "draft": "Me gustaría hablar de actualizar o sustituir un sitio existente y de planificar su migración."
+      },
+      "ai-process": {
+        "question": "¿Cómo utilizas la IA?",
+        "answer": "La IA forma parte de las herramientas de diseño y desarrollo para explorar ideas y realizar el trabajo. Las decisiones de diseño, la revisión humana y las pruebas siguen siendo parte del proceso.",
+        "draft": "Me gustaría entender cómo encaja la IA en tu proceso de diseño, desarrollo, revisión y pruebas."
+      }
+    },
+    "illustrationNote": "Ilustración del enfoque con estados de ejemplo. No es una captura del producto.",
+    "confidentialNote": "La identidad y los registros del cliente se mantienen confidenciales. La ilustración muestra el enfoque, no la interfaz entregada."
   },
-  "faq": {
-   "online-store": {
-    "question": "Pouvez-vous créer une boutique en ligne sur mesure ?",
-    "answer": "Oui. Catalogue, boutique, paiement et livraison sont définis selon votre activité. Le choix de plateforme suit les besoins. Les intégrations complexes et le commerce entièrement personnalisé nécessitent un cadrage distinct ; abonnements et frais de transaction sont séparés.",
-    "draft": "Je souhaite discuter d’une boutique en ligne sur mesure, des plateformes possibles et du périmètre de la mise en place."
-   },
-   "self-editing": {
-    "question": "Puis-je mettre le site à jour moi-même ?",
-    "answer": "Un outil d’édition et une formation peuvent figurer au devis ; ils ne sont pas inclus automatiquement dans chaque offre. Une maintenance ou des modifications ponctuelles sont aussi possibles. Propriété, accès et transfert sont précisés dans l’accord de projet.",
-    "draft": "Je souhaite discuter de la mise à jour autonome du contenu, avec un outil d’édition et une formation."
-   },
-   "existing-website": {
-    "question": "Pouvez-vous remplacer mon site actuel ?",
-    "answer": "Oui. Partagez le lien et les problèmes rencontrés. Nous pouvons évaluer une refonte ou des améliorations ciblées, en prévoyant avant le changement les accès au domaine, les emails existants, les URL importantes et les redirections.",
-    "draft": "Je souhaite discuter de la mise à jour ou du remplacement d’un site existant et de la préparation de sa migration."
-   },
-   "ai-process": {
-    "question": "Comment utilisez-vous l’IA ?",
-    "answer": "L’IA fait partie des outils de conception et de développement pour explorer des idées et réaliser le travail. Les décisions de design, la vérification humaine et les tests restent intégrés au processus.",
-    "draft": "Je souhaite comprendre la place de l’IA dans votre conception, votre développement, vos vérifications et vos tests."
-   }
+  "af": {
+    "moreWork": "Meer projekte",
+    "swiftWorkTitle": "Elke onderneming. Sy eie ontwerpbesluite.",
+    "stackWorkTitle": "Stelsels gebou rondom die werklike werk.",
+    "development": "In ontwikkeling",
+    "inhouse": "Interne ateljeeprojek",
+    "developmentNote": "Ontwerpvoorskou. Hierdie webwerf is in ontwikkeling.",
+    "earlierNote": "’n Vroeëre Stackcraft-webwerfontwerp, getoon as ’n interne ateljeeprojek.",
+    "screenshot": "Webwerfskermgreep",
+    "diagramNote": "Werkvloei-illustrasie wat die benadering verduidelik; nie ’n produk-skermgreep nie.",
+    "readCase": "Verken die projek",
+    "back": "Terug na projekte",
+    "approach": "Die benadering",
+    "build": "Die oplossing",
+    "designDirection": "Die ontwerprigting",
+    "visit": "Besoek die webwerf",
+    "nextProject": "Jou volgende projek",
+    "discussSimilar": "Bespreek ’n soortgelyke projek",
+    "beforeStart": "Voor ons begin",
+    "questions": "’n Paar praktiese vrae.",
+    "askAbout": "Vra hieroor",
+    "projects": {
+      "emerald": {
+        "category": "Boukonsultasie · Waiheke en Auckland",
+        "brief": "’n Webwerf in ontwikkeling vir ’n konstruksiebestuur- en konsultasieonderneming, met sy twee kerndienste en plaaslike bande voorop.",
+        "approach": "Behou Emerald se bestaande embleem en woordmerk. Integreer argitektuur- en kusbeelde en plaas uitgesoekte projekte binne die stigter se loopbaanervaring.",
+        "build": "’n Ontwerprigting met duidelike Projekbestuur- en Konsultasiedienste, projekinligting in konteks en ’n toegewyde navraagblad."
+      },
+      "purchase-order-automation": {
+        "title": "Aankooporder-outomatisering",
+        "category": "Gesondheidsdiensnetwerk · Outomatisering",
+        "brief": "Herhalende verwerking het werk geskep voordat en nadat elke item hanteer is.",
+        "approach": "Verbind verwerking met opvolgaksies in die stelsel sodat dieselfde handstappe minder herhaal hoef te word.",
+        "build": "’n Toegewyde outomatiseringshulpmiddel wat handhantering wil verminder.",
+        "constraint": "Die kliënt se gevallebestuurstelsel het geen API nie, dus werk die instrument vanaf die stelsel se eie uitvoere, skryf nooit na lewendige rekords nie, en ’n personeellid bevestig elke gemerkte item voordat enigiets verander.",
+        "steps": [
+          "Inkomende item",
+          "Verwerking",
+          "Stelselaksies"
+        ],
+        "illustration": [
+          "Skoon",
+          "Gemerk",
+          "Geblok",
+          "Hersiener"
+        ]
+      },
+      "referral-matching": {
+        "title": "Verwysingspassing",
+        "category": "Gesondheidsdiensnetwerk · Pasgemaakte gereedskap",
+        "brief": "Verwysingspassing het staatgemaak op inligting en besluitreëls wat tyd gekos het om met die hand deur te werk.",
+        "approach": "Bring die passingslogika in ’n doelgemaakte hulpmiddel wat ’n herhaalbare werkvloei ondersteun.",
+        "build": "’n Verwysingspassingshulpmiddel ontwerp om tyd aan die handproses te verminder.",
+        "constraint": "Passing moes die befondser se kontrakreëls en verskafferbeskikbaarheid in ’n stelsel sonder API respekteer; die instrument lees uitvoere en rangskik kandidate, en die koördineerder neem die finale besluit.",
+        "steps": [
+          "Verwysing",
+          "Passingslogika",
+          "Volgende stap"
+        ],
+        "illustration": [
+          "Verwysing",
+          "Kandidate",
+          "Hersiening",
+          "Bevestig"
+        ]
+      },
+      "provider-onboarding": {
+        "title": "Diensverskaffer-aansluiting",
+        "category": "Gesondheidsdiensnetwerk · Webtoepassing",
+        "brief": "Verskillende diensverskafferroetes was moeilik om met een algemene kontrolelys te bestuur.",
+        "approach": "Skep ’n toegangsbeheerde portaal met afsonderlike roetes, gedokumenteerde stappe en ’n administrasiepaneel wat vordering toon.",
+        "build": "’n Aansluitingstoepassing wat die volgende stap en algehele vordering makliker sigbaar maak.",
+        "constraint": "Ses afsonderlike roetes met verskillende dokument- en keuringsvereistes, gebou binne die kliënt se bestaande Microsoft 365-huurder, met individuele aanmeldings en elke oplaai as atomies hanteer.",
+        "steps": [
+          "Kies ’n roete",
+          "Voltooi stappe",
+          "Volg vordering"
+        ],
+        "illustration": [
+          "Genooi",
+          "Dokumente",
+          "Kontroles",
+          "Aktief"
+        ]
+      },
+      "records-dashboard": {
+        "title": "Diensverskafferrekordpaneel",
+        "category": "Gesondheidsdiensnetwerk · Data-integriteit",
+        "brief": "Ontbrekende inligting in kernrekords was moeilik om konsekwent met handkontroles raak te sien.",
+        "approach": "Kontroleer rekords volgens ’n skedule en wys die inligting wat aandag verg in een paneel.",
+        "build": "’n Gefokusde paneel vir rekordkontroles en opvolg.",
+        "constraint": "Kontroles loop volgens ’n skedule oor rekords wat die instrument nie kan wysig nie, en elke vlag gaan na die rekord se eienaar vir regstelling eerder as om data outomaties te verander.",
+        "steps": [
+          "Kernrekords",
+          "Geskeduleerde kontroles",
+          "Hersien leemtes"
+        ],
+        "illustration": [
+          "Rekord",
+          "Volledig",
+          "Ontbreek",
+          "Opvolg"
+        ]
+      }
+    },
+    "faq": {
+      "online-store": {
+        "question": "Kan jy ’n pasgemaakte aanlyn winkel bou?",
+        "answer": "Ja. Produkindeling, winkel, betaalproses en aflewering word rondom jou onderneming bepaal. Die vereistes bepaal die platform. Komplekse integrasies en geheel pasgemaakte handel verg aparte ondersoek; platformintekeninge en transaksiefooie is afsonderlik.",
+        "draft": "Ek wil graag ’n pasgemaakte aanlyn winkel, platformopsies en die opstelomvang bespreek."
+      },
+      "self-editing": {
+        "question": "Kan ek die webwerf self bywerk?",
+        "answer": "’n Redigeerstelsel en opleiding kan by die kwotasie ingesluit word; dit is nie outomaties deel van elke pakket nie. Jy kan ook onderhoud of afsonderlik bepaalde wysigings aanvra. Eienaarskap, toegang en oorhandiging word in die projekooreenkoms vasgelê.",
+        "draft": "Ek wil graag bespreek hoe ek webwerf-inhoud self kan bywerk, met ’n redigeerstelsel en opleiding."
+      },
+      "existing-website": {
+        "question": "Kan jy my bestaande webwerf vervang?",
+        "answer": "Ja. Deel die skakel en wat nie werk nie. Ons kan ’n herbou of gefokusde veranderings ondersoek en domeintoegang, bestaande e-pos, belangrike URL’s en soekherleidings voor die oorskakeling beplan.",
+        "draft": "Ek wil graag die bywerking of vervanging van ’n bestaande webwerf en die migrasieplan bespreek."
+      },
+      "ai-process": {
+        "question": "Hoe gebruik jy KI?",
+        "answer": "KI is deel van die ontwerp- en ontwikkelingsgereedskap om idees te verken en werk uit te voer. Ontwerpbesluite, menslike hersiening en toetsing bly deel van die proses.",
+        "draft": "Ek wil graag verstaan hoe KI by jou ontwerp-, ontwikkelings-, hersienings- en toetsproses inpas."
+      }
+    },
+    "illustrationNote": "Illustrasie van die benadering met voorbeeldstate. Nie ’n produkskermskoot nie.",
+    "confidentialNote": "Kliëntidentiteit en rekords bly vertroulik. Die illustrasie wys die benadering, nie die gelewerde koppelvlak nie."
   },
-  "illustrationNote": "Illustration de l’approche avec des états fictifs. Ce n’est pas une capture du produit.",
-  "confidentialNote": "L’identité et les données du client restent confidentielles. L’illustration montre l’approche, pas l’interface livrée."
- },
- "es": {
-  "moreWork": "Más proyectos",
-  "swiftWorkTitle": "Cada empresa, sus propias decisiones.",
-  "stackWorkTitle": "Sistemas diseñados para el trabajo real.",
-  "development": "En desarrollo",
-  "inhouse": "Proyecto interno del estudio",
-  "developmentNote": "Vista previa del diseño. Este sitio está en desarrollo.",
-  "earlierNote": "Un diseño anterior del sitio de Stackcraft, presentado como proyecto interno del estudio.",
-  "screenshot": "Captura del sitio web",
-  "diagramNote": "Diagrama que explica el enfoque; no es una captura del producto.",
-  "readCase": "Explorar el proyecto",
-  "back": "Volver a proyectos",
-  "approach": "El enfoque",
-  "build": "La solución",
-  "designDirection": "La dirección del diseño",
-  "visit": "Visitar el sitio",
-  "nextProject": "Tu próximo proyecto",
-  "discussSimilar": "Hablar de un proyecto similar",
-  "beforeStart": "Antes de empezar",
-  "questions": "Algunas preguntas prácticas.",
-  "askAbout": "Consultar sobre esto",
-  "projects": {
-   "emerald": {
-    "category": "Consultoría de construcción · Waiheke y Auckland",
-    "brief": "Un sitio en desarrollo para una empresa de gestión y consultoría de construcción, centrado en sus dos servicios principales y su conexión local.",
-    "approach": "Conservar el símbolo y el logotipo de Emerald. Integrar imágenes arquitectónicas y costeras y presentar proyectos dentro de la experiencia profesional del fundador.",
-    "build": "Una propuesta de diseño con servicios claros de Gestión de Proyectos y Consultoría, proyectos contextualizados y una página específica de consultas."
-   },
-   "stackcraft": {
-    "category": "Productos digitales · Internacional",
-    "brief": "Una identidad y un sitio propios para software a medida, automatización e integración, presentados como proyecto interno.",
-    "approach": "Organizar la oferta según las herramientas que una empresa puede necesitar. Explicar cada servicio y ofrecer un camino directo para consultar un proyecto.",
-    "build": "Identidad visual, sitio de varias páginas y recorrido de contacto para el área de software del estudio. La imagen muestra un diseño anterior."
-   },
-   "purchase-order-automation": {
-    "title": "Automatización de órdenes de compra",
-    "category": "Red de proveedores sanitarios · Automatización",
-    "brief": "El procesamiento repetitivo generaba trabajo antes y después de gestionar cada elemento.",
-    "approach": "Conectar el procesamiento con las acciones posteriores del sistema para reducir la repetición de tareas manuales.",
-    "build": "Una herramienta de automatización centrada en reducir la gestión manual.",
-    "constraint": "El sistema de gestión de casos del cliente no tiene API, así que la herramienta trabaja con las exportaciones del propio sistema, nunca escribe en registros activos y una persona del equipo confirma cada elemento marcado antes de cualquier cambio.",
-    "steps": [
-     "Elemento entrante",
-     "Procesamiento",
-     "Acciones del sistema"
-    ],
-    "illustration": [
-     "Correcto",
-     "Marcado",
-     "Bloqueado",
-     "Revisor"
-    ]
-   },
-   "referral-matching": {
-    "title": "Asignación de derivaciones",
-    "category": "Red sanitaria · Herramientas a medida",
-    "brief": "La asignación de derivaciones dependía de información y reglas que requerían tiempo al revisarse manualmente.",
-    "approach": "Incorporar la lógica de asignación en una herramienta específica que apoye un proceso repetible.",
-    "build": "Una herramienta de asignación diseñada para reducir el tiempo dedicado al proceso manual.",
-    "constraint": "El emparejamiento debía respetar las reglas del contrato con el financiador y la disponibilidad de proveedores guardada en un sistema sin API; la herramienta lee exportaciones y clasifica candidatos, y la coordinadora toma la decisión final.",
-    "steps": [
-     "Derivación",
-     "Reglas de asignación",
-     "Siguiente paso"
-    ],
-    "illustration": [
-     "Derivación",
-     "Candidatos",
-     "Revisión",
-     "Confirmado"
-    ]
-   },
-   "provider-onboarding": {
-    "title": "Incorporación de proveedores",
-    "category": "Red sanitaria · Aplicación web",
-    "brief": "Las distintas vías de incorporación eran difíciles de gestionar con una única lista de comprobación.",
-    "approach": "Crear un portal con acceso controlado, recorridos diferenciados, pasos documentados y un panel de administración con el progreso.",
-    "build": "Una aplicación que hace más visibles el siguiente paso y el avance general de la incorporación.",
-    "constraint": "Seis itinerarios distintos con requisitos documentales y de verificación diferentes, construidos dentro del tenant de Microsoft 365 existente del cliente, con accesos individuales y cada carga tratada como atómica.",
-    "steps": [
-     "Elegir recorrido",
-     "Completar pasos",
-     "Seguir el progreso"
-    ],
-    "illustration": [
-     "Invitado",
-     "Documentos",
-     "Verificaciones",
-     "Activo"
-    ]
-   },
-   "records-dashboard": {
-    "title": "Panel de registros de proveedores",
-    "category": "Red sanitaria · Integridad de datos",
-    "brief": "La información ausente en registros principales era difícil de detectar de forma constante mediante revisiones manuales.",
-    "approach": "Revisar los registros periódicamente y reunir en un panel la información que necesita atención.",
-    "build": "Un panel específico para comprobación y seguimiento de registros.",
-    "constraint": "Las comprobaciones se ejecutan según un calendario sobre registros que la herramienta no puede editar, y cada aviso se dirige al responsable del registro para corregirlo en lugar de cambiar datos automáticamente.",
-    "steps": [
-     "Registros principales",
-     "Revisiones programadas",
-     "Revisar carencias"
-    ],
-    "illustration": [
-     "Registro",
-     "Completo",
-     "Falta",
-     "Seguimiento"
-    ]
-   }
+  "ru": {
+    "moreWork": "Другие проекты",
+    "swiftWorkTitle": "Разным компаниям — индивидуальные решения.",
+    "stackWorkTitle": "Системы для реальных рабочих процессов.",
+    "development": "В разработке",
+    "inhouse": "Внутренний проект студии",
+    "developmentNote": "Предварительный дизайн. Сайт находится в разработке.",
+    "earlierNote": "Предыдущий дизайн сайта Stackcraft, представленный как внутренний проект студии.",
+    "screenshot": "Скриншот сайта",
+    "diagramNote": "Схема объясняет подход к процессу; это не скриншот продукта.",
+    "readCase": "Подробнее о проекте",
+    "back": "Назад к проектам",
+    "approach": "Подход",
+    "build": "Реализация",
+    "designDirection": "Направление дизайна",
+    "visit": "Перейти на сайт",
+    "nextProject": "Ваш следующий проект",
+    "discussSimilar": "Обсудить похожий проект",
+    "beforeStart": "Прежде чем начать",
+    "questions": "Несколько практических вопросов.",
+    "askAbout": "Спросить об этом",
+    "projects": {
+      "emerald": {
+        "category": "Строительный консалтинг · Уаихеке и Окленд",
+        "brief": "Сайт в разработке для компании по управлению строительством и консалтингу, с акцентом на две основные услуги и связь с регионом.",
+        "approach": "Сохранить знак и логотип Emerald. Включить архитектурные и прибрежные фотографии, представив проекты в контексте профессионального опыта основателя.",
+        "build": "Дизайн с ясным разделением управления проектами и консалтинга, описаниями проектов и отдельной страницей для обращения."
+      },
+      "purchase-order-automation": {
+        "title": "Автоматизация заказов на закупку",
+        "category": "Сеть поставщиков медицинских услуг · Автоматизация",
+        "brief": "Повторяющаяся обработка создавала работу до и после каждого элемента.",
+        "approach": "Связать обработку с последующими действиями системы, чтобы сократить повторение ручных шагов.",
+        "build": "Специализированный инструмент автоматизации, направленный на сокращение ручной обработки.",
+        "constraint": "У системы ведения дел клиента нет API, поэтому инструмент работает с её собственными выгрузками, никогда не пишет в рабочие записи, и сотрудник подтверждает каждый помеченный элемент до любых изменений.",
+        "steps": [
+          "Входящий элемент",
+          "Обработка",
+          "Действия системы"
+        ],
+        "illustration": [
+          "Чисто",
+          "Отмечено",
+          "Заблокировано",
+          "Проверяющий"
+        ]
+      },
+      "referral-matching": {
+        "title": "Подбор по направлениям",
+        "category": "Медицинская сеть · Заказные инструменты",
+        "brief": "Подбор по направлениям зависел от информации и правил принятия решений, на ручную проверку которых уходило время.",
+        "approach": "Перенести логику подбора в специальный инструмент, поддерживающий повторяемый процесс.",
+        "build": "Инструмент подбора, разработанный для сокращения времени ручной обработки.",
+        "constraint": "Подбор должен был учитывать правила договора с финансирующей стороной и доступность поставщиков, хранящуюся в системе без API; инструмент читает выгрузки и ранжирует кандидатов, а окончательное решение принимает координатор.",
+        "steps": [
+          "Направление",
+          "Логика подбора",
+          "Следующий шаг"
+        ],
+        "illustration": [
+          "Направление",
+          "Кандидаты",
+          "Проверка",
+          "Подтверждено"
+        ]
+      },
+      "provider-onboarding": {
+        "title": "Подключение поставщиков услуг",
+        "category": "Медицинская сеть · Веб-приложение",
+        "brief": "Разные пути подключения было сложно вести по единому общему чек-листу.",
+        "approach": "Создать портал с контролем доступа, отдельными маршрутами, описанными этапами и административной панелью прогресса.",
+        "build": "Приложение для подключения, которое делает следующий шаг и общий прогресс понятнее.",
+        "constraint": "Шесть отдельных маршрутов с разными требованиями к документам и проверкам, реализованные внутри существующего тенанта Microsoft 365 клиента, с индивидуальными учётными записями и атомарной обработкой каждой загрузки.",
+        "steps": [
+          "Выбор маршрута",
+          "Выполнение шагов",
+          "Контроль прогресса"
+        ],
+        "illustration": [
+          "Приглашён",
+          "Документы",
+          "Проверки",
+          "Активен"
+        ]
+      },
+      "records-dashboard": {
+        "title": "Панель записей поставщиков услуг",
+        "category": "Медицинская сеть · Целостность данных",
+        "brief": "При ручной проверке было сложно регулярно замечать отсутствующие данные в основных записях.",
+        "approach": "Проверять записи по расписанию и собирать требующую внимания информацию в одной панели.",
+        "build": "Специализированная панель для проверки записей и последующих действий.",
+        "constraint": "Проверки выполняются по расписанию над записями, которые инструмент не может редактировать, и каждый сигнал направляется владельцу записи для исправления, а не меняет данные автоматически.",
+        "steps": [
+          "Основные записи",
+          "Плановые проверки",
+          "Поиск пробелов"
+        ],
+        "illustration": [
+          "Запись",
+          "Полная",
+          "Отсутствует",
+          "Доработка"
+        ]
+      }
+    },
+    "faq": {
+      "online-store": {
+        "question": "Можно ли заказать индивидуальный интернет-магазин?",
+        "answer": "Да. Каталог, витрина, оформление заказа, оплата и доставка определяются под ваш бизнес. Платформа выбирается по требованиям. Сложные интеграции и полностью заказные решения требуют отдельного исследования; подписки и комиссии оплачиваются отдельно.",
+        "draft": "Хочу обсудить индивидуальный интернет-магазин, выбор платформы и состав настройки."
+      },
+      "self-editing": {
+        "question": "Смогу ли я обновлять сайт самостоятельно?",
+        "answer": "Редактор контента и обучение можно включить в смету; они не входят автоматически во все пакеты. Можно также заказать поддержку или отдельные изменения. Права собственности, доступы и передача сайта фиксируются в соглашении по проекту.",
+        "draft": "Хочу обсудить самостоятельное обновление сайта, редактор контента и обучение."
+      },
+      "existing-website": {
+        "question": "Можете ли вы заменить мой нынешний сайт?",
+        "answer": "Да. Пришлите ссылку и опишите проблемы. Можно оценить полную переработку или точечные изменения. Доступ к домену, действующая почта, важные URL и поисковые перенаправления включаются в план миграции до переключения.",
+        "draft": "Хочу обсудить обновление или замену существующего сайта и план миграции."
+      },
+      "ai-process": {
+        "question": "Как вы используете ИИ?",
+        "answer": "ИИ входит в набор инструментов для поиска идей и выполнения работ по дизайну и разработке. Решения по дизайну, проверка человеком и тестирование остаются частью процесса.",
+        "draft": "Хочу понять, как ИИ используется в вашем дизайне, разработке, проверке и тестировании."
+      }
+    },
+    "illustrationNote": "Иллюстрация подхода с условными состояниями. Не снимок продукта.",
+    "confidentialNote": "Личность клиента и записи остаются конфиденциальными. Иллюстрация показывает подход, а не сданный интерфейс."
   },
-  "faq": {
-   "online-store": {
-    "question": "¿Puedes crear una tienda online a medida?",
-    "answer": "Sí. Catálogo, tienda, pago y entrega se definen según tu negocio. La plataforma se elige a partir de los requisitos. Las integraciones complejas y el comercio totalmente personalizado requieren análisis específico; las suscripciones y comisiones se presupuestan aparte.",
-    "draft": "Me gustaría hablar de una tienda online a medida, las opciones de plataforma y lo que incluiría la configuración."
-   },
-   "self-editing": {
-    "question": "¿Puedo actualizar el sitio yo mismo?",
-    "answer": "El presupuesto puede incluir un editor de contenido y formación; no vienen automáticamente con todos los paquetes. También puedes contratar mantenimiento o cambios puntuales. La propiedad, los accesos y la entrega se documentan en el acuerdo del proyecto.",
-    "draft": "Me gustaría hablar de actualizar el contenido por mi cuenta, con un editor y formación."
-   },
-   "existing-website": {
-    "question": "¿Puedes sustituir mi sitio actual?",
-    "answer": "Sí. Comparte el enlace y lo que no funciona. Podemos valorar una reconstrucción o cambios concretos, incluyendo antes de la migración el acceso al dominio, el correo existente, las URL importantes y las redirecciones de búsqueda.",
-    "draft": "Me gustaría hablar de actualizar o sustituir un sitio existente y de planificar su migración."
-   },
-   "ai-process": {
-    "question": "¿Cómo utilizas la IA?",
-    "answer": "La IA forma parte de las herramientas de diseño y desarrollo para explorar ideas y realizar el trabajo. Las decisiones de diseño, la revisión humana y las pruebas siguen siendo parte del proceso.",
-    "draft": "Me gustaría entender cómo encaja la IA en tu proceso de diseño, desarrollo, revisión y pruebas."
-   }
+  "zh-Hans": {
+    "moreWork": "更多项目",
+    "swiftWorkTitle": "不同的企业，各有合适的设计。",
+    "stackWorkTitle": "围绕实际业务打造的系统。",
+    "development": "开发中",
+    "inhouse": "工作室内部项目",
+    "developmentNote": "设计预览。该网站仍在开发中。",
+    "earlierNote": "Stackcraft 网站的早期设计，作为工作室内部项目展示。",
+    "screenshot": "网站截图",
+    "diagramNote": "用于解释方法的流程示意图，并非产品截图。",
+    "readCase": "了解项目",
+    "back": "返回项目列表",
+    "approach": "实施思路",
+    "build": "开发成果",
+    "designDirection": "设计方向",
+    "visit": "访问网站",
+    "nextProject": "您的下一个项目",
+    "discussSimilar": "讨论类似项目",
+    "beforeStart": "开始之前",
+    "questions": "几个实际问题。",
+    "askAbout": "咨询此问题",
+    "projects": {
+      "emerald": {
+        "category": "建筑咨询 · 怀赫科岛与奥克兰",
+        "brief": "为建筑管理与咨询企业开发中的网站，以两项核心服务和当地联系为重点。",
+        "approach": "保留 Emerald 原有标志和文字商标，结合建筑与海岸图像，并在创始人的职业经历背景下介绍精选项目。",
+        "build": "清晰呈现项目管理和咨询服务的设计方向，包含有背景说明的项目资料和专门的项目咨询页面。"
+      },
+      "purchase-order-automation": {
+        "title": "采购订单自动化",
+        "category": "医疗服务提供商网络 · 自动化",
+        "brief": "重复处理在每条记录处理前后都带来了额外工作。",
+        "approach": "将处理任务与后续系统操作连接，减少重复的手工步骤。",
+        "build": "以减少人工处理为目标的专用自动化工具。",
+        "constraint": "客户的个案管理系统没有 API，因此工具基于系统自身的导出数据工作，从不写入在用记录，每一项被标记的内容都由工作人员确认后才会有任何改动。",
+        "steps": [
+          "接收条目",
+          "处理",
+          "系统操作"
+        ],
+        "illustration": [
+          "正常",
+          "已标记",
+          "已拦截",
+          "审核人"
+        ]
+      },
+      "referral-matching": {
+        "title": "转介匹配",
+        "category": "医疗服务网络 · 定制工具",
+        "brief": "转介匹配依赖信息和决策规则，人工逐项处理需要时间。",
+        "approach": "将匹配逻辑纳入专用工具，支持可重复执行的工作流程。",
+        "build": "旨在减少人工处理时间的转介匹配工具。",
+        "constraint": "匹配必须遵循资助方的合同规则以及保存在无 API 系统中的服务提供者可用情况；工具读取导出数据并对候选对象排序，最终由协调员做出决定。",
+        "steps": [
+          "转介",
+          "匹配逻辑",
+          "下一步"
+        ],
+        "illustration": [
+          "转介",
+          "候选",
+          "审核",
+          "已确认"
+        ]
+      },
+      "provider-onboarding": {
+        "title": "服务提供商入驻",
+        "category": "医疗服务网络 · Web 应用",
+        "brief": "不同的入驻路径难以通过一份统一清单管理。",
+        "approach": "建立具有访问控制的门户，提供不同路径、明确步骤和显示进度的管理后台。",
+        "build": "让下一步操作及整体进度更加清晰的入驻应用。",
+        "constraint": "六条独立路径，各有不同的文件与审查要求，构建在客户现有的 Microsoft 365 租户内，采用独立登录账号，并将每次上传作为原子操作处理。",
+        "steps": [
+          "选择路径",
+          "完成步骤",
+          "跟踪进度"
+        ],
+        "illustration": [
+          "已邀请",
+          "文件",
+          "核查",
+          "已激活"
+        ]
+      },
+      "records-dashboard": {
+        "title": "服务提供商记录仪表板",
+        "category": "医疗服务网络 · 数据完整性",
+        "brief": "人工检查难以持续发现核心记录中的缺失信息。",
+        "approach": "按计划检查记录，并在一个仪表板中汇总需要关注的信息。",
+        "build": "用于记录检查及后续跟进的专用仪表板。",
+        "constraint": "检查按计划针对工具无法编辑的记录运行，每个标记都转交给记录负责人处理，而不是自动更改数据。",
+        "steps": [
+          "核心记录",
+          "定期检查",
+          "检查缺漏"
+        ],
+        "illustration": [
+          "记录",
+          "完整",
+          "缺失",
+          "待跟进"
+        ]
+      }
+    },
+    "faq": {
+      "online-store": {
+        "question": "可以定制网上商店吗？",
+        "answer": "可以。商品结构、店面、结账、支付和配送都根据业务需求确定。平台选择以需求为依据。复杂集成及完全定制的电商系统需要单独调研；平台订阅和交易费用另计。",
+        "draft": "我想讨论定制网上商店、平台选择以及搭建范围。"
+      },
+      "self-editing": {
+        "question": "我可以自己更新网站吗？",
+        "answer": "报价可包含内容编辑系统和培训，但并非每个套餐默认包含。也可选择持续维护或单独约定修改范围。所有权、访问权限和交接事项会写入项目协议。",
+        "draft": "我想了解自行更新网站内容的方式，包括编辑系统和培训。"
+      },
+      "existing-website": {
+        "question": "可以替换我现有的网站吗？",
+        "answer": "可以。请提供链接并说明问题。我们可以评估重建或针对性调整，并在切换前将域名访问、现有邮件、重要网址和搜索重定向纳入迁移范围。",
+        "draft": "我想讨论更新或替换现有网站，以及如何规划迁移。"
+      },
+      "ai-process": {
+        "question": "你如何使用 AI？",
+        "answer": "AI 是设计与开发工具的一部分，用于探索创意和实施工作。设计决策、人工审核和测试仍然是流程中的必要环节。",
+        "draft": "我想了解 AI 如何融入你的设计、开发、审核和测试流程。"
+      }
+    },
+    "illustrationNote": "方法示意图，使用示例状态。并非产品截图。",
+    "confidentialNote": "客户身份与记录保密。插图展示的是方法，而非交付的界面。"
   },
-  "illustrationNote": "Ilustración del enfoque con estados de ejemplo. No es una captura del producto.",
-  "confidentialNote": "La identidad y los registros del cliente se mantienen confidenciales. La ilustración muestra el enfoque, no la interfaz entregada."
- },
- "af": {
-  "moreWork": "Meer projekte",
-  "swiftWorkTitle": "Elke onderneming. Sy eie ontwerpbesluite.",
-  "stackWorkTitle": "Stelsels gebou rondom die werklike werk.",
-  "development": "In ontwikkeling",
-  "inhouse": "Interne ateljeeprojek",
-  "developmentNote": "Ontwerpvoorskou. Hierdie webwerf is in ontwikkeling.",
-  "earlierNote": "’n Vroeëre Stackcraft-webwerfontwerp, getoon as ’n interne ateljeeprojek.",
-  "screenshot": "Webwerfskermgreep",
-  "diagramNote": "Werkvloei-illustrasie wat die benadering verduidelik; nie ’n produk-skermgreep nie.",
-  "readCase": "Verken die projek",
-  "back": "Terug na projekte",
-  "approach": "Die benadering",
-  "build": "Die oplossing",
-  "designDirection": "Die ontwerprigting",
-  "visit": "Besoek die webwerf",
-  "nextProject": "Jou volgende projek",
-  "discussSimilar": "Bespreek ’n soortgelyke projek",
-  "beforeStart": "Voor ons begin",
-  "questions": "’n Paar praktiese vrae.",
-  "askAbout": "Vra hieroor",
-  "projects": {
-   "emerald": {
-    "category": "Boukonsultasie · Waiheke en Auckland",
-    "brief": "’n Webwerf in ontwikkeling vir ’n konstruksiebestuur- en konsultasieonderneming, met sy twee kerndienste en plaaslike bande voorop.",
-    "approach": "Behou Emerald se bestaande embleem en woordmerk. Integreer argitektuur- en kusbeelde en plaas uitgesoekte projekte binne die stigter se loopbaanervaring.",
-    "build": "’n Ontwerprigting met duidelike Projekbestuur- en Konsultasiedienste, projekinligting in konteks en ’n toegewyde navraagblad."
-   },
-   "stackcraft": {
-    "category": "Digitale produkte · Internasionaal",
-    "brief": "’n Afsonderlike identiteit en webwerf vir pasgemaakte sagteware, outomatisering en integrasie, as ’n interne projek aangebied.",
-    "approach": "Rangskik die aanbod volgens die gereedskap wat ’n onderneming nodig het. Verduidelik elke diens en bied ’n direkte roete na ’n projeknavraag.",
-    "build": "Visuele identiteit, ’n meerbladwebwerf en kontakroete vir die ateljee se sagtewarepraktyk. Die beeld wys ’n vroeëre ontwerp."
-   },
-   "purchase-order-automation": {
-    "title": "Aankooporder-outomatisering",
-    "category": "Gesondheidsdiensnetwerk · Outomatisering",
-    "brief": "Herhalende verwerking het werk geskep voordat en nadat elke item hanteer is.",
-    "approach": "Verbind verwerking met opvolgaksies in die stelsel sodat dieselfde handstappe minder herhaal hoef te word.",
-    "build": "’n Toegewyde outomatiseringshulpmiddel wat handhantering wil verminder.",
-    "constraint": "Die kliënt se gevallebestuurstelsel het geen API nie, dus werk die instrument vanaf die stelsel se eie uitvoere, skryf nooit na lewendige rekords nie, en ’n personeellid bevestig elke gemerkte item voordat enigiets verander.",
-    "steps": [
-     "Inkomende item",
-     "Verwerking",
-     "Stelselaksies"
-    ],
-    "illustration": [
-     "Skoon",
-     "Gemerk",
-     "Geblok",
-     "Hersiener"
-    ]
-   },
-   "referral-matching": {
-    "title": "Verwysingspassing",
-    "category": "Gesondheidsdiensnetwerk · Pasgemaakte gereedskap",
-    "brief": "Verwysingspassing het staatgemaak op inligting en besluitreëls wat tyd gekos het om met die hand deur te werk.",
-    "approach": "Bring die passingslogika in ’n doelgemaakte hulpmiddel wat ’n herhaalbare werkvloei ondersteun.",
-    "build": "’n Verwysingspassingshulpmiddel ontwerp om tyd aan die handproses te verminder.",
-    "constraint": "Passing moes die befondser se kontrakreëls en verskafferbeskikbaarheid in ’n stelsel sonder API respekteer; die instrument lees uitvoere en rangskik kandidate, en die koördineerder neem die finale besluit.",
-    "steps": [
-     "Verwysing",
-     "Passingslogika",
-     "Volgende stap"
-    ],
-    "illustration": [
-     "Verwysing",
-     "Kandidate",
-     "Hersiening",
-     "Bevestig"
-    ]
-   },
-   "provider-onboarding": {
-    "title": "Diensverskaffer-aansluiting",
-    "category": "Gesondheidsdiensnetwerk · Webtoepassing",
-    "brief": "Verskillende diensverskafferroetes was moeilik om met een algemene kontrolelys te bestuur.",
-    "approach": "Skep ’n toegangsbeheerde portaal met afsonderlike roetes, gedokumenteerde stappe en ’n administrasiepaneel wat vordering toon.",
-    "build": "’n Aansluitingstoepassing wat die volgende stap en algehele vordering makliker sigbaar maak.",
-    "constraint": "Ses afsonderlike roetes met verskillende dokument- en keuringsvereistes, gebou binne die kliënt se bestaande Microsoft 365-huurder, met individuele aanmeldings en elke oplaai as atomies hanteer.",
-    "steps": [
-     "Kies ’n roete",
-     "Voltooi stappe",
-     "Volg vordering"
-    ],
-    "illustration": [
-     "Genooi",
-     "Dokumente",
-     "Kontroles",
-     "Aktief"
-    ]
-   },
-   "records-dashboard": {
-    "title": "Diensverskafferrekordpaneel",
-    "category": "Gesondheidsdiensnetwerk · Data-integriteit",
-    "brief": "Ontbrekende inligting in kernrekords was moeilik om konsekwent met handkontroles raak te sien.",
-    "approach": "Kontroleer rekords volgens ’n skedule en wys die inligting wat aandag verg in een paneel.",
-    "build": "’n Gefokusde paneel vir rekordkontroles en opvolg.",
-    "constraint": "Kontroles loop volgens ’n skedule oor rekords wat die instrument nie kan wysig nie, en elke vlag gaan na die rekord se eienaar vir regstelling eerder as om data outomaties te verander.",
-    "steps": [
-     "Kernrekords",
-     "Geskeduleerde kontroles",
-     "Hersien leemtes"
-    ],
-    "illustration": [
-     "Rekord",
-     "Volledig",
-     "Ontbreek",
-     "Opvolg"
-    ]
-   }
+  "ja": {
+    "moreWork": "その他の制作事例",
+    "swiftWorkTitle": "それぞれの事業に、それぞれの設計を。",
+    "stackWorkTitle": "実際の業務に合わせて作るシステム。",
+    "development": "開発中",
+    "inhouse": "スタジオの自社プロジェクト",
+    "developmentNote": "デザインのプレビューです。このサイトは開発中です。",
+    "earlierNote": "自社プロジェクトとして紹介する、Stackcraft ウェブサイトの過去のデザインです。",
+    "screenshot": "ウェブサイトの画面",
+    "diagramNote": "アプローチを説明する業務フロー図です。製品のスクリーンショットではありません。",
+    "readCase": "プロジェクトを見る",
+    "back": "制作事例に戻る",
+    "approach": "アプローチ",
+    "build": "制作内容",
+    "designDirection": "デザインの方向性",
+    "visit": "サイトを開く",
+    "nextProject": "次のプロジェクトへ",
+    "discussSimilar": "同様のプロジェクトを相談する",
+    "beforeStart": "始める前に",
+    "questions": "よくある実務的なご質問。",
+    "askAbout": "この内容について相談する",
+    "projects": {
+      "emerald": {
+        "category": "建設コンサルティング · ワイヘキ島・オークランド",
+        "brief": "建設管理とコンサルティングの企業向けに開発中のサイト。二つの主要サービスと地域とのつながりを中心に据えています。",
+        "approach": "Emerald の既存のマークとロゴタイプを継承。建築と海岸の写真を取り入れ、創業者の職務経験という文脈で代表的なプロジェクトを紹介します。",
+        "build": "プロジェクト管理とコンサルティングを明確に示し、背景を添えた事例と専用の問い合わせページを備えたデザイン案です。"
+      },
+      "purchase-order-automation": {
+        "title": "発注書処理の自動化",
+        "category": "医療サービス提供者ネットワーク · 自動化",
+        "brief": "各項目の処理前後に、繰り返しの手作業が発生していました。",
+        "approach": "処理タスクと後続のシステム操作をつなぎ、同じ手順を手作業で繰り返す必要を減らします。",
+        "build": "手作業の削減を目的とした専用の自動化ツールです。",
+        "constraint": "クライアントのケース管理システムには API がないため、ツールはシステム自身のエクスポートを基に動作し、稼働中の記録には一切書き込まず、フラグが付いた項目はすべて担当者が確認してから変更されます。",
+        "steps": [
+          "項目の受信",
+          "処理",
+          "システム操作"
+        ],
+        "illustration": [
+          "正常",
+          "要確認",
+          "ブロック",
+          "レビュー担当"
+        ]
+      },
+      "referral-matching": {
+        "title": "紹介案件のマッチング",
+        "category": "医療ネットワーク · 個別開発ツール",
+        "brief": "紹介案件のマッチングでは、情報と判断ルールを手作業で確認するのに時間がかかっていました。",
+        "approach": "マッチングのロジックを専用ツールに組み込み、繰り返し実行できる業務フローを支えます。",
+        "build": "手作業に費やす時間の削減を目的としたマッチングツールです。",
+        "constraint": "マッチングは資金提供者との契約ルールと、API のないシステムに保持された提供者の空き状況に従う必要がありました。ツールはエクスポートを読み取って候補を順位付けし、最終判断はコーディネーターが行います。",
+        "steps": [
+          "紹介案件",
+          "マッチングロジック",
+          "次の手順"
+        ],
+        "illustration": [
+          "紹介",
+          "候補",
+          "レビュー",
+          "確定"
+        ]
+      },
+      "provider-onboarding": {
+        "title": "サービス提供者の登録支援",
+        "category": "医療ネットワーク · ウェブアプリ",
+        "brief": "登録経路が異なるため、一つの共通チェックリストでは管理が難しくなっていました。",
+        "approach": "アクセス制御付きポータルに個別の経路、文書化した手順、進捗を示す管理画面を設けます。",
+        "build": "次の作業と全体の進捗を把握しやすくする登録支援アプリです。",
+        "constraint": "書類と審査の要件が異なる六つの独立した経路を、クライアントの既存の Microsoft 365 テナント内に構築し、個別ログインと、各アップロードの原子的な処理を採用しました。",
+        "steps": [
+          "経路を選択",
+          "手順を完了",
+          "進捗を確認"
+        ],
+        "illustration": [
+          "招待済み",
+          "書類",
+          "確認",
+          "有効"
+        ]
+      },
+      "records-dashboard": {
+        "title": "提供者記録ダッシュボード",
+        "category": "医療ネットワーク · データ整合性",
+        "brief": "主要な記録の情報不足を、手作業の確認だけで継続的に見つけるのは困難でした。",
+        "approach": "記録を定期的に確認し、対応が必要な情報を一つのダッシュボードにまとめます。",
+        "build": "記録の確認とフォローアップに特化したダッシュボードです。",
+        "constraint": "チェックはツールが編集できない記録に対してスケジュールどおりに実行され、各フラグはデータを自動で変更するのではなく、記録の担当者に修正のために回されます。",
+        "steps": [
+          "主要な記録",
+          "定期チェック",
+          "不足情報を確認"
+        ],
+        "illustration": [
+          "記録",
+          "完了",
+          "不足",
+          "フォロー"
+        ]
+      }
+    },
+    "faq": {
+      "online-store": {
+        "question": "オーダーメイドのオンラインストアは作れますか？",
+        "answer": "はい。商品構成、店舗画面、購入手続き、決済、配送を事業に合わせて定義します。プラットフォームは要件に応じて選びます。複雑な連携や完全な独自開発には別途調査が必要で、プラットフォーム利用料や取引手数料は別途です。",
+        "draft": "オーダーメイドのオンラインストア、プラットフォームの選択肢、構築範囲について相談したいです。"
+      },
+      "self-editing": {
+        "question": "自分でサイトを更新できますか？",
+        "answer": "編集システムとトレーニングを見積もりに含められますが、すべてのプランに自動で付くものではありません。継続的な保守や個別の変更依頼も可能です。所有権、アクセス権、引き渡しはプロジェクト契約で定めます。",
+        "draft": "編集システムやトレーニングを含め、自分でサイトの内容を更新する方法を相談したいです。"
+      },
+      "existing-website": {
+        "question": "今あるサイトを置き換えられますか？",
+        "answer": "はい。URL と問題点を共有してください。全面改修か部分的な変更かを検討し、切り替え前にドメインへのアクセス、既存メール、重要な URL、検索向けリダイレクトを移行範囲に含めます。",
+        "draft": "既存サイトの更新や置き換えと、移行計画について相談したいです。"
+      },
+      "ai-process": {
+        "question": "AI はどのように使いますか？",
+        "answer": "AI はアイデアの検討や実装に使う設計・開発ツールの一部です。デザインの判断、人による確認、テストは引き続き制作プロセスに含まれます。",
+        "draft": "AI が設計、開発、確認、テストの工程にどう組み込まれるのか知りたいです。"
+      }
+    },
+    "illustrationNote": "サンプル状態で取り組み方を示した図です。製品のスクリーンショットではありません。",
+    "confidentialNote": "顧客の身元と記録は非公開です。図は取り組み方を示すもので、納品したインターフェースではありません。"
   },
-  "faq": {
-   "online-store": {
-    "question": "Kan jy ’n pasgemaakte aanlyn winkel bou?",
-    "answer": "Ja. Produkindeling, winkel, betaalproses en aflewering word rondom jou onderneming bepaal. Die vereistes bepaal die platform. Komplekse integrasies en geheel pasgemaakte handel verg aparte ondersoek; platformintekeninge en transaksiefooie is afsonderlik.",
-    "draft": "Ek wil graag ’n pasgemaakte aanlyn winkel, platformopsies en die opstelomvang bespreek."
-   },
-   "self-editing": {
-    "question": "Kan ek die webwerf self bywerk?",
-    "answer": "’n Redigeerstelsel en opleiding kan by die kwotasie ingesluit word; dit is nie outomaties deel van elke pakket nie. Jy kan ook onderhoud of afsonderlik bepaalde wysigings aanvra. Eienaarskap, toegang en oorhandiging word in die projekooreenkoms vasgelê.",
-    "draft": "Ek wil graag bespreek hoe ek webwerf-inhoud self kan bywerk, met ’n redigeerstelsel en opleiding."
-   },
-   "existing-website": {
-    "question": "Kan jy my bestaande webwerf vervang?",
-    "answer": "Ja. Deel die skakel en wat nie werk nie. Ons kan ’n herbou of gefokusde veranderings ondersoek en domeintoegang, bestaande e-pos, belangrike URL’s en soekherleidings voor die oorskakeling beplan.",
-    "draft": "Ek wil graag die bywerking of vervanging van ’n bestaande webwerf en die migrasieplan bespreek."
-   },
-   "ai-process": {
-    "question": "Hoe gebruik jy KI?",
-    "answer": "KI is deel van die ontwerp- en ontwikkelingsgereedskap om idees te verken en werk uit te voer. Ontwerpbesluite, menslike hersiening en toetsing bly deel van die proses.",
-    "draft": "Ek wil graag verstaan hoe KI by jou ontwerp-, ontwikkelings-, hersienings- en toetsproses inpas."
-   }
+  "ko": {
+    "moreWork": "다른 프로젝트",
+    "swiftWorkTitle": "각 비즈니스에 맞는 개별적인 설계.",
+    "stackWorkTitle": "실제 업무를 중심으로 만드는 시스템.",
+    "development": "개발 중",
+    "inhouse": "스튜디오 자체 프로젝트",
+    "developmentNote": "디자인 미리보기입니다. 이 웹사이트는 개발 중입니다.",
+    "earlierNote": "스튜디오 자체 프로젝트로 소개하는 Stackcraft 웹사이트의 이전 디자인입니다.",
+    "screenshot": "웹사이트 화면",
+    "diagramNote": "접근 방식을 설명하는 업무 흐름도이며, 제품 화면은 아닙니다.",
+    "readCase": "프로젝트 살펴보기",
+    "back": "프로젝트로 돌아가기",
+    "approach": "접근 방식",
+    "build": "구현 내용",
+    "designDirection": "디자인 방향",
+    "visit": "웹사이트 방문",
+    "nextProject": "다음 프로젝트",
+    "discussSimilar": "비슷한 프로젝트 상담",
+    "beforeStart": "시작하기 전에",
+    "questions": "몇 가지 실무적인 질문.",
+    "askAbout": "이 내용 문의하기",
+    "projects": {
+      "emerald": {
+        "category": "건설 컨설팅 · 와이헤케와 오클랜드",
+        "brief": "건설 관리 및 컨설팅 기업을 위해 개발 중인 웹사이트로, 두 핵심 서비스와 지역과의 연결을 중심에 둡니다.",
+        "approach": "Emerald의 기존 심벌과 워드마크를 유지합니다. 건축·해안 이미지를 통합하고 창업자의 경력이라는 맥락 안에서 주요 프로젝트를 소개합니다.",
+        "build": "프로젝트 관리와 컨설팅을 명확히 구분하고, 배경 설명이 있는 프로젝트 정보와 전용 문의 페이지를 갖춘 디자인 방향입니다."
+      },
+      "purchase-order-automation": {
+        "title": "구매 주문 자동화",
+        "category": "의료 서비스 제공자 네트워크 · 자동화",
+        "brief": "각 항목의 처리 전후에 반복적인 업무가 발생했습니다.",
+        "approach": "처리 작업을 후속 시스템 동작과 연결하여 동일한 수작업 단계를 반복할 필요를 줄입니다.",
+        "build": "수작업 처리를 줄이는 데 초점을 둔 전용 자동화 도구입니다.",
+        "constraint": "고객의 사례 관리 시스템에는 API가 없어, 도구는 시스템 자체의 내보내기 데이터로만 작동하고 운영 중인 기록에는 절대 쓰지 않으며, 표시된 항목은 모두 담당 직원이 확인한 뒤에야 변경됩니다.",
+        "steps": [
+          "항목 접수",
+          "처리",
+          "시스템 작업"
+        ],
+        "illustration": [
+          "정상",
+          "표시됨",
+          "차단됨",
+          "검토자"
+        ]
+      },
+      "referral-matching": {
+        "title": "의뢰 매칭",
+        "category": "의료 네트워크 · 맞춤형 도구",
+        "brief": "의뢰 매칭에 필요한 정보와 판단 규칙을 수작업으로 검토하는 데 시간이 걸렸습니다.",
+        "approach": "매칭 로직을 전용 도구에 넣어 반복 가능한 업무 흐름을 지원합니다.",
+        "build": "수작업 과정에 드는 시간을 줄이도록 설계한 의뢰 매칭 도구입니다.",
+        "constraint": "매칭은 자금 제공 기관의 계약 규칙과 API 없는 시스템에 보관된 제공자 가용성을 따라야 했습니다. 도구는 내보내기 데이터를 읽어 후보를 순위화하고, 최종 판단은 코디네이터가 내립니다.",
+        "steps": [
+          "의뢰",
+          "매칭 로직",
+          "다음 단계"
+        ],
+        "illustration": [
+          "의뢰",
+          "후보",
+          "검토",
+          "확정"
+        ]
+      },
+      "provider-onboarding": {
+        "title": "서비스 제공자 온보딩",
+        "category": "의료 네트워크 · 웹 애플리케이션",
+        "brief": "온보딩 경로가 서로 달라 하나의 공통 체크리스트로 관리하기 어려웠습니다.",
+        "approach": "접근이 통제된 포털에 개별 경로, 문서화된 단계, 진행 상황을 보여주는 관리자 화면을 만듭니다.",
+        "build": "다음 단계와 전체 진행 상황을 쉽게 파악할 수 있는 온보딩 웹앱입니다.",
+        "constraint": "문서와 검증 요건이 서로 다른 여섯 개의 독립된 경로를 고객의 기존 Microsoft 365 테넌트 안에 구축했으며, 개별 로그인과 원자적 업로드 처리를 적용했습니다.",
+        "steps": [
+          "경로 선택",
+          "단계 완료",
+          "진행 상황 확인"
+        ],
+        "illustration": [
+          "초대됨",
+          "서류",
+          "확인",
+          "활성"
+        ]
+      },
+      "records-dashboard": {
+        "title": "서비스 제공자 기록 대시보드",
+        "category": "의료 네트워크 · 데이터 무결성",
+        "brief": "핵심 기록의 누락 정보를 수작업 검사로 일관되게 찾기 어려웠습니다.",
+        "approach": "정해진 일정에 따라 기록을 검사하고 주의가 필요한 정보를 하나의 대시보드에 모읍니다.",
+        "build": "기록 검사와 후속 조치에 집중한 대시보드입니다.",
+        "constraint": "점검은 도구가 편집할 수 없는 기록을 대상으로 일정에 따라 실행되며, 각 표시는 데이터를 자동으로 바꾸는 대신 기록 담당자에게 전달되어 수정됩니다.",
+        "steps": [
+          "핵심 기록",
+          "정기 검사",
+          "누락 검토"
+        ],
+        "illustration": [
+          "기록",
+          "완료",
+          "누락",
+          "후속 조치"
+        ]
+      }
+    },
+    "faq": {
+      "online-store": {
+        "question": "맞춤형 온라인 스토어를 만들 수 있나요?",
+        "answer": "네. 상품 구조, 스토어 화면, 주문, 결제와 배송 범위를 비즈니스에 맞게 정합니다. 플랫폼은 요구사항에 따라 선택합니다. 복잡한 통합과 완전 맞춤형 커머스는 별도 조사가 필요하며, 플랫폼 구독료와 거래 수수료는 별도입니다.",
+        "draft": "맞춤형 온라인 스토어, 플랫폼 선택지와 구축 범위에 대해 상담하고 싶습니다."
+      },
+      "self-editing": {
+        "question": "웹사이트를 직접 업데이트할 수 있나요?",
+        "answer": "콘텐츠 편집 시스템과 교육을 견적에 포함할 수 있지만 모든 패키지에 자동 포함되지는 않습니다. 지속적인 관리나 별도 범위의 변경도 요청할 수 있습니다. 소유권, 접근 권한과 인계는 프로젝트 계약에 명시합니다.",
+        "draft": "편집 시스템과 교육을 포함해 웹사이트 콘텐츠를 직접 업데이트하는 방법을 상담하고 싶습니다."
+      },
+      "existing-website": {
+        "question": "기존 웹사이트를 교체할 수 있나요?",
+        "answer": "네. 링크와 현재 문제를 알려 주세요. 전면 재구축이나 필요한 부분의 개선을 검토할 수 있으며, 전환 전에 도메인 접근, 기존 이메일, 주요 URL과 검색 리디렉션을 이전 범위에 포함합니다.",
+        "draft": "기존 웹사이트 업데이트 또는 교체와 이전 계획에 대해 상담하고 싶습니다."
+      },
+      "ai-process": {
+        "question": "AI를 어떻게 사용하나요?",
+        "answer": "AI는 아이디어를 탐색하고 작업을 구현하는 디자인·개발 도구의 일부입니다. 디자인 판단, 사람의 검토와 테스트는 계속해서 과정에 포함됩니다.",
+        "draft": "AI가 디자인, 개발, 검토와 테스트 과정에 어떻게 활용되는지 알고 싶습니다."
+      }
+    },
+    "illustrationNote": "샘플 상태로 접근 방식을 보여주는 일러스트입니다. 제품 스크린샷이 아닙니다.",
+    "confidentialNote": "고객의 신원과 기록은 비공개입니다. 일러스트는 접근 방식을 보여줄 뿐, 납품된 인터페이스가 아닙니다."
   },
-  "illustrationNote": "Illustrasie van die benadering met voorbeeldstate. Nie ’n produkskermskoot nie.",
-  "confidentialNote": "Kliëntidentiteit en rekords bly vertroulik. Die illustrasie wys die benadering, nie die gelewerde koppelvlak nie."
- },
- "ru": {
-  "moreWork": "Другие проекты",
-  "swiftWorkTitle": "Разным компаниям — индивидуальные решения.",
-  "stackWorkTitle": "Системы для реальных рабочих процессов.",
-  "development": "В разработке",
-  "inhouse": "Внутренний проект студии",
-  "developmentNote": "Предварительный дизайн. Сайт находится в разработке.",
-  "earlierNote": "Предыдущий дизайн сайта Stackcraft, представленный как внутренний проект студии.",
-  "screenshot": "Скриншот сайта",
-  "diagramNote": "Схема объясняет подход к процессу; это не скриншот продукта.",
-  "readCase": "Подробнее о проекте",
-  "back": "Назад к проектам",
-  "approach": "Подход",
-  "build": "Реализация",
-  "designDirection": "Направление дизайна",
-  "visit": "Перейти на сайт",
-  "nextProject": "Ваш следующий проект",
-  "discussSimilar": "Обсудить похожий проект",
-  "beforeStart": "Прежде чем начать",
-  "questions": "Несколько практических вопросов.",
-  "askAbout": "Спросить об этом",
-  "projects": {
-   "emerald": {
-    "category": "Строительный консалтинг · Уаихеке и Окленд",
-    "brief": "Сайт в разработке для компании по управлению строительством и консалтингу, с акцентом на две основные услуги и связь с регионом.",
-    "approach": "Сохранить знак и логотип Emerald. Включить архитектурные и прибрежные фотографии, представив проекты в контексте профессионального опыта основателя.",
-    "build": "Дизайн с ясным разделением управления проектами и консалтинга, описаниями проектов и отдельной страницей для обращения."
-   },
-   "stackcraft": {
-    "category": "Цифровые продукты · Международные проекты",
-    "brief": "Отдельная айдентика и сайт для заказного ПО, автоматизации и интеграций, представленные как внутренний проект.",
-    "approach": "Сгруппировать предложение вокруг инструментов, нужных бизнесу. Объяснить каждую услугу и дать прямой путь к обсуждению проекта.",
-    "build": "Айдентика, многостраничный сайт и сценарий обращения для программного направления студии. На изображении — предыдущий дизайн."
-   },
-   "purchase-order-automation": {
-    "title": "Автоматизация заказов на закупку",
-    "category": "Сеть поставщиков медицинских услуг · Автоматизация",
-    "brief": "Повторяющаяся обработка создавала работу до и после каждого элемента.",
-    "approach": "Связать обработку с последующими действиями системы, чтобы сократить повторение ручных шагов.",
-    "build": "Специализированный инструмент автоматизации, направленный на сокращение ручной обработки.",
-    "constraint": "У системы ведения дел клиента нет API, поэтому инструмент работает с её собственными выгрузками, никогда не пишет в рабочие записи, и сотрудник подтверждает каждый помеченный элемент до любых изменений.",
-    "steps": [
-     "Входящий элемент",
-     "Обработка",
-     "Действия системы"
-    ],
-    "illustration": [
-     "Чисто",
-     "Отмечено",
-     "Заблокировано",
-     "Проверяющий"
-    ]
-   },
-   "referral-matching": {
-    "title": "Подбор по направлениям",
-    "category": "Медицинская сеть · Заказные инструменты",
-    "brief": "Подбор по направлениям зависел от информации и правил принятия решений, на ручную проверку которых уходило время.",
-    "approach": "Перенести логику подбора в специальный инструмент, поддерживающий повторяемый процесс.",
-    "build": "Инструмент подбора, разработанный для сокращения времени ручной обработки.",
-    "constraint": "Подбор должен был учитывать правила договора с финансирующей стороной и доступность поставщиков, хранящуюся в системе без API; инструмент читает выгрузки и ранжирует кандидатов, а окончательное решение принимает координатор.",
-    "steps": [
-     "Направление",
-     "Логика подбора",
-     "Следующий шаг"
-    ],
-    "illustration": [
-     "Направление",
-     "Кандидаты",
-     "Проверка",
-     "Подтверждено"
-    ]
-   },
-   "provider-onboarding": {
-    "title": "Подключение поставщиков услуг",
-    "category": "Медицинская сеть · Веб-приложение",
-    "brief": "Разные пути подключения было сложно вести по единому общему чек-листу.",
-    "approach": "Создать портал с контролем доступа, отдельными маршрутами, описанными этапами и административной панелью прогресса.",
-    "build": "Приложение для подключения, которое делает следующий шаг и общий прогресс понятнее.",
-    "constraint": "Шесть отдельных маршрутов с разными требованиями к документам и проверкам, реализованные внутри существующего тенанта Microsoft 365 клиента, с индивидуальными учётными записями и атомарной обработкой каждой загрузки.",
-    "steps": [
-     "Выбор маршрута",
-     "Выполнение шагов",
-     "Контроль прогресса"
-    ],
-    "illustration": [
-     "Приглашён",
-     "Документы",
-     "Проверки",
-     "Активен"
-    ]
-   },
-   "records-dashboard": {
-    "title": "Панель записей поставщиков услуг",
-    "category": "Медицинская сеть · Целостность данных",
-    "brief": "При ручной проверке было сложно регулярно замечать отсутствующие данные в основных записях.",
-    "approach": "Проверять записи по расписанию и собирать требующую внимания информацию в одной панели.",
-    "build": "Специализированная панель для проверки записей и последующих действий.",
-    "constraint": "Проверки выполняются по расписанию над записями, которые инструмент не может редактировать, и каждый сигнал направляется владельцу записи для исправления, а не меняет данные автоматически.",
-    "steps": [
-     "Основные записи",
-     "Плановые проверки",
-     "Поиск пробелов"
-    ],
-    "illustration": [
-     "Запись",
-     "Полная",
-     "Отсутствует",
-     "Доработка"
-    ]
-   }
-  },
-  "faq": {
-   "online-store": {
-    "question": "Можно ли заказать индивидуальный интернет-магазин?",
-    "answer": "Да. Каталог, витрина, оформление заказа, оплата и доставка определяются под ваш бизнес. Платформа выбирается по требованиям. Сложные интеграции и полностью заказные решения требуют отдельного исследования; подписки и комиссии оплачиваются отдельно.",
-    "draft": "Хочу обсудить индивидуальный интернет-магазин, выбор платформы и состав настройки."
-   },
-   "self-editing": {
-    "question": "Смогу ли я обновлять сайт самостоятельно?",
-    "answer": "Редактор контента и обучение можно включить в смету; они не входят автоматически во все пакеты. Можно также заказать поддержку или отдельные изменения. Права собственности, доступы и передача сайта фиксируются в соглашении по проекту.",
-    "draft": "Хочу обсудить самостоятельное обновление сайта, редактор контента и обучение."
-   },
-   "existing-website": {
-    "question": "Можете ли вы заменить мой нынешний сайт?",
-    "answer": "Да. Пришлите ссылку и опишите проблемы. Можно оценить полную переработку или точечные изменения. Доступ к домену, действующая почта, важные URL и поисковые перенаправления включаются в план миграции до переключения.",
-    "draft": "Хочу обсудить обновление или замену существующего сайта и план миграции."
-   },
-   "ai-process": {
-    "question": "Как вы используете ИИ?",
-    "answer": "ИИ входит в набор инструментов для поиска идей и выполнения работ по дизайну и разработке. Решения по дизайну, проверка человеком и тестирование остаются частью процесса.",
-    "draft": "Хочу понять, как ИИ используется в вашем дизайне, разработке, проверке и тестировании."
-   }
-  },
-  "illustrationNote": "Иллюстрация подхода с условными состояниями. Не снимок продукта.",
-  "confidentialNote": "Личность клиента и записи остаются конфиденциальными. Иллюстрация показывает подход, а не сданный интерфейс."
- },
- "zh-Hans": {
-  "moreWork": "更多项目",
-  "swiftWorkTitle": "不同的企业，各有合适的设计。",
-  "stackWorkTitle": "围绕实际业务打造的系统。",
-  "development": "开发中",
-  "inhouse": "工作室内部项目",
-  "developmentNote": "设计预览。该网站仍在开发中。",
-  "earlierNote": "Stackcraft 网站的早期设计，作为工作室内部项目展示。",
-  "screenshot": "网站截图",
-  "diagramNote": "用于解释方法的流程示意图，并非产品截图。",
-  "readCase": "了解项目",
-  "back": "返回项目列表",
-  "approach": "实施思路",
-  "build": "开发成果",
-  "designDirection": "设计方向",
-  "visit": "访问网站",
-  "nextProject": "您的下一个项目",
-  "discussSimilar": "讨论类似项目",
-  "beforeStart": "开始之前",
-  "questions": "几个实际问题。",
-  "askAbout": "咨询此问题",
-  "projects": {
-   "emerald": {
-    "category": "建筑咨询 · 怀赫科岛与奥克兰",
-    "brief": "为建筑管理与咨询企业开发中的网站，以两项核心服务和当地联系为重点。",
-    "approach": "保留 Emerald 原有标志和文字商标，结合建筑与海岸图像，并在创始人的职业经历背景下介绍精选项目。",
-    "build": "清晰呈现项目管理和咨询服务的设计方向，包含有背景说明的项目资料和专门的项目咨询页面。"
-   },
-   "stackcraft": {
-    "category": "数字产品 · 国际业务",
-    "brief": "为定制软件、自动化和集成业务建立独立品牌与网站，作为工作室内部项目展示。",
-    "approach": "围绕企业可能需要的工具组织服务内容，解释各项服务，并提供直接的项目咨询入口。",
-    "build": "为工作室的软件业务打造视觉识别、多页面网站和联系流程。图片展示的是早期设计。"
-   },
-   "purchase-order-automation": {
-    "title": "采购订单自动化",
-    "category": "医疗服务提供商网络 · 自动化",
-    "brief": "重复处理在每条记录处理前后都带来了额外工作。",
-    "approach": "将处理任务与后续系统操作连接，减少重复的手工步骤。",
-    "build": "以减少人工处理为目标的专用自动化工具。",
-    "constraint": "客户的个案管理系统没有 API，因此工具基于系统自身的导出数据工作，从不写入在用记录，每一项被标记的内容都由工作人员确认后才会有任何改动。",
-    "steps": [
-     "接收条目",
-     "处理",
-     "系统操作"
-    ],
-    "illustration": [
-     "正常",
-     "已标记",
-     "已拦截",
-     "审核人"
-    ]
-   },
-   "referral-matching": {
-    "title": "转介匹配",
-    "category": "医疗服务网络 · 定制工具",
-    "brief": "转介匹配依赖信息和决策规则，人工逐项处理需要时间。",
-    "approach": "将匹配逻辑纳入专用工具，支持可重复执行的工作流程。",
-    "build": "旨在减少人工处理时间的转介匹配工具。",
-    "constraint": "匹配必须遵循资助方的合同规则以及保存在无 API 系统中的服务提供者可用情况；工具读取导出数据并对候选对象排序，最终由协调员做出决定。",
-    "steps": [
-     "转介",
-     "匹配逻辑",
-     "下一步"
-    ],
-    "illustration": [
-     "转介",
-     "候选",
-     "审核",
-     "已确认"
-    ]
-   },
-   "provider-onboarding": {
-    "title": "服务提供商入驻",
-    "category": "医疗服务网络 · Web 应用",
-    "brief": "不同的入驻路径难以通过一份统一清单管理。",
-    "approach": "建立具有访问控制的门户，提供不同路径、明确步骤和显示进度的管理后台。",
-    "build": "让下一步操作及整体进度更加清晰的入驻应用。",
-    "constraint": "六条独立路径，各有不同的文件与审查要求，构建在客户现有的 Microsoft 365 租户内，采用独立登录账号，并将每次上传作为原子操作处理。",
-    "steps": [
-     "选择路径",
-     "完成步骤",
-     "跟踪进度"
-    ],
-    "illustration": [
-     "已邀请",
-     "文件",
-     "核查",
-     "已激活"
-    ]
-   },
-   "records-dashboard": {
-    "title": "服务提供商记录仪表板",
-    "category": "医疗服务网络 · 数据完整性",
-    "brief": "人工检查难以持续发现核心记录中的缺失信息。",
-    "approach": "按计划检查记录，并在一个仪表板中汇总需要关注的信息。",
-    "build": "用于记录检查及后续跟进的专用仪表板。",
-    "constraint": "检查按计划针对工具无法编辑的记录运行，每个标记都转交给记录负责人处理，而不是自动更改数据。",
-    "steps": [
-     "核心记录",
-     "定期检查",
-     "检查缺漏"
-    ],
-    "illustration": [
-     "记录",
-     "完整",
-     "缺失",
-     "待跟进"
-    ]
-   }
-  },
-  "faq": {
-   "online-store": {
-    "question": "可以定制网上商店吗？",
-    "answer": "可以。商品结构、店面、结账、支付和配送都根据业务需求确定。平台选择以需求为依据。复杂集成及完全定制的电商系统需要单独调研；平台订阅和交易费用另计。",
-    "draft": "我想讨论定制网上商店、平台选择以及搭建范围。"
-   },
-   "self-editing": {
-    "question": "我可以自己更新网站吗？",
-    "answer": "报价可包含内容编辑系统和培训，但并非每个套餐默认包含。也可选择持续维护或单独约定修改范围。所有权、访问权限和交接事项会写入项目协议。",
-    "draft": "我想了解自行更新网站内容的方式，包括编辑系统和培训。"
-   },
-   "existing-website": {
-    "question": "可以替换我现有的网站吗？",
-    "answer": "可以。请提供链接并说明问题。我们可以评估重建或针对性调整，并在切换前将域名访问、现有邮件、重要网址和搜索重定向纳入迁移范围。",
-    "draft": "我想讨论更新或替换现有网站，以及如何规划迁移。"
-   },
-   "ai-process": {
-    "question": "你如何使用 AI？",
-    "answer": "AI 是设计与开发工具的一部分，用于探索创意和实施工作。设计决策、人工审核和测试仍然是流程中的必要环节。",
-    "draft": "我想了解 AI 如何融入你的设计、开发、审核和测试流程。"
-   }
-  },
-  "illustrationNote": "方法示意图，使用示例状态。并非产品截图。",
-  "confidentialNote": "客户身份与记录保密。插图展示的是方法，而非交付的界面。"
- },
- "ja": {
-  "moreWork": "その他の制作事例",
-  "swiftWorkTitle": "それぞれの事業に、それぞれの設計を。",
-  "stackWorkTitle": "実際の業務に合わせて作るシステム。",
-  "development": "開発中",
-  "inhouse": "スタジオの自社プロジェクト",
-  "developmentNote": "デザインのプレビューです。このサイトは開発中です。",
-  "earlierNote": "自社プロジェクトとして紹介する、Stackcraft ウェブサイトの過去のデザインです。",
-  "screenshot": "ウェブサイトの画面",
-  "diagramNote": "アプローチを説明する業務フロー図です。製品のスクリーンショットではありません。",
-  "readCase": "プロジェクトを見る",
-  "back": "制作事例に戻る",
-  "approach": "アプローチ",
-  "build": "制作内容",
-  "designDirection": "デザインの方向性",
-  "visit": "サイトを開く",
-  "nextProject": "次のプロジェクトへ",
-  "discussSimilar": "同様のプロジェクトを相談する",
-  "beforeStart": "始める前に",
-  "questions": "よくある実務的なご質問。",
-  "askAbout": "この内容について相談する",
-  "projects": {
-   "emerald": {
-    "category": "建設コンサルティング · ワイヘキ島・オークランド",
-    "brief": "建設管理とコンサルティングの企業向けに開発中のサイト。二つの主要サービスと地域とのつながりを中心に据えています。",
-    "approach": "Emerald の既存のマークとロゴタイプを継承。建築と海岸の写真を取り入れ、創業者の職務経験という文脈で代表的なプロジェクトを紹介します。",
-    "build": "プロジェクト管理とコンサルティングを明確に示し、背景を添えた事例と専用の問い合わせページを備えたデザイン案です。"
-   },
-   "stackcraft": {
-    "category": "デジタル製品 · 国際対応",
-    "brief": "個別開発ソフトウェア、自動化、連携のための独立したブランドとサイトを、自社プロジェクトとして紹介します。",
-    "approach": "企業が必要とするツールに沿ってサービスを整理。それぞれの内容を説明し、プロジェクト相談へ直接進めるようにします。",
-    "build": "スタジオのソフトウェア事業向けのビジュアルアイデンティティ、複数ページのサイト、問い合わせ導線。画像は過去のデザインです。"
-   },
-   "purchase-order-automation": {
-    "title": "発注書処理の自動化",
-    "category": "医療サービス提供者ネットワーク · 自動化",
-    "brief": "各項目の処理前後に、繰り返しの手作業が発生していました。",
-    "approach": "処理タスクと後続のシステム操作をつなぎ、同じ手順を手作業で繰り返す必要を減らします。",
-    "build": "手作業の削減を目的とした専用の自動化ツールです。",
-    "constraint": "クライアントのケース管理システムには API がないため、ツールはシステム自身のエクスポートを基に動作し、稼働中の記録には一切書き込まず、フラグが付いた項目はすべて担当者が確認してから変更されます。",
-    "steps": [
-     "項目の受信",
-     "処理",
-     "システム操作"
-    ],
-    "illustration": [
-     "正常",
-     "要確認",
-     "ブロック",
-     "レビュー担当"
-    ]
-   },
-   "referral-matching": {
-    "title": "紹介案件のマッチング",
-    "category": "医療ネットワーク · 個別開発ツール",
-    "brief": "紹介案件のマッチングでは、情報と判断ルールを手作業で確認するのに時間がかかっていました。",
-    "approach": "マッチングのロジックを専用ツールに組み込み、繰り返し実行できる業務フローを支えます。",
-    "build": "手作業に費やす時間の削減を目的としたマッチングツールです。",
-    "constraint": "マッチングは資金提供者との契約ルールと、API のないシステムに保持された提供者の空き状況に従う必要がありました。ツールはエクスポートを読み取って候補を順位付けし、最終判断はコーディネーターが行います。",
-    "steps": [
-     "紹介案件",
-     "マッチングロジック",
-     "次の手順"
-    ],
-    "illustration": [
-     "紹介",
-     "候補",
-     "レビュー",
-     "確定"
-    ]
-   },
-   "provider-onboarding": {
-    "title": "サービス提供者の登録支援",
-    "category": "医療ネットワーク · ウェブアプリ",
-    "brief": "登録経路が異なるため、一つの共通チェックリストでは管理が難しくなっていました。",
-    "approach": "アクセス制御付きポータルに個別の経路、文書化した手順、進捗を示す管理画面を設けます。",
-    "build": "次の作業と全体の進捗を把握しやすくする登録支援アプリです。",
-    "constraint": "書類と審査の要件が異なる六つの独立した経路を、クライアントの既存の Microsoft 365 テナント内に構築し、個別ログインと、各アップロードの原子的な処理を採用しました。",
-    "steps": [
-     "経路を選択",
-     "手順を完了",
-     "進捗を確認"
-    ],
-    "illustration": [
-     "招待済み",
-     "書類",
-     "確認",
-     "有効"
-    ]
-   },
-   "records-dashboard": {
-    "title": "提供者記録ダッシュボード",
-    "category": "医療ネットワーク · データ整合性",
-    "brief": "主要な記録の情報不足を、手作業の確認だけで継続的に見つけるのは困難でした。",
-    "approach": "記録を定期的に確認し、対応が必要な情報を一つのダッシュボードにまとめます。",
-    "build": "記録の確認とフォローアップに特化したダッシュボードです。",
-    "constraint": "チェックはツールが編集できない記録に対してスケジュールどおりに実行され、各フラグはデータを自動で変更するのではなく、記録の担当者に修正のために回されます。",
-    "steps": [
-     "主要な記録",
-     "定期チェック",
-     "不足情報を確認"
-    ],
-    "illustration": [
-     "記録",
-     "完了",
-     "不足",
-     "フォロー"
-    ]
-   }
-  },
-  "faq": {
-   "online-store": {
-    "question": "オーダーメイドのオンラインストアは作れますか？",
-    "answer": "はい。商品構成、店舗画面、購入手続き、決済、配送を事業に合わせて定義します。プラットフォームは要件に応じて選びます。複雑な連携や完全な独自開発には別途調査が必要で、プラットフォーム利用料や取引手数料は別途です。",
-    "draft": "オーダーメイドのオンラインストア、プラットフォームの選択肢、構築範囲について相談したいです。"
-   },
-   "self-editing": {
-    "question": "自分でサイトを更新できますか？",
-    "answer": "編集システムとトレーニングを見積もりに含められますが、すべてのプランに自動で付くものではありません。継続的な保守や個別の変更依頼も可能です。所有権、アクセス権、引き渡しはプロジェクト契約で定めます。",
-    "draft": "編集システムやトレーニングを含め、自分でサイトの内容を更新する方法を相談したいです。"
-   },
-   "existing-website": {
-    "question": "今あるサイトを置き換えられますか？",
-    "answer": "はい。URL と問題点を共有してください。全面改修か部分的な変更かを検討し、切り替え前にドメインへのアクセス、既存メール、重要な URL、検索向けリダイレクトを移行範囲に含めます。",
-    "draft": "既存サイトの更新や置き換えと、移行計画について相談したいです。"
-   },
-   "ai-process": {
-    "question": "AI はどのように使いますか？",
-    "answer": "AI はアイデアの検討や実装に使う設計・開発ツールの一部です。デザインの判断、人による確認、テストは引き続き制作プロセスに含まれます。",
-    "draft": "AI が設計、開発、確認、テストの工程にどう組み込まれるのか知りたいです。"
-   }
-  },
-  "illustrationNote": "サンプル状態で取り組み方を示した図です。製品のスクリーンショットではありません。",
-  "confidentialNote": "顧客の身元と記録は非公開です。図は取り組み方を示すもので、納品したインターフェースではありません。"
- },
- "ko": {
-  "moreWork": "다른 프로젝트",
-  "swiftWorkTitle": "각 비즈니스에 맞는 개별적인 설계.",
-  "stackWorkTitle": "실제 업무를 중심으로 만드는 시스템.",
-  "development": "개발 중",
-  "inhouse": "스튜디오 자체 프로젝트",
-  "developmentNote": "디자인 미리보기입니다. 이 웹사이트는 개발 중입니다.",
-  "earlierNote": "스튜디오 자체 프로젝트로 소개하는 Stackcraft 웹사이트의 이전 디자인입니다.",
-  "screenshot": "웹사이트 화면",
-  "diagramNote": "접근 방식을 설명하는 업무 흐름도이며, 제품 화면은 아닙니다.",
-  "readCase": "프로젝트 살펴보기",
-  "back": "프로젝트로 돌아가기",
-  "approach": "접근 방식",
-  "build": "구현 내용",
-  "designDirection": "디자인 방향",
-  "visit": "웹사이트 방문",
-  "nextProject": "다음 프로젝트",
-  "discussSimilar": "비슷한 프로젝트 상담",
-  "beforeStart": "시작하기 전에",
-  "questions": "몇 가지 실무적인 질문.",
-  "askAbout": "이 내용 문의하기",
-  "projects": {
-   "emerald": {
-    "category": "건설 컨설팅 · 와이헤케와 오클랜드",
-    "brief": "건설 관리 및 컨설팅 기업을 위해 개발 중인 웹사이트로, 두 핵심 서비스와 지역과의 연결을 중심에 둡니다.",
-    "approach": "Emerald의 기존 심벌과 워드마크를 유지합니다. 건축·해안 이미지를 통합하고 창업자의 경력이라는 맥락 안에서 주요 프로젝트를 소개합니다.",
-    "build": "프로젝트 관리와 컨설팅을 명확히 구분하고, 배경 설명이 있는 프로젝트 정보와 전용 문의 페이지를 갖춘 디자인 방향입니다."
-   },
-   "stackcraft": {
-    "category": "디지털 제품 · 국제 서비스",
-    "brief": "맞춤형 소프트웨어, 자동화, 통합 업무를 위한 독립적인 브랜드와 웹사이트를 자체 프로젝트로 소개합니다.",
-    "approach": "기업에 필요한 도구를 기준으로 서비스를 구성하고, 각 서비스를 설명하며 프로젝트 문의로 직접 이어지게 합니다.",
-    "build": "스튜디오 소프트웨어 사업의 시각적 정체성, 다중 페이지 웹사이트와 문의 흐름입니다. 이미지는 이전 디자인을 보여줍니다."
-   },
-   "purchase-order-automation": {
-    "title": "구매 주문 자동화",
-    "category": "의료 서비스 제공자 네트워크 · 자동화",
-    "brief": "각 항목의 처리 전후에 반복적인 업무가 발생했습니다.",
-    "approach": "처리 작업을 후속 시스템 동작과 연결하여 동일한 수작업 단계를 반복할 필요를 줄입니다.",
-    "build": "수작업 처리를 줄이는 데 초점을 둔 전용 자동화 도구입니다.",
-    "constraint": "고객의 사례 관리 시스템에는 API가 없어, 도구는 시스템 자체의 내보내기 데이터로만 작동하고 운영 중인 기록에는 절대 쓰지 않으며, 표시된 항목은 모두 담당 직원이 확인한 뒤에야 변경됩니다.",
-    "steps": [
-     "항목 접수",
-     "처리",
-     "시스템 작업"
-    ],
-    "illustration": [
-     "정상",
-     "표시됨",
-     "차단됨",
-     "검토자"
-    ]
-   },
-   "referral-matching": {
-    "title": "의뢰 매칭",
-    "category": "의료 네트워크 · 맞춤형 도구",
-    "brief": "의뢰 매칭에 필요한 정보와 판단 규칙을 수작업으로 검토하는 데 시간이 걸렸습니다.",
-    "approach": "매칭 로직을 전용 도구에 넣어 반복 가능한 업무 흐름을 지원합니다.",
-    "build": "수작업 과정에 드는 시간을 줄이도록 설계한 의뢰 매칭 도구입니다.",
-    "constraint": "매칭은 자금 제공 기관의 계약 규칙과 API 없는 시스템에 보관된 제공자 가용성을 따라야 했습니다. 도구는 내보내기 데이터를 읽어 후보를 순위화하고, 최종 판단은 코디네이터가 내립니다.",
-    "steps": [
-     "의뢰",
-     "매칭 로직",
-     "다음 단계"
-    ],
-    "illustration": [
-     "의뢰",
-     "후보",
-     "검토",
-     "확정"
-    ]
-   },
-   "provider-onboarding": {
-    "title": "서비스 제공자 온보딩",
-    "category": "의료 네트워크 · 웹 애플리케이션",
-    "brief": "온보딩 경로가 서로 달라 하나의 공통 체크리스트로 관리하기 어려웠습니다.",
-    "approach": "접근이 통제된 포털에 개별 경로, 문서화된 단계, 진행 상황을 보여주는 관리자 화면을 만듭니다.",
-    "build": "다음 단계와 전체 진행 상황을 쉽게 파악할 수 있는 온보딩 웹앱입니다.",
-    "constraint": "문서와 검증 요건이 서로 다른 여섯 개의 독립된 경로를 고객의 기존 Microsoft 365 테넌트 안에 구축했으며, 개별 로그인과 원자적 업로드 처리를 적용했습니다.",
-    "steps": [
-     "경로 선택",
-     "단계 완료",
-     "진행 상황 확인"
-    ],
-    "illustration": [
-     "초대됨",
-     "서류",
-     "확인",
-     "활성"
-    ]
-   },
-   "records-dashboard": {
-    "title": "서비스 제공자 기록 대시보드",
-    "category": "의료 네트워크 · 데이터 무결성",
-    "brief": "핵심 기록의 누락 정보를 수작업 검사로 일관되게 찾기 어려웠습니다.",
-    "approach": "정해진 일정에 따라 기록을 검사하고 주의가 필요한 정보를 하나의 대시보드에 모읍니다.",
-    "build": "기록 검사와 후속 조치에 집중한 대시보드입니다.",
-    "constraint": "점검은 도구가 편집할 수 없는 기록을 대상으로 일정에 따라 실행되며, 각 표시는 데이터를 자동으로 바꾸는 대신 기록 담당자에게 전달되어 수정됩니다.",
-    "steps": [
-     "핵심 기록",
-     "정기 검사",
-     "누락 검토"
-    ],
-    "illustration": [
-     "기록",
-     "완료",
-     "누락",
-     "후속 조치"
-    ]
-   }
-  },
-  "faq": {
-   "online-store": {
-    "question": "맞춤형 온라인 스토어를 만들 수 있나요?",
-    "answer": "네. 상품 구조, 스토어 화면, 주문, 결제와 배송 범위를 비즈니스에 맞게 정합니다. 플랫폼은 요구사항에 따라 선택합니다. 복잡한 통합과 완전 맞춤형 커머스는 별도 조사가 필요하며, 플랫폼 구독료와 거래 수수료는 별도입니다.",
-    "draft": "맞춤형 온라인 스토어, 플랫폼 선택지와 구축 범위에 대해 상담하고 싶습니다."
-   },
-   "self-editing": {
-    "question": "웹사이트를 직접 업데이트할 수 있나요?",
-    "answer": "콘텐츠 편집 시스템과 교육을 견적에 포함할 수 있지만 모든 패키지에 자동 포함되지는 않습니다. 지속적인 관리나 별도 범위의 변경도 요청할 수 있습니다. 소유권, 접근 권한과 인계는 프로젝트 계약에 명시합니다.",
-    "draft": "편집 시스템과 교육을 포함해 웹사이트 콘텐츠를 직접 업데이트하는 방법을 상담하고 싶습니다."
-   },
-   "existing-website": {
-    "question": "기존 웹사이트를 교체할 수 있나요?",
-    "answer": "네. 링크와 현재 문제를 알려 주세요. 전면 재구축이나 필요한 부분의 개선을 검토할 수 있으며, 전환 전에 도메인 접근, 기존 이메일, 주요 URL과 검색 리디렉션을 이전 범위에 포함합니다.",
-    "draft": "기존 웹사이트 업데이트 또는 교체와 이전 계획에 대해 상담하고 싶습니다."
-   },
-   "ai-process": {
-    "question": "AI를 어떻게 사용하나요?",
-    "answer": "AI는 아이디어를 탐색하고 작업을 구현하는 디자인·개발 도구의 일부입니다. 디자인 판단, 사람의 검토와 테스트는 계속해서 과정에 포함됩니다.",
-    "draft": "AI가 디자인, 개발, 검토와 테스트 과정에 어떻게 활용되는지 알고 싶습니다."
-   }
-  },
-  "illustrationNote": "샘플 상태로 접근 방식을 보여주는 일러스트입니다. 제품 스크린샷이 아닙니다.",
-  "confidentialNote": "고객의 신원과 기록은 비공개입니다. 일러스트는 접근 방식을 보여줄 뿐, 납품된 인터페이스가 아닙니다."
- },
- "vi": {
-  "moreWork": "Dự án khác",
-  "swiftWorkTitle": "Mỗi doanh nghiệp, một cách thiết kế riêng.",
-  "stackWorkTitle": "Hệ thống được xây dựng theo công việc thực tế.",
-  "development": "Đang phát triển",
-  "inhouse": "Dự án nội bộ của studio",
-  "developmentNote": "Bản xem trước thiết kế. Website này đang được phát triển.",
-  "earlierNote": "Thiết kế website Stackcraft trước đây, giới thiệu như một dự án nội bộ của studio.",
-  "screenshot": "Ảnh chụp website",
-  "diagramNote": "Sơ đồ minh họa cách tiếp cận, không phải ảnh chụp sản phẩm.",
-  "readCase": "Tìm hiểu dự án",
-  "back": "Quay lại các dự án",
-  "approach": "Cách tiếp cận",
-  "build": "Sản phẩm xây dựng",
-  "designDirection": "Định hướng thiết kế",
-  "visit": "Xem website",
-  "nextProject": "Dự án tiếp theo của bạn",
-  "discussSimilar": "Trao đổi về dự án tương tự",
-  "beforeStart": "Trước khi bắt đầu",
-  "questions": "Một vài câu hỏi thực tế.",
-  "askAbout": "Hỏi về nội dung này",
-  "projects": {
-   "emerald": {
-    "category": "Tư vấn xây dựng · Waiheke và Auckland",
-    "brief": "Website đang phát triển cho doanh nghiệp quản lý và tư vấn xây dựng, tập trung vào hai dịch vụ chính và mối liên hệ với địa phương.",
-    "approach": "Giữ lại biểu tượng và tên thương hiệu Emerald. Kết hợp hình ảnh kiến trúc, ven biển và giới thiệu các dự án trong bối cảnh kinh nghiệm nghề nghiệp của người sáng lập.",
-    "build": "Định hướng thiết kế làm rõ dịch vụ Quản lý dự án và Tư vấn, thông tin dự án có bối cảnh và trang yêu cầu tư vấn riêng."
-   },
-   "stackcraft": {
-    "category": "Sản phẩm số · Quốc tế",
-    "brief": "Bản sắc và website riêng cho phần mềm tùy chỉnh, tự động hóa và tích hợp, được giới thiệu như một dự án nội bộ.",
-    "approach": "Sắp xếp dịch vụ theo những công cụ doanh nghiệp có thể cần. Giải thích từng dịch vụ và tạo lối đi trực tiếp đến yêu cầu dự án.",
-    "build": "Bản sắc thương hiệu, website nhiều trang và quy trình liên hệ cho mảng phần mềm của studio. Hình ảnh thể hiện thiết kế trước đây."
-   },
-   "purchase-order-automation": {
-    "title": "Tự động hóa đơn đặt hàng",
-    "category": "Mạng lưới nhà cung cấp dịch vụ y tế · Tự động hóa",
-    "brief": "Xử lý lặp lại tạo thêm công việc cả trước và sau khi mỗi mục được xử lý.",
-    "approach": "Kết nối tác vụ xử lý với các thao tác tiếp theo của hệ thống, giảm nhu cầu lặp lại các bước thủ công.",
-    "build": "Công cụ tự động hóa chuyên biệt nhằm giảm thao tác thủ công.",
-    "constraint": "Hệ thống quản lý hồ sơ của khách hàng không có API, nên công cụ làm việc từ dữ liệu xuất của chính hệ thống, không bao giờ ghi vào hồ sơ đang hoạt động, và một nhân viên xác nhận từng mục được đánh dấu trước khi có bất kỳ thay đổi nào.",
-    "steps": [
-     "Mục đầu vào",
-     "Xử lý",
-     "Thao tác hệ thống"
-    ],
-    "illustration": [
-     "Sạch",
-     "Gắn cờ",
-     "Chặn",
-     "Người rà soát"
-    ]
-   },
-   "referral-matching": {
-    "title": "Ghép nối hồ sơ giới thiệu",
-    "category": "Mạng lưới dịch vụ y tế · Công cụ tùy chỉnh",
-    "brief": "Ghép nối hồ sơ giới thiệu dựa vào thông tin và logic ra quyết định tốn thời gian khi thực hiện thủ công.",
-    "approach": "Đưa logic ghép nối vào một công cụ chuyên dụng, hỗ trợ quy trình có thể lặp lại.",
-    "build": "Công cụ ghép nối hồ sơ được thiết kế để giảm thời gian xử lý thủ công.",
-    "constraint": "Việc ghép nối phải tuân theo quy tắc hợp đồng của bên tài trợ và lịch trống của nhà cung cấp được lưu trong một hệ thống không có API; công cụ đọc dữ liệu xuất và xếp hạng ứng viên, còn điều phối viên đưa ra quyết định cuối cùng.",
-    "steps": [
-     "Hồ sơ giới thiệu",
-     "Logic ghép nối",
-     "Bước tiếp theo"
-    ],
-    "illustration": [
-     "Giới thiệu",
-     "Ứng viên",
-     "Rà soát",
-     "Xác nhận"
-    ]
-   },
-   "provider-onboarding": {
-    "title": "Tiếp nhận nhà cung cấp dịch vụ",
-    "category": "Mạng lưới dịch vụ y tế · Ứng dụng web",
-    "brief": "Các lộ trình khác nhau khiến việc tiếp nhận khó quản lý bằng một danh sách kiểm tra chung.",
-    "approach": "Xây dựng cổng truy cập có kiểm soát, các lộ trình riêng, hướng dẫn từng bước và bảng quản trị theo dõi tiến độ.",
-    "build": "Ứng dụng tiếp nhận giúp thấy rõ bước tiếp theo và tiến độ tổng thể.",
-    "constraint": "Sáu lộ trình riêng biệt với yêu cầu hồ sơ và thẩm tra khác nhau, xây dựng ngay trong môi trường Microsoft 365 hiện có của khách hàng, với tài khoản đăng nhập riêng cho từng người và mỗi lần tải lên được xử lý trọn vẹn hoặc không.",
-    "steps": [
-     "Chọn lộ trình",
-     "Hoàn thành các bước",
-     "Theo dõi tiến độ"
-    ],
-    "illustration": [
-     "Đã mời",
-     "Hồ sơ",
-     "Kiểm tra",
-     "Hoạt động"
-    ]
-   },
-   "records-dashboard": {
-    "title": "Bảng theo dõi hồ sơ nhà cung cấp",
-    "category": "Mạng lưới dịch vụ y tế · Tính toàn vẹn dữ liệu",
-    "brief": "Khó phát hiện đều đặn thông tin thiếu trong hồ sơ chính khi kiểm tra thủ công.",
-    "approach": "Kiểm tra hồ sơ theo lịch và tập hợp thông tin cần chú ý trên một bảng điều khiển.",
-    "build": "Bảng điều khiển tập trung cho việc kiểm tra hồ sơ và theo dõi xử lý.",
-    "constraint": "Các kiểm tra chạy theo lịch trên những hồ sơ mà công cụ không thể chỉnh sửa, và mỗi cảnh báo được chuyển đến người phụ trách hồ sơ để xử lý thay vì tự động thay đổi dữ liệu.",
-    "steps": [
-     "Hồ sơ chính",
-     "Kiểm tra theo lịch",
-     "Xem thông tin thiếu"
-    ],
-    "illustration": [
-     "Hồ sơ",
-     "Đầy đủ",
-     "Thiếu",
-     "Theo dõi"
-    ]
-   }
-  },
-  "faq": {
-   "online-store": {
-    "question": "Bạn có xây dựng cửa hàng trực tuyến theo yêu cầu không?",
-    "answer": "Có. Cấu trúc sản phẩm, giao diện cửa hàng, thanh toán và giao hàng được xác định theo doanh nghiệp. Nền tảng được chọn theo yêu cầu. Tích hợp phức tạp và hệ thống hoàn toàn tùy chỉnh cần khảo sát riêng; phí nền tảng và giao dịch được tính riêng.",
-    "draft": "Tôi muốn trao đổi về cửa hàng trực tuyến theo yêu cầu, lựa chọn nền tảng và phạm vi thiết lập."
-   },
-   "self-editing": {
-    "question": "Tôi có thể tự cập nhật website không?",
-    "answer": "Hệ thống biên tập nội dung và đào tạo có thể được đưa vào báo giá, không mặc định có trong mọi gói. Bạn cũng có thể chọn dịch vụ bảo trì hoặc thay đổi theo phạm vi riêng. Quyền sở hữu, truy cập và bàn giao được ghi trong thỏa thuận dự án.",
-    "draft": "Tôi muốn trao đổi về việc tự cập nhật nội dung website, bao gồm hệ thống biên tập và đào tạo."
-   },
-   "existing-website": {
-    "question": "Bạn có thể thay thế website hiện tại của tôi không?",
-    "answer": "Có. Hãy gửi đường dẫn và vấn đề hiện tại. Chúng ta có thể đánh giá việc xây lại hoặc chỉnh sửa có mục tiêu, với quyền truy cập tên miền, email hiện có, URL quan trọng và chuyển hướng tìm kiếm được xác định trước khi chuyển đổi.",
-    "draft": "Tôi muốn trao đổi về cập nhật hoặc thay thế website hiện tại và lập kế hoạch chuyển đổi."
-   },
-   "ai-process": {
-    "question": "Bạn sử dụng AI như thế nào?",
-    "answer": "AI là một phần của bộ công cụ thiết kế và phát triển, giúp khám phá ý tưởng và triển khai công việc. Quyết định thiết kế, đánh giá của con người và kiểm thử vẫn nằm trong quy trình.",
-    "draft": "Tôi muốn hiểu AI được sử dụng thế nào trong thiết kế, phát triển, đánh giá và kiểm thử."
-   }
-  },
-  "illustrationNote": "Minh họa cách tiếp cận với trạng thái mẫu. Không phải ảnh chụp sản phẩm.",
-  "confidentialNote": "Danh tính và hồ sơ khách hàng được giữ kín. Hình minh họa thể hiện cách tiếp cận, không phải giao diện đã bàn giao."
- }
+  "vi": {
+    "moreWork": "Dự án khác",
+    "swiftWorkTitle": "Mỗi doanh nghiệp, một cách thiết kế riêng.",
+    "stackWorkTitle": "Hệ thống được xây dựng theo công việc thực tế.",
+    "development": "Đang phát triển",
+    "inhouse": "Dự án nội bộ của studio",
+    "developmentNote": "Bản xem trước thiết kế. Website này đang được phát triển.",
+    "earlierNote": "Thiết kế website Stackcraft trước đây, giới thiệu như một dự án nội bộ của studio.",
+    "screenshot": "Ảnh chụp website",
+    "diagramNote": "Sơ đồ minh họa cách tiếp cận, không phải ảnh chụp sản phẩm.",
+    "readCase": "Tìm hiểu dự án",
+    "back": "Quay lại các dự án",
+    "approach": "Cách tiếp cận",
+    "build": "Sản phẩm xây dựng",
+    "designDirection": "Định hướng thiết kế",
+    "visit": "Xem website",
+    "nextProject": "Dự án tiếp theo của bạn",
+    "discussSimilar": "Trao đổi về dự án tương tự",
+    "beforeStart": "Trước khi bắt đầu",
+    "questions": "Một vài câu hỏi thực tế.",
+    "askAbout": "Hỏi về nội dung này",
+    "projects": {
+      "emerald": {
+        "category": "Tư vấn xây dựng · Waiheke và Auckland",
+        "brief": "Website đang phát triển cho doanh nghiệp quản lý và tư vấn xây dựng, tập trung vào hai dịch vụ chính và mối liên hệ với địa phương.",
+        "approach": "Giữ lại biểu tượng và tên thương hiệu Emerald. Kết hợp hình ảnh kiến trúc, ven biển và giới thiệu các dự án trong bối cảnh kinh nghiệm nghề nghiệp của người sáng lập.",
+        "build": "Định hướng thiết kế làm rõ dịch vụ Quản lý dự án và Tư vấn, thông tin dự án có bối cảnh và trang yêu cầu tư vấn riêng."
+      },
+      "purchase-order-automation": {
+        "title": "Tự động hóa đơn đặt hàng",
+        "category": "Mạng lưới nhà cung cấp dịch vụ y tế · Tự động hóa",
+        "brief": "Xử lý lặp lại tạo thêm công việc cả trước và sau khi mỗi mục được xử lý.",
+        "approach": "Kết nối tác vụ xử lý với các thao tác tiếp theo của hệ thống, giảm nhu cầu lặp lại các bước thủ công.",
+        "build": "Công cụ tự động hóa chuyên biệt nhằm giảm thao tác thủ công.",
+        "constraint": "Hệ thống quản lý hồ sơ của khách hàng không có API, nên công cụ làm việc từ dữ liệu xuất của chính hệ thống, không bao giờ ghi vào hồ sơ đang hoạt động, và một nhân viên xác nhận từng mục được đánh dấu trước khi có bất kỳ thay đổi nào.",
+        "steps": [
+          "Mục đầu vào",
+          "Xử lý",
+          "Thao tác hệ thống"
+        ],
+        "illustration": [
+          "Sạch",
+          "Gắn cờ",
+          "Chặn",
+          "Người rà soát"
+        ]
+      },
+      "referral-matching": {
+        "title": "Ghép nối hồ sơ giới thiệu",
+        "category": "Mạng lưới dịch vụ y tế · Công cụ tùy chỉnh",
+        "brief": "Ghép nối hồ sơ giới thiệu dựa vào thông tin và logic ra quyết định tốn thời gian khi thực hiện thủ công.",
+        "approach": "Đưa logic ghép nối vào một công cụ chuyên dụng, hỗ trợ quy trình có thể lặp lại.",
+        "build": "Công cụ ghép nối hồ sơ được thiết kế để giảm thời gian xử lý thủ công.",
+        "constraint": "Việc ghép nối phải tuân theo quy tắc hợp đồng của bên tài trợ và lịch trống của nhà cung cấp được lưu trong một hệ thống không có API; công cụ đọc dữ liệu xuất và xếp hạng ứng viên, còn điều phối viên đưa ra quyết định cuối cùng.",
+        "steps": [
+          "Hồ sơ giới thiệu",
+          "Logic ghép nối",
+          "Bước tiếp theo"
+        ],
+        "illustration": [
+          "Giới thiệu",
+          "Ứng viên",
+          "Rà soát",
+          "Xác nhận"
+        ]
+      },
+      "provider-onboarding": {
+        "title": "Tiếp nhận nhà cung cấp dịch vụ",
+        "category": "Mạng lưới dịch vụ y tế · Ứng dụng web",
+        "brief": "Các lộ trình khác nhau khiến việc tiếp nhận khó quản lý bằng một danh sách kiểm tra chung.",
+        "approach": "Xây dựng cổng truy cập có kiểm soát, các lộ trình riêng, hướng dẫn từng bước và bảng quản trị theo dõi tiến độ.",
+        "build": "Ứng dụng tiếp nhận giúp thấy rõ bước tiếp theo và tiến độ tổng thể.",
+        "constraint": "Sáu lộ trình riêng biệt với yêu cầu hồ sơ và thẩm tra khác nhau, xây dựng ngay trong môi trường Microsoft 365 hiện có của khách hàng, với tài khoản đăng nhập riêng cho từng người và mỗi lần tải lên được xử lý trọn vẹn hoặc không.",
+        "steps": [
+          "Chọn lộ trình",
+          "Hoàn thành các bước",
+          "Theo dõi tiến độ"
+        ],
+        "illustration": [
+          "Đã mời",
+          "Hồ sơ",
+          "Kiểm tra",
+          "Hoạt động"
+        ]
+      },
+      "records-dashboard": {
+        "title": "Bảng theo dõi hồ sơ nhà cung cấp",
+        "category": "Mạng lưới dịch vụ y tế · Tính toàn vẹn dữ liệu",
+        "brief": "Khó phát hiện đều đặn thông tin thiếu trong hồ sơ chính khi kiểm tra thủ công.",
+        "approach": "Kiểm tra hồ sơ theo lịch và tập hợp thông tin cần chú ý trên một bảng điều khiển.",
+        "build": "Bảng điều khiển tập trung cho việc kiểm tra hồ sơ và theo dõi xử lý.",
+        "constraint": "Các kiểm tra chạy theo lịch trên những hồ sơ mà công cụ không thể chỉnh sửa, và mỗi cảnh báo được chuyển đến người phụ trách hồ sơ để xử lý thay vì tự động thay đổi dữ liệu.",
+        "steps": [
+          "Hồ sơ chính",
+          "Kiểm tra theo lịch",
+          "Xem thông tin thiếu"
+        ],
+        "illustration": [
+          "Hồ sơ",
+          "Đầy đủ",
+          "Thiếu",
+          "Theo dõi"
+        ]
+      }
+    },
+    "faq": {
+      "online-store": {
+        "question": "Bạn có xây dựng cửa hàng trực tuyến theo yêu cầu không?",
+        "answer": "Có. Cấu trúc sản phẩm, giao diện cửa hàng, thanh toán và giao hàng được xác định theo doanh nghiệp. Nền tảng được chọn theo yêu cầu. Tích hợp phức tạp và hệ thống hoàn toàn tùy chỉnh cần khảo sát riêng; phí nền tảng và giao dịch được tính riêng.",
+        "draft": "Tôi muốn trao đổi về cửa hàng trực tuyến theo yêu cầu, lựa chọn nền tảng và phạm vi thiết lập."
+      },
+      "self-editing": {
+        "question": "Tôi có thể tự cập nhật website không?",
+        "answer": "Hệ thống biên tập nội dung và đào tạo có thể được đưa vào báo giá, không mặc định có trong mọi gói. Bạn cũng có thể chọn dịch vụ bảo trì hoặc thay đổi theo phạm vi riêng. Quyền sở hữu, truy cập và bàn giao được ghi trong thỏa thuận dự án.",
+        "draft": "Tôi muốn trao đổi về việc tự cập nhật nội dung website, bao gồm hệ thống biên tập và đào tạo."
+      },
+      "existing-website": {
+        "question": "Bạn có thể thay thế website hiện tại của tôi không?",
+        "answer": "Có. Hãy gửi đường dẫn và vấn đề hiện tại. Chúng ta có thể đánh giá việc xây lại hoặc chỉnh sửa có mục tiêu, với quyền truy cập tên miền, email hiện có, URL quan trọng và chuyển hướng tìm kiếm được xác định trước khi chuyển đổi.",
+        "draft": "Tôi muốn trao đổi về cập nhật hoặc thay thế website hiện tại và lập kế hoạch chuyển đổi."
+      },
+      "ai-process": {
+        "question": "Bạn sử dụng AI như thế nào?",
+        "answer": "AI là một phần của bộ công cụ thiết kế và phát triển, giúp khám phá ý tưởng và triển khai công việc. Quyết định thiết kế, đánh giá của con người và kiểm thử vẫn nằm trong quy trình.",
+        "draft": "Tôi muốn hiểu AI được sử dụng thế nào trong thiết kế, phát triển, đánh giá và kiểm thử."
+      }
+    },
+    "illustrationNote": "Minh họa cách tiếp cận với trạng thái mẫu. Không phải ảnh chụp sản phẩm.",
+    "confidentialNote": "Danh tính và hồ sơ khách hàng được giữ kín. Hình minh họa thể hiện cách tiếp cận, không phải giao diện đã bàn giao."
+  }
 }
