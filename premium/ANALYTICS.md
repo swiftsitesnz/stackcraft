@@ -27,6 +27,14 @@ Malformed IDs fail validation. Keep each brand's real stream separate.
 - Cookies use a 180-day lifetime and SameSite=Lax;Secure. An externally supplied
   `ga-disable-MEASUREMENT_ID` browser-level opt-out is respected.
 
+## Runtime cache version
+
+The loader uses a content-hashed asset pathname, `/premium/analytics-4aaed0be9cea.js`.
+This bypasses previously cached opt-in code at the old unversioned URL, including
+SwiftSites’ four-hour Cloudflare/browser cache. If the runtime changes, rename it
+to its new LF-normalised SHA-256 prefix and update all loader references. The cache-version test
+fails if content and filename drift or a renderer points at the old URL.
+
 ## Verification and maintenance
 
 Preserve the real per-brand IDs and account settings. Do not copy whole renderers
