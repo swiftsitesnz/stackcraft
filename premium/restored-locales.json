@@ -328,8 +328,8 @@
       "provider-onboarding": {
         "title": "Incorporación de proveedores",
         "category": "Red sanitaria · Aplicación web",
-        "brief": "Los nuevos proveedores siguen vías distintas, así que una única lista de comprobación compartida dificultaba el seguimiento de la incorporación.",
-        "approach": "Crear un portal con inicio de sesión, una vía separada para cada tipo de proveedor, pasos documentados y un panel de administración que muestra el progreso.",
+        "brief": "Los nuevos proveedores siguen itinerarios distintos, así que una única lista de comprobación compartida dificultaba el seguimiento de la incorporación.",
+        "approach": "Crear un portal con inicio de sesión, un itinerario separado para cada tipo de proveedor, pasos documentados y un panel de administración que muestra el progreso.",
         "build": "Una aplicación web de incorporación en la que el siguiente paso y el progreso general se ven con facilidad.",
         "constraint": "Seis itinerarios distintos con requisitos documentales y de verificación diferentes, construidos dentro del tenant de Microsoft 365 existente del cliente, con accesos individuales y cada carga tratada como atómica.",
         "steps": [
@@ -738,7 +738,7 @@
         "title": "服务提供商记录仪表板",
         "category": "医疗服务网络 · 数据完整性",
         "brief": "人工检查时，核心记录中的缺漏很容易被忽略。",
-        "approach": "按计划检查记录，并在一个仪表板中汇总需要关注的信息。",
+        "approach": "按计划检查记录，并把所有需要关注的事项集中在一个仪表板上。",
         "build": "用于记录检查与后续跟进的仪表板。",
         "constraint": "检查按计划针对工具无法编辑的记录运行，每个标记都转交给记录负责人处理，而不是自动更改数据。",
         "steps": [
@@ -868,7 +868,7 @@
         "title": "提供者記録ダッシュボード",
         "category": "医療ネットワーク · データ整合性",
         "brief": "手作業の確認では、主要な記録の不足を見落としがちでした。",
-        "approach": "記録を定期的に確認し、対応が必要な情報を一つのダッシュボードにまとめます。",
+        "approach": "記録を定期的に確認し、対応が必要なものをすべて一つのダッシュボードにまとめます。",
         "build": "記録の確認とフォローアップのためのダッシュボードです。",
         "constraint": "チェックはツールが編集できない記録に対してスケジュールどおりに実行され、各フラグはデータを自動で変更するのではなく、記録の担当者に修正のために回されます。",
         "steps": [
