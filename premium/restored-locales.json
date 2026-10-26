@@ -1,7 +1,7 @@
 {
   "en": {
     "moreWork": "More work",
-    "swiftWorkTitle": "Different businesses. Individual decisions.",
+    "swiftWorkTitle": "Different businesses. Different decisions.",
     "stackWorkTitle": "Systems built around the work.",
     "development": "In development",
     "inhouse": "In-house studio project",
@@ -30,9 +30,9 @@
       "purchase-order-automation": {
         "title": "Purchase-order automation",
         "category": "Healthcare provider network · Automation",
-        "brief": "Repetitive processing created work before and after each item was handled.",
-        "approach": "Connect the processing task with downstream system actions, reducing the need to repeat the same manual steps.",
-        "build": "A dedicated automation tool focused on reducing manual handling.",
+        "brief": "Each purchase order was handled by hand, with the same steps repeated before and after it.",
+        "approach": "Link the checking step to the actions that follow in the system, so the same manual steps are not repeated.",
+        "build": "An automation tool that cuts the manual handling for each order.",
         "constraint": "The client's case-management system has no API, so the tool works from the system's own exports, never writes to live records, and a staff member confirms every flagged item before anything changes.",
         "steps": [
           "Incoming item",
@@ -49,9 +49,9 @@
       "referral-matching": {
         "title": "Referral matching",
         "category": "Healthcare provider network · Custom tools",
-        "brief": "Matching referrals involved information and decision logic that took time to work through manually.",
-        "approach": "Bring the matching logic into a purpose-built tool that supports a repeatable workflow.",
-        "build": "A referral-matching tool designed to reduce time spent on the manual process.",
+        "brief": "Matching a referral to a provider meant working through contract rules and availability by hand, every time.",
+        "approach": "Put the matching rules into a purpose-built tool so the same steps run the same way each time.",
+        "build": "A referral-matching tool that cuts the time spent matching by hand.",
         "constraint": "Matching had to respect funder contract rules and provider availability held in a system without an API; the tool reads exports and ranks candidates, and the coordinator makes the final call.",
         "steps": [
           "Referral",
@@ -68,9 +68,9 @@
       "provider-onboarding": {
         "title": "Provider onboarding",
         "category": "Healthcare provider network · Web application",
-        "brief": "Different provider pathways made onboarding difficult to manage as one undifferentiated checklist.",
-        "approach": "Create a gated portal with separate pathways, documented steps and an admin dashboard showing progress.",
-        "build": "An onboarding web application that makes the next step and overall progress easier to see.",
+        "brief": "New providers follow different pathways, so one shared checklist made onboarding hard to track.",
+        "approach": "Build a portal with a login, a separate pathway for each provider type, documented steps and an admin dashboard that shows progress.",
+        "build": "An onboarding web app where the next step and overall progress are easy to see.",
         "constraint": "Six distinct pathways with different document and vetting requirements, built inside the client's existing Microsoft 365 tenant, with individual logins and every upload treated as atomic.",
         "steps": [
           "Choose pathway",
@@ -87,9 +87,9 @@
       "records-dashboard": {
         "title": "Provider records dashboard",
         "category": "Healthcare provider network · Data integrity",
-        "brief": "Missing information in core records was difficult to spot consistently through manual checking.",
-        "approach": "Check records on a schedule and surface the information needing attention in one dashboard.",
-        "build": "A focused dashboard for record checks and follow-up.",
+        "brief": "Gaps in core records were easy to miss when checking by hand.",
+        "approach": "Check the records on a schedule and put everything that needs attention on one dashboard.",
+        "build": "A dashboard for record checks and follow-up.",
         "constraint": "Checks run on a schedule against records the tool cannot edit, and each flag routes to the record's owner for the fix rather than changing data automatically.",
         "steps": [
           "Core records",
@@ -1041,7 +1041,7 @@
   },
   "vi": {
     "moreWork": "Dự án khác",
-    "swiftWorkTitle": "Mỗi doanh nghiệp, một cách thiết kế riêng.",
+    "swiftWorkTitle": "Mỗi doanh nghiệp, một cách làm riêng.",
     "stackWorkTitle": "Hệ thống được xây dựng theo công việc thực tế.",
     "development": "Đang phát triển",
     "inhouse": "Dự án nội bộ của studio",
@@ -1070,9 +1070,9 @@
       "purchase-order-automation": {
         "title": "Tự động hóa đơn đặt hàng",
         "category": "Mạng lưới nhà cung cấp dịch vụ y tế · Tự động hóa",
-        "brief": "Xử lý lặp lại tạo thêm công việc cả trước và sau khi mỗi mục được xử lý.",
-        "approach": "Kết nối tác vụ xử lý với các thao tác tiếp theo của hệ thống, giảm nhu cầu lặp lại các bước thủ công.",
-        "build": "Công cụ tự động hóa chuyên biệt nhằm giảm thao tác thủ công.",
+        "brief": "Mỗi đơn đặt hàng được xử lý tận tay, với những bước được lặp lại trước và sau khi xử lý.",
+        "approach": "Liên kết bước kiểm tra với các hành động tiếp theo trong hệ thống, để không phải lặp lại cùng những bước thủ công.",
+        "build": "Công cụ tự động hóa giúp giảm thao tác thủ công cho mỗi đơn.",
         "constraint": "Hệ thống quản lý hồ sơ của khách hàng không có API, nên công cụ làm việc từ dữ liệu xuất của chính hệ thống, không bao giờ ghi vào hồ sơ đang hoạt động, và một nhân viên xác nhận từng mục được đánh dấu trước khi có bất kỳ thay đổi nào.",
         "steps": [
           "Mục đầu vào",
@@ -1089,9 +1089,9 @@
       "referral-matching": {
         "title": "Ghép nối hồ sơ giới thiệu",
         "category": "Mạng lưới dịch vụ y tế · Công cụ tùy chỉnh",
-        "brief": "Ghép nối hồ sơ giới thiệu dựa vào thông tin và logic ra quyết định tốn thời gian khi thực hiện thủ công.",
-        "approach": "Đưa logic ghép nối vào một công cụ chuyên dụng, hỗ trợ quy trình có thể lặp lại.",
-        "build": "Công cụ ghép nối hồ sơ được thiết kế để giảm thời gian xử lý thủ công.",
+        "brief": "Ghép nối mỗi hồ sơ giới thiệu với nhà cung cấp phải dò quy tắc hợp đồng và lịch trống bằng tay, lần nào cũng vậy.",
+        "approach": "Đưa các quy tắc ghép nối vào một công cụ chuyên dụng để các bước luôn chạy giống nhau.",
+        "build": "Công cụ ghép hồ sơ giới thiệu giúp giảm thời gian ghép bằng tay.",
         "constraint": "Việc ghép nối phải tuân theo quy tắc hợp đồng của bên tài trợ và lịch trống của nhà cung cấp được lưu trong một hệ thống không có API; công cụ đọc dữ liệu xuất và xếp hạng ứng viên, còn điều phối viên đưa ra quyết định cuối cùng.",
         "steps": [
           "Hồ sơ giới thiệu",
@@ -1108,9 +1108,9 @@
       "provider-onboarding": {
         "title": "Tiếp nhận nhà cung cấp dịch vụ",
         "category": "Mạng lưới dịch vụ y tế · Ứng dụng web",
-        "brief": "Các lộ trình khác nhau khiến việc tiếp nhận khó quản lý bằng một danh sách kiểm tra chung.",
-        "approach": "Xây dựng cổng truy cập có kiểm soát, các lộ trình riêng, hướng dẫn từng bước và bảng quản trị theo dõi tiến độ.",
-        "build": "Ứng dụng tiếp nhận giúp thấy rõ bước tiếp theo và tiến độ tổng thể.",
+        "brief": "Nhà cung cấp mới đi theo các lộ trình khác nhau, nên một danh sách kiểm tra chung khiến việc tiếp nhận khó theo dõi.",
+        "approach": "Xây dựng một cổng thông tin có đăng nhập, lộ trình riêng cho từng loại nhà cung cấp, các bước được ghi rõ và một bảng quản trị theo dõi tiến độ.",
+        "build": "Một ứng dụng web tiếp nhận trực quan, nơi bước tiếp theo và tiến độ chung dễ dàng theo dõi.",
         "constraint": "Sáu lộ trình riêng biệt với yêu cầu hồ sơ và thẩm tra khác nhau, xây dựng ngay trong môi trường Microsoft 365 hiện có của khách hàng, với tài khoản đăng nhập riêng cho từng người và mỗi lần tải lên được xử lý trọn vẹn hoặc không.",
         "steps": [
           "Chọn lộ trình",
@@ -1127,9 +1127,9 @@
       "records-dashboard": {
         "title": "Bảng theo dõi hồ sơ nhà cung cấp",
         "category": "Mạng lưới dịch vụ y tế · Tính toàn vẹn dữ liệu",
-        "brief": "Khó phát hiện đều đặn thông tin thiếu trong hồ sơ chính khi kiểm tra thủ công.",
-        "approach": "Kiểm tra hồ sơ theo lịch và tập hợp thông tin cần chú ý trên một bảng điều khiển.",
-        "build": "Bảng điều khiển tập trung cho việc kiểm tra hồ sơ và theo dõi xử lý.",
+        "brief": "Thiếu sót trong hồ sơ chính dễ bị bỏ qua khi kiểm tra bằng tay.",
+        "approach": "Kiểm tra hồ sơ theo lịch và đưa mọi thứ cần chú ý lên một bảng điều khiển.",
+        "build": "Bảng điều khiển để kiểm tra hồ sơ và theo dõi xử lý.",
         "constraint": "Các kiểm tra chạy theo lịch trên những hồ sơ mà công cụ không thể chỉnh sửa, và mỗi cảnh báo được chuyển đến người phụ trách hồ sơ để xử lý thay vì tự động thay đổi dữ liệu.",
         "steps": [
           "Hồ sơ chính",
