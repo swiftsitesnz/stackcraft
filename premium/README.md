@@ -16,4 +16,4 @@ No operational PO, ACC or CMS instructions or records are part of this site work
 
 The previous website-review endpoint remains retired. Existing signed agreements retain their terms. Original source/public archives and restore verification are held in the canonical business archive.
 
-Optional Google Analytics setup, consent behavior and activation checks: [ANALYTICS.md](ANALYTICS.md).
+Google Analytics configuration, automatic collection and verification checks: [ANALYTICS.md](ANALYTICS.md).
