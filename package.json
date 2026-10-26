@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "build": "node scripts/build-locales.mjs && node scripts/build-static.mjs stack dist",
-    "test:api": "node --test test/api.test.cjs"
+    "test:api": "node --test test/api.test.cjs",
+    "test:analytics": "node --test test/analytics.test.mjs"
   },
   "dependencies": {
     "resend": "^4.0.0"

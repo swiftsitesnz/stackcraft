@@ -409,5 +409,16 @@
   "notFoundTitle": "Page not found",
   "notFoundText": "The address may have changed or never existed. The main sections are in the menu above.",
   "notFoundHome": "Back to the homepage",
-  "processIntro": "Four stages, the same on every project. You see each one before the next begins."
+  "processIntro": "Four stages, the same on every project. You see each one before the next begins.",
+  "analyticsTitle": "Website analytics",
+  "analyticsText": "We use Google Analytics only if you agree, to measure page visits and successfully sent enquiries. Your enquiry details are not sent to Google Analytics.",
+  "analyticsAccept": "Allow analytics",
+  "analyticsReject": "No thanks",
+  "analyticsSettings": "Analytics settings",
+  "analyticsStatusOn": "Analytics is on.",
+  "analyticsStatusOff": "Analytics is off.",
+  "analyticsDisable": "Turn off analytics",
+  "analyticsClose": "Close",
+  "analyticsPrivacy": "Privacy",
+  "privacyAnalytics": "With your permission, Google Analytics uses cookies to measure page visits and successfully sent enquiries. We do not send your name, email address or enquiry message to Google Analytics. You can change your choice through Analytics settings in the footer."
 }
