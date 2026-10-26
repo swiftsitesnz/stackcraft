@@ -2,11 +2,12 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
+import {createHash} from 'node:crypto';
 import {measurementId} from '../premium/analytics.mjs';
 import {renderPage,languages} from '../premium/render.mjs';
 import dictionaries from '../premium/dictionaries.json' with {type:'json'};
 
-const source=fs.readFileSync(new URL('../public/premium/analytics.js',import.meta.url),'utf8');
+const source=fs.readFileSync(new URL('../public/premium/analytics-4aaed0be9cea.js',import.meta.url),'utf8');
 const id='G-TEST123456'; // Synthetic fixture, never written into the site config.
 function harness({brand='swift',hostname=brand==='swift'?'www.swiftsites.nz':'stackcraft.co.nz',protocol='https:',locale='vi',page='contact',idValue=id,pageLocation,disabled=false}={}){
   const callbacks={},scripts=[];
@@ -82,4 +83,16 @@ test('Stackcraft uses its own production host and service allowlist',()=>{
   const h=harness({brand:'stack'});h.window.premiumAnalytics.lead({service:'app'});
   const lead=h.commands().find(c=>c[1]==='generate_lead')[2];assert.equal(lead.site_brand,'stack');assert.equal(lead.service_type,'app');assert.equal(lead.page_location,'https://stackcraft.co.nz/vi/contact');
   const wrongHost=harness({brand:'stack',hostname:'www.swiftsites.nz'});assert.equal(wrongHost.scripts.length,0);
+});
+
+test('runtime content hash changes the asset URL and prevents reuse of the cached opt-in script',()=>{
+  const expected='/premium/analytics-'+createHash('sha256').update(source.replace(/\r\n/g,'\n')).digest('hex').slice(0,12)+'.js';
+  assert.equal(expected,'/premium/analytics-4aaed0be9cea.js');
+  const build=fs.readFileSync(new URL('../scripts/build-static.mjs',import.meta.url),'utf8');
+  const sources=[...build.matchAll(/src="(\/premium\/analytics[^"]*)"/g)].map(m=>m[1]);
+  assert.equal(sources.length,2);assert.ok(sources.every(src=>src===expected));
+  const layout=new URL('../app/[[...path]]/layout.tsx',import.meta.url);
+  if(fs.existsSync(layout)){const html=fs.readFileSync(layout,'utf8');assert.ok(html.includes('src="'+expected+'"'));assert.ok(!html.includes('src="/premium/analytics.js"'))}
+  const previousBrowserCache=new Map([['/premium/analytics.js','previous opt-in runtime']]);
+  assert.equal(previousBrowserCache.has(expected),false);
 });
