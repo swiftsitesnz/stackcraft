@@ -1,0 +1,25 @@
+.swift #main>.hero+.danang-offer{order:-2}
+.premium-site .danang-offer{padding:42px 0 54px;background:#f7f5f0;--offer-ink:#842f1d;--offer-bg:#fff6e7;--offer-border:#a8422c;--offer-muted:#55473b;--offer-button:#a8422c;--offer-button-ink:#fffaf2}
+.premium-site.stack .danang-offer{background:#edf1f1;--offer-ink:#c4f28c;--offer-bg:#13343e;--offer-border:#b8ef68;--offer-muted:#d1e0df;--offer-button:#b8ef68;--offer-button-ink:#102c36}
+.offer-panel{display:grid;grid-template-columns:.95fr 1.25fr;border:3px solid var(--offer-border);background:var(--offer-bg);color:var(--offer-ink);position:relative}
+.offer-panel::before,.offer-panel::after{content:'';position:absolute;width:14px;height:14px;background:var(--offer-border);pointer-events:none}.offer-panel::before{left:-3px;top:-3px}.offer-panel::after{right:-3px;bottom:-3px}
+.offer-discount{padding:34px 38px;border-right:1px solid color-mix(in srgb,var(--offer-border),transparent 45%);display:flex;flex-direction:column;justify-content:center}
+.offer-panel p{color:var(--offer-muted);margin:0}
+.offer-panel .offer-kicker{font-size:12px;line-height:1.6;font-weight:600;letter-spacing:.13em;color:var(--offer-ink)}
+.offer-panel h2{margin-top:22px;color:var(--offer-ink);letter-spacing:-.06em;line-height:.95}
+.offer-reduction{display:block;font-size:28px;font-weight:500;letter-spacing:.07em;line-height:1.3}
+.offer-panel h2 strong{display:block;font-size:clamp(110px,12vw,174px);font-weight:600;line-height:1.05;letter-spacing:-.075em}
+.offer-panel h2 strong>span{font-size:.55em;vertical-align:17%;letter-spacing:-.06em;padding-left:3px}
+.offer-panel .offer-base{font-size:16px;line-height:1.6;margin-top:6px}
+.offer-message{padding:40px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.offer-panel h3{font-size:clamp(25px,2.6vw,36px);line-height:1.25;letter-spacing:-.035em;max-width:25ch;color:var(--offer-ink)}
+.offer-panel p.offer-eligibility{font-size:18px;line-height:1.65;margin-top:20px;max-width:43ch}
+.offer-panel p.offer-deadline{font-size:17px;font-weight:600;line-height:1.5;margin-top:24px;color:var(--offer-ink);padding-block:12px;border-block:1px solid color-mix(in srgb,var(--offer-border),transparent 55%)}
+.offer-cta{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;min-height:50px;margin-top:24px;padding:13px 20px;background:var(--offer-button);color:var(--offer-button-ink);font-size:15px;line-height:1.5;font-weight:500;border:1px solid var(--offer-button);transition:background .2s,color .2s,transform .2s}
+.offer-cta:is(:hover,:focus-visible){background:var(--offer-bg);color:var(--offer-ink);transform:translateY(-2px);outline:2px solid var(--offer-border);outline-offset:4px}
+.offer-terms{grid-column:1/-1;border-top:1px solid color-mix(in srgb,var(--offer-border),transparent 45%);padding:20px 38px;display:grid;grid-template-columns:1.65fr 1fr;gap:30px}
+.offer-terms p{font-size:14px;line-height:1.65}
+@media(max-width:900px){.offer-discount{padding:28px}.offer-message{padding:28px}.offer-terms{padding:22px 28px;grid-template-columns:1fr;gap:10px}.offer-panel h2 strong{font-size:120px}.offer-panel p.offer-eligibility{font-size:16px}}
+@media(max-width:620px){.premium-site .danang-offer{padding:28px 0 36px}.offer-panel{grid-template-columns:1fr}.offer-discount{border-right:0;border-bottom:1px solid color-mix(in srgb,var(--offer-border),transparent 45%);padding:23px}.offer-panel h2{margin-top:13px}.offer-panel h2 strong{font-size:112px}.offer-reduction{font-size:23px}.offer-message{padding:25px 23px}.offer-panel h3{font-size:26px}.offer-panel p.offer-deadline{font-size:16px;margin-top:18px}.offer-terms{padding:18px 23px}.offer-cta{width:100%;margin-top:20px}.offer-panel .offer-kicker{font-size:11px;letter-spacing:.09em}}
+@media(prefers-reduced-motion:reduce){.offer-cta{transition:none}.offer-cta:is(:hover,:focus-visible){transform:none}}
+@media(max-width:360px){.premium-site[data-locale="vi"] .header-inner{gap:10px}.premium-site[data-locale="vi"] .menu-button{font-size:15px;padding:9px 10px;white-space:nowrap}}
