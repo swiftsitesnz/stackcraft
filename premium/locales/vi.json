@@ -409,5 +409,16 @@
   "notFoundTitle": "Không tìm thấy trang",
   "notFoundText": "Địa chỉ có thể đã thay đổi hoặc không tồn tại. Các mục chính nằm trong menu phía trên.",
   "notFoundHome": "Về trang chủ",
-  "processIntro": "Bốn giai đoạn, dự án nào cũng vậy. Bạn xem xong giai đoạn này rồi mới sang giai đoạn tiếp theo."
+  "processIntro": "Bốn giai đoạn, dự án nào cũng vậy. Bạn xem xong giai đoạn này rồi mới sang giai đoạn tiếp theo.",
+  "analyticsTitle": "Phân tích website",
+  "analyticsText": "Chúng tôi chỉ dùng Google Analytics khi bạn đồng ý, để đo lượt xem trang và số yêu cầu liên hệ được gửi thành công. Chi tiết yêu cầu của bạn không được gửi đến Google Analytics.",
+  "analyticsAccept": "Cho phép phân tích",
+  "analyticsReject": "Không, cảm ơn",
+  "analyticsSettings": "Cài đặt phân tích",
+  "analyticsStatusOn": "Đang bật phân tích.",
+  "analyticsStatusOff": "Đang tắt phân tích.",
+  "analyticsDisable": "Tắt phân tích",
+  "analyticsClose": "Đóng",
+  "analyticsPrivacy": "Quyền riêng tư",
+  "privacyAnalytics": "Khi bạn cho phép, Google Analytics sử dụng cookie để đo lượt xem trang và số yêu cầu liên hệ được gửi thành công. Chúng tôi không gửi họ tên, địa chỉ email hoặc nội dung yêu cầu của bạn đến Google Analytics. Bạn có thể thay đổi lựa chọn tại mục Cài đặt phân tích ở cuối trang."
 }
