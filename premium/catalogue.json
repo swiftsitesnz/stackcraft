@@ -1,125 +1,83 @@
 {
-  "version": "2026-10-22",
+  "version": "2026-10-29",
   "base": "USD",
+  "note": "Single pricing source for SwiftSites and Stackcraft. Edit in swift-sites, then run `node scripts/sync-pricing.mjs` to copy the pricing files to the sibling Stackcraft checkout and refresh premium/pricing.lock.json in both. Amounts are customer-paid indicative ranges in USD before tax.",
   "offers": [
-    {
-      "id": "web",
-      "brand": "swift",
-      "min": 5000,
-      "max": 9000,
-      "unit": "projectUnit"
-    },
-    {
-      "id": "flagship",
-      "brand": "swift",
-      "min": 10000,
-      "max": 18000,
-      "unit": "projectUnit"
-    },
-    {
-      "id": "commerce",
-      "brand": "swift",
-      "min": 15000,
-      "max": 30000,
-      "plus": true,
-      "unit": "projectUnit"
-    },
-    {
-      "id": "seo",
-      "brand": "swift",
-      "min": 1500,
-      "max": 3000,
-      "unit": "auditUnit"
-    },
-    {
-      "id": "search",
-      "brand": "swift",
-      "min": 1500,
-      "max": 3500,
-      "unit": "monthUnit"
-    },
-    {
-      "id": "care",
-      "brand": "swift",
-      "min": 250,
-      "max": 750,
-      "unit": "monthUnit"
-    },
-    {
-      "id": "app",
-      "brand": "stack",
-      "min": 12000,
-      "max": 25000,
-      "unit": "projectUnit"
-    },
-    {
-      "id": "platform",
-      "brand": "stack",
-      "min": 25000,
-      "max": 50000,
-      "plus": true,
-      "unit": "projectUnit"
-    },
-    {
-      "id": "ai",
-      "brand": "stack",
-      "min": 7500,
-      "max": 20000,
-      "unit": "projectUnit"
-    },
-    {
-      "id": "consult",
-      "brand": "stack",
-      "min": 349,
-      "max": 349,
-      "unit": "hourUnit"
-    },
-    {
-      "id": "training",
-      "brand": "stack",
-      "min": 1500,
-      "max": 3500,
-      "unit": "programmeUnit"
-    },
-    {
-      "id": "ops",
-      "brand": "stack",
-      "min": 750,
-      "max": 2500,
-      "plus": true,
-      "unit": "monthUnit"
-    },
-    {
-      "id": "discovery",
-      "brand": "stack",
-      "min": 1750,
-      "max": 3500,
-      "unit": "projectUnit"
-    },
-    {
-      "id": "mobile",
-      "brand": "stack",
-      "min": 35000,
-      "max": 65000,
-      "plus": true,
-      "unit": "projectUnit"
-    }
+    { "id": "fix", "brand": "swift", "min": 150, "max": 400, "unit": "projectUnit", "page": "fix", "group": "improve", "status": "new" },
+    { "id": "audit", "brand": "swift", "min": 150, "max": 400, "unit": "auditUnit", "page": "seo", "group": "improve", "status": "new" },
+    { "id": "compact", "brand": "swift", "min": 450, "max": 800, "unit": "projectUnit", "page": "web", "group": "build", "status": "new" },
+    { "id": "web", "brand": "swift", "min": 900, "max": 1800, "unit": "projectUnit", "page": "web", "group": "build", "status": "repriced", "previous": { "min": 5000, "max": 9000 } },
+    { "id": "premium", "brand": "swift", "min": 2000, "max": 4500, "unit": "projectUnit", "page": "web", "group": "build", "status": "new" },
+    { "id": "flagship", "brand": "swift", "min": 10000, "max": 18000, "unit": "projectUnit", "page": "flagship", "group": "build", "status": "existing" },
+    { "id": "store", "brand": "swift", "min": 1200, "max": 3000, "unit": "projectUnit", "page": "commerce", "group": "sell", "status": "new" },
+    { "id": "commerce", "brand": "swift", "min": 15000, "max": 30000, "plus": true, "unit": "projectUnit", "page": "commerce", "group": "sell", "status": "existing" },
+    { "id": "caretech", "brand": "swift", "min": 49, "max": 99, "unit": "monthUnit", "page": "care", "group": "grow", "status": "new" },
+    { "id": "carecontent", "brand": "swift", "min": 99, "max": 199, "unit": "monthUnit", "page": "care", "group": "grow", "status": "new" },
+    { "id": "care", "brand": "swift", "min": 250, "max": 750, "unit": "monthUnit", "page": "care", "group": "grow", "status": "existing" },
+    { "id": "localsearch", "brand": "swift", "min": 300, "max": 600, "unit": "monthUnit", "page": "search", "group": "grow", "status": "new" },
+    { "id": "search", "brand": "swift", "min": 1500, "max": 3500, "unit": "monthUnit", "page": "search", "group": "grow", "status": "existing" },
+    { "id": "seo", "brand": "swift", "min": 1500, "max": 3000, "unit": "auditUnit", "page": "seo", "group": "grow", "status": "existing" },
+
+    { "id": "diagnostic", "brand": "stack", "min": 150, "max": 300, "unit": "engagementUnit", "page": "consult", "group": "understand", "status": "new" },
+    { "id": "consult", "brand": "stack", "min": 349, "max": 349, "unit": "hourUnit", "page": "consult", "group": "understand", "status": "existing" },
+    { "id": "discovery", "brand": "stack", "min": 1750, "max": 3500, "unit": "projectUnit", "page": "discovery", "group": "understand", "status": "existing" },
+    { "id": "training", "brand": "stack", "min": 1500, "max": 3500, "unit": "programmeUnit", "page": "training", "group": "understand", "status": "existing" },
+    { "id": "automate", "brand": "stack", "min": 250, "max": 750, "unit": "projectUnit", "page": "automation", "group": "automate", "status": "new" },
+    { "id": "workflow", "brand": "stack", "min": 800, "max": 2000, "unit": "projectUnit", "page": "automation", "group": "automate", "status": "new" },
+    { "id": "ai", "brand": "stack", "min": 7500, "max": 20000, "unit": "projectUnit", "page": "ai", "group": "automate", "status": "existing" },
+    { "id": "pilot", "brand": "stack", "min": 2500, "max": 6500, "unit": "projectUnit", "page": "app", "group": "system", "status": "new" },
+    { "id": "app", "brand": "stack", "min": 12000, "max": 25000, "unit": "projectUnit", "page": "app", "group": "system", "status": "existing" },
+    { "id": "platform", "brand": "stack", "min": 25000, "max": 50000, "plus": true, "unit": "projectUnit", "page": "platform", "group": "system", "status": "existing" },
+    { "id": "mobile", "brand": "stack", "min": 35000, "max": 65000, "plus": true, "unit": "projectUnit", "page": "mobile", "group": "system", "status": "existing" },
+    { "id": "ops", "brand": "stack", "min": 750, "max": 2500, "plus": true, "unit": "monthUnit", "page": "ops", "group": "run", "status": "existing" }
   ],
   "scenarios": [
+    { "id": "largerAi", "brand": "stack", "min": 20000, "max": 40000, "plus": true, "unit": "programmeUnit" },
+    { "id": "largerDiscovery", "brand": "stack", "min": 3500, "max": 7500, "unit": "projectUnit" }
+  ],
+  "groups": [
+    { "id": "improve", "brand": "swift", "home": true },
+    { "id": "build", "brand": "swift", "home": true },
+    { "id": "sell", "brand": "swift", "home": true },
+    { "id": "grow", "brand": "swift", "home": false },
+    { "id": "understand", "brand": "stack", "home": true },
+    { "id": "automate", "brand": "stack", "home": true },
+    { "id": "system", "brand": "stack", "home": true },
+    { "id": "run", "brand": "stack", "home": false }
+  ],
+  "budgets": {
+    "swift": [
+      { "id": "b-500", "min": 500, "max": 500, "upTo": true },
+      { "id": "b500-1000", "min": 500, "max": 1000 },
+      { "id": "b1000-2500", "min": 1000, "max": 2500 },
+      { "id": "b2500-5000", "min": 2500, "max": 5000 },
+      { "id": "b5000-15000", "min": 5000, "max": 15000 },
+      { "id": "b15000", "min": 15000, "max": 15000, "plus": true }
+    ],
+    "stack": [
+      { "id": "b-500", "min": 500, "max": 500, "upTo": true },
+      { "id": "b500-2500", "min": 500, "max": 2500 },
+      { "id": "b2500-10000", "min": 2500, "max": 10000 },
+      { "id": "b10000-25000", "min": 10000, "max": 25000 },
+      { "id": "b25000", "min": 25000, "max": 25000, "plus": true }
+    ],
+    "extra": ["monthly", "hourly"]
+  },
+  "campaigns": [
     {
-      "id": "largerAi",
-      "brand": "stack",
-      "min": 20000,
-      "max": 40000,
-      "plus": true,
-      "unit": "programmeUnit"
-    },
-    {
-      "id": "largerDiscovery",
-      "brand": "stack",
-      "min": 3500,
-      "max": 7500,
-      "unit": "projectUnit"
+      "id": "danang-2026",
+      "locales": ["vi"],
+      "discount": 0.5,
+      "recurringMonths": 12,
+      "timezone": "Asia/Ho_Chi_Minh",
+      "startsAt": "2026-10-26T00:00:00+07:00",
+      "endsAt": "2026-11-30T00:00:00+07:00",
+      "deadlineNote": "Published Vietnamese wording is 'Ký hợp đồng trước ngày 30/11/2026' (sign before 30 Nov), so the last eligible signing day is 29 Nov and the campaign ends at 00:00 on 30 Nov Vietnam time. If Eli confirms 'through 30 November', change endsAt to 2026-12-01T00:00:00+07:00 and the Vietnamese deadline line together.",
+      "eligibility": "Vietnamese businesses operating in Da Nang",
+      "appliesTo": "base service fees; excludes tax and third-party costs",
+      "status": "proposed-scope",
+      "statusNote": "PROPOSED, awaiting Eli: the entry products are already customer-paid target prices, so they are not discounted again. The campaign keeps applying 50% to every established service whose standard price is unchanged. The Vietnamese offer line changes from 'all services' to 'services marked with a Da Nang price' (draft, not native-reviewed).",
+      "eligible": ["flagship", "commerce", "care", "search", "seo", "consult", "discovery", "training", "ai", "app", "platform", "mobile", "ops"]
     }
   ]
 }

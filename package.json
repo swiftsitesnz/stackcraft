@@ -3,7 +3,10 @@
   "scripts": {
     "build": "node scripts/build-locales.mjs && node scripts/build-static.mjs stack dist",
     "test:api": "node --test test/api.test.cjs",
-    "test:analytics": "node --test test/analytics.test.mjs"
+    "test:analytics": "node --test test/analytics.test.mjs",
+    "test:pricing": "node --test test/pricing.test.mjs",
+    "test": "node --test test/api.test.cjs test/analytics.test.mjs test/pricing.test.mjs",
+    "sync:check": "node scripts/sync-pricing.mjs --check"
   },
   "dependencies": {
     "resend": "^4.0.0"

@@ -12,7 +12,8 @@ function createHandler(load = () => import('../premium/prices.mjs')) {
     try {
       const {convertedCatalogue} = await load();
       const catalogue = await convertedCatalogue(currency);
-      res.setHeader('Cache-Control','public, max-age=300, s-maxage=3600');
+      const {priceCacheSeconds} = await import('../premium/pricing.mjs');const seconds = priceCacheSeconds();
+      res.setHeader('Cache-Control', seconds > 0 ? `public, max-age=${Math.min(300, seconds)}, s-maxage=${seconds}` : 'no-store');
       return res.status(200).json(catalogue);
     } catch {
       res.setHeader('Cache-Control','no-store');
