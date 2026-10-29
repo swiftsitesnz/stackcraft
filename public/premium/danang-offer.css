@@ -2,7 +2,7 @@
 .premium-site .danang-offer{padding:42px 0 54px;background:#f7f5f0;--offer-ink:#842f1d;--offer-bg:#fff6e7;--offer-border:#a8422c;--offer-muted:#55473b;--offer-button:#a8422c;--offer-button-ink:#fffaf2}
 .premium-site.stack .danang-offer{background:#edf1f1;--offer-ink:#c4f28c;--offer-bg:#13343e;--offer-border:#b8ef68;--offer-muted:#d1e0df;--offer-button:#b8ef68;--offer-button-ink:#102c36}
 .offer-panel{display:grid;grid-template-columns:.95fr 1.25fr;border:3px solid var(--offer-border);background:var(--offer-bg);color:var(--offer-ink);position:relative}
-.offer-panel::before,.offer-panel::after{content:'';position:absolute;width:14px;height:14px;background:var(--offer-border);pointer-events:none}.offer-panel::before{left:-3px;top:-3px}.offer-panel::after{right:-3px;bottom:-3px}
+.offer-panel::before,.offer-panel::after{content:'';position:absolute;width:14px;height:14px;background:var(--offer-border);pointer-events:none}.offer-panel::before{left:0;top:0}.offer-panel::after{right:0;bottom:0}
 .offer-discount{padding:34px 38px;border-right:1px solid color-mix(in srgb,var(--offer-border),transparent 45%);display:flex;flex-direction:column;justify-content:center}
 .offer-panel p{color:var(--offer-muted);margin:0}
 .offer-panel .offer-kicker{font-size:12px;line-height:1.6;font-weight:600;letter-spacing:.13em;color:var(--offer-ink)}

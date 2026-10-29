@@ -68,3 +68,10 @@ test('base USD prices load from actual catalogue without fetching exchange rates
   const res=response();await createPrices()({method:'GET',query:{currency:'USD'}},res);
   assert.equal(res.code,200);assert.equal(res.body.prices.consult.min,349);assert.equal(res.body.prices.app.min,12000);
 });
+test('budget bands from the shared catalogue are accepted and arrive readable; old service-style budgets are rejected',async()=>{
+  const messages=[];const handler=createHandler({sendEmail:async m=>{messages.push(m);return {data:{id:'ok'}}}});
+  let res=response();await handler(request({...valid,budget:'b-500'},{'x-forwarded-for':'192.0.2.50'}),res);
+  assert.equal(res.code,200);assert.match(messages[0].text,/Budget selection: Up to USD 500 \(b-500\)/);
+  for(const [budget,ip] of [['hourly','192.0.2.51'],['b25000','192.0.2.52']]){res=response();await handler(request({...valid,budget},{'x-forwarded-for':ip}),res);assert.equal(res.code,200,budget)}
+  res=response();await handler(request({...valid,budget:'app'},{'x-forwarded-for':'192.0.2.53'}),res);assert.equal(res.code,400);
+});

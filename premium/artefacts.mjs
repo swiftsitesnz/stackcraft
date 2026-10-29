@@ -43,6 +43,11 @@ export function aiFlow(t){return `<div class="art-diagram art-diagram--ai" role=
 <ol class="art-flow">${['aiStepTask','aiStepProposal','aiStepValidation','aiStepReview','aiStepAction'].map((k,i)=>`<li class="${i===3?'art-flow--human':''}"><span>0${i+1}</span><strong>${t(k)}</strong></li>`).join('')}</ol>
 <div class="art-fallback"><span aria-hidden="true">↳</span>${t('aiStepFallback')}</div></div>`}
 
+/* One bounded automation: input, validation, process, output, with failures flagged rather than passed on. */
+export function automationFlow(t){return `<div class="art-diagram art-diagram--ai art-diagram--automation" role="img" aria-label="${t('autoStepInput')} → ${t('autoStepOutput')}">
+<ol class="art-flow art-flow--four">${['autoStepInput','autoStepValidate','autoStepProcess','autoStepOutput'].map((k,i)=>`<li><span>0${i+1}</span><strong>${t(k)}</strong></li>`).join('')}</ol>
+<div class="art-fallback"><span aria-hidden="true">↳</span>${t('autoStepError')}</div></div>`}
+
 /* Four small artefacts that the shared process actually produces. */
 export function processStrip(t){return `<div class="art-strip" role="img" aria-label="${t('processTitle')}">
 <div class="art-mini"><span class="art-mini-label">${t('artefactPageMap')}</span><div class="art-tree"><i></i><div><i></i><i></i><i></i><i></i></div></div></div>

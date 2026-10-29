@@ -23,7 +23,7 @@
     "projects": {
       "emerald": {
         "category": "Construction consultancy · Waiheke & Auckland",
-        "brief": "A website in development for a construction management and consultancy business, with two core services and its local ties at the centre.",
+        "brief": "A website for a construction management and consultancy business, with two core services and its local ties at the centre.",
         "approach": "Retain Emerald’s existing mark and wordmark. Integrate architectural and coastal imagery, and present selected projects in the context of the founder’s career experience.",
         "build": "A design direction with clear Project Management and Consultancy services, contextual project information and a dedicated project-enquiry page."
       },
@@ -106,8 +106,8 @@
     },
     "faq": {
       "online-store": {
-        "question": "Can you build a bespoke online store?",
-        "answer": "Yes. Product structure, storefront, checkout, payments and delivery are scoped around your business. Platform choice follows the requirements. Complex integrations and fully custom commerce need separate discovery; platform subscriptions and transaction fees are separate.",
+        "question": "Can you build an online store?",
+        "answer": "Yes. Most shops suit a configured store on an established commerce platform: storefront, products, payments, shipping and training, quoted from {store}. Unusual ordering rules, custom integrations or complex stock and fulfilment need bespoke commerce, which starts with discovery and a written quotation. Platform subscriptions and transaction fees are separate.",
         "draft": "I’d like to discuss a bespoke online store, platform options and what the setup would include."
       },
       "self-editing": {
@@ -116,8 +116,8 @@
         "draft": "I’d like to discuss updating website content myself, including an editing system and training."
       },
       "existing-website": {
-        "question": "Can you replace my existing website?",
-        "answer": "Yes. Share the link and what is not working. We can assess a rebuild or focused changes, with domain access, existing email, important URLs and search redirects included in the migration scope before switching.",
+        "question": "Can you fix or replace my existing website?",
+        "answer": "Yes. Share the link and what is not working. A single defined problem can often be fixed as a website improvement from {fix}; a wider problem may need a rebuild. Domain access, existing email, important URLs and search redirects are included in any migration scope before switching.",
         "draft": "I’d like to discuss updating or replacing an existing website and how to plan the migration."
       },
       "ai-process": {
@@ -153,7 +153,7 @@
     "projects": {
       "emerald": {
         "category": "Conseil en construction · Waiheke et Auckland",
-        "brief": "Un site en développement pour une entreprise de gestion et de conseil en construction, centré sur ses deux activités principales et son ancrage local.",
+        "brief": "Un site pour une entreprise de gestion et de conseil en construction, centré sur ses deux activités principales et son ancrage local.",
         "approach": "Conserver le symbole et le logotype d’Emerald. Intégrer des images architecturales et côtières, en replaçant les projets dans le parcours professionnel du fondateur.",
         "build": "Une direction de design présentant clairement la gestion de projet et le conseil, des projets contextualisés et une page de demande dédiée."
       },
@@ -236,8 +236,8 @@
     },
     "faq": {
       "online-store": {
-        "question": "Pouvez-vous créer une boutique en ligne sur mesure ?",
-        "answer": "Oui. Catalogue, boutique, paiement et livraison sont définis selon votre activité. Le choix de plateforme suit les besoins. Les intégrations complexes et le commerce entièrement personnalisé nécessitent un cadrage distinct ; abonnements et frais de transaction sont séparés.",
+        "question": "Pouvez-vous créer une boutique en ligne ?",
+        "answer": "Oui. Pour la plupart des commerces, une boutique configurée sur une plateforme e-commerce établie convient : vitrine, produits, paiements, livraison et formation, sur devis à partir de {store}. Les règles de commande inhabituelles, les intégrations sur mesure ou des stocks et une préparation des commandes complexes nécessitent un e-commerce sur mesure, qui commence par un cadrage et un devis écrit. Les abonnements à la plateforme et les frais de transaction sont en supplément.",
         "draft": "Je souhaite discuter d’une boutique en ligne sur mesure, des plateformes possibles et du périmètre de la mise en place."
       },
       "self-editing": {
@@ -246,8 +246,8 @@
         "draft": "Je souhaite discuter de la mise à jour autonome du contenu, avec un outil d’édition et une formation."
       },
       "existing-website": {
-        "question": "Pouvez-vous remplacer mon site actuel ?",
-        "answer": "Oui. Partagez le lien et les problèmes rencontrés. Nous pouvons évaluer une refonte ou des améliorations ciblées, en prévoyant avant le changement les accès au domaine, les emails existants, les URL importantes et les redirections.",
+        "question": "Pouvez-vous corriger ou remplacer mon site actuel ?",
+        "answer": "Oui. Partagez le lien et ce qui ne fonctionne pas. Un problème précis et unique peut souvent être corrigé dans le cadre d’une amélioration de site, à partir de {fix} ; un problème plus large peut nécessiter une refonte. L’accès au domaine, les e-mails existants, les URL importantes et les redirections pour les moteurs de recherche sont inclus dans tout périmètre de migration avant la bascule.",
         "draft": "Je souhaite discuter de la mise à jour ou du remplacement d’un site existant et de la préparation de sa migration."
       },
       "ai-process": {
@@ -283,7 +283,7 @@
     "projects": {
       "emerald": {
         "category": "Consultoría de construcción · Waiheke y Auckland",
-        "brief": "Un sitio en desarrollo para una empresa de gestión y consultoría de construcción, centrado en sus dos servicios principales y su conexión local.",
+        "brief": "Un sitio para una empresa de gestión y consultoría de construcción, centrado en sus dos servicios principales y su conexión local.",
         "approach": "Conservar el símbolo y el logotipo de Emerald. Integrar imágenes arquitectónicas y costeras y presentar proyectos dentro de la experiencia profesional del fundador.",
         "build": "Una propuesta de diseño con servicios claros de Gestión de Proyectos y Consultoría, proyectos contextualizados y una página específica de consultas."
       },
@@ -366,8 +366,8 @@
     },
     "faq": {
       "online-store": {
-        "question": "¿Puedes crear una tienda online a medida?",
-        "answer": "Sí. Catálogo, tienda, pago y entrega se definen según tu negocio. La plataforma se elige a partir de los requisitos. Las integraciones complejas y el comercio totalmente personalizado requieren análisis específico; las suscripciones y comisiones se presupuestan aparte.",
+        "question": "¿Puedes crear una tienda online?",
+        "answer": "Sí. A la mayoría de los comercios les encaja una tienda configurada sobre una plataforma de comercio consolidada: escaparate, productos, pagos, envíos y formación, con presupuesto desde {store}. Las reglas de pedido poco habituales, las integraciones a medida o un inventario y una preparación de pedidos complejos requieren ecommerce a medida, que empieza con un análisis inicial y un presupuesto por escrito. Las suscripciones de la plataforma y las comisiones por transacción van aparte.",
         "draft": "Me gustaría hablar de una tienda online a medida, las opciones de plataforma y lo que incluiría la configuración."
       },
       "self-editing": {
@@ -376,8 +376,8 @@
         "draft": "Me gustaría hablar de actualizar el contenido por mi cuenta, con un editor y formación."
       },
       "existing-website": {
-        "question": "¿Puedes sustituir mi sitio actual?",
-        "answer": "Sí. Comparte el enlace y lo que no funciona. Podemos valorar una reconstrucción o cambios concretos, incluyendo antes de la migración el acceso al dominio, el correo existente, las URL importantes y las redirecciones de búsqueda.",
+        "question": "¿Puedes arreglar o sustituir mi web actual?",
+        "answer": "Sí. Comparte el enlace y lo que no funciona. Un único problema concreto a menudo se puede resolver como mejora web desde {fix}; un problema más amplio puede requerir rehacer la web. El acceso al dominio, el correo existente, las URL importantes y las redirecciones de búsqueda se incluyen en el alcance de cualquier migración antes del cambio.",
         "draft": "Me gustaría hablar de actualizar o sustituir un sitio existente y de planificar su migración."
       },
       "ai-process": {
@@ -413,7 +413,7 @@
     "projects": {
       "emerald": {
         "category": "Boukonsultasie · Waiheke en Auckland",
-        "brief": "’n Webwerf in ontwikkeling vir ’n konstruksiebestuur- en konsultasieonderneming, met sy twee kerndienste en plaaslike bande voorop.",
+        "brief": "’n Webwerf vir ’n konstruksiebestuur- en konsultasieonderneming, met sy twee kerndienste en plaaslike bande voorop.",
         "approach": "Behou Emerald se bestaande embleem en woordmerk. Integreer argitektuur- en kusbeelde en plaas uitgesoekte projekte binne die stigter se loopbaanervaring.",
         "build": "’n Ontwerprigting met duidelike Projekbestuur- en Konsultasiedienste, projekinligting in konteks en ’n toegewyde navraagblad."
       },
@@ -496,8 +496,8 @@
     },
     "faq": {
       "online-store": {
-        "question": "Kan jy ’n pasgemaakte aanlyn winkel bou?",
-        "answer": "Ja. Produkindeling, winkel, betaalproses en aflewering word rondom jou onderneming bepaal. Die vereistes bepaal die platform. Komplekse integrasies en geheel pasgemaakte handel verg aparte ondersoek; platformintekeninge en transaksiefooie is afsonderlik.",
+        "question": "Kan jy ’n aanlynwinkel bou?",
+        "answer": "Ja. Die meeste winkels pas by ’n opgestelde winkel op ’n gevestigde handelsplatform: winkelfront, produkte, betalings, versending en opleiding, gekwoteer vanaf {store}. Ongewone bestelreëls, pasgemaakte integrasies of ingewikkelde voorraad en bestellingsafhandeling verg pasgemaakte e-handel, wat met verkenning en ’n skriftelike kwotasie begin. Platformintekeninge en transaksiefooie is apart.",
         "draft": "Ek wil graag ’n pasgemaakte aanlyn winkel, platformopsies en die opstelomvang bespreek."
       },
       "self-editing": {
@@ -506,8 +506,8 @@
         "draft": "Ek wil graag bespreek hoe ek webwerf-inhoud self kan bywerk, met ’n redigeerstelsel en opleiding."
       },
       "existing-website": {
-        "question": "Kan jy my bestaande webwerf vervang?",
-        "answer": "Ja. Deel die skakel en wat nie werk nie. Ons kan ’n herbou of gefokusde veranderings ondersoek en domeintoegang, bestaande e-pos, belangrike URL’s en soekherleidings voor die oorskakeling beplan.",
+        "question": "Kan jy my bestaande webwerf regmaak of vervang?",
+        "answer": "Ja. Deel die skakel en wat nie werk nie. ’n Enkele omskrewe probleem kan dikwels as ’n webwerfverbetering vanaf {fix} reggemaak word; ’n wyer probleem kan ’n herbou nodig hê. Domeintoegang, bestaande e-pos, belangrike URL’s en soekherleidings word voor die oorskakeling by enige migrasieomvang ingesluit.",
         "draft": "Ek wil graag die bywerking of vervanging van ’n bestaande webwerf en die migrasieplan bespreek."
       },
       "ai-process": {
@@ -543,7 +543,7 @@
     "projects": {
       "emerald": {
         "category": "Строительный консалтинг · Уаихеке и Окленд",
-        "brief": "Сайт в разработке для компании по управлению строительством и консалтингу, с акцентом на две основные услуги и связь с регионом.",
+        "brief": "Сайт компании по управлению строительством и консалтингу, с акцентом на две основные услуги и связь с регионом.",
         "approach": "Сохранить знак и логотип Emerald. Включить архитектурные и прибрежные фотографии, представив проекты в контексте профессионального опыта основателя.",
         "build": "Дизайн с ясным разделением управления проектами и консалтинга, описаниями проектов и отдельной страницей для обращения."
       },
@@ -626,8 +626,8 @@
     },
     "faq": {
       "online-store": {
-        "question": "Можно ли заказать индивидуальный интернет-магазин?",
-        "answer": "Да. Каталог, витрина, оформление заказа, оплата и доставка определяются под ваш бизнес. Платформа выбирается по требованиям. Сложные интеграции и полностью заказные решения требуют отдельного исследования; подписки и комиссии оплачиваются отдельно.",
+        "question": "Можете ли вы создать интернет-магазин?",
+        "answer": "Да. Большинству магазинов подходит настроенный магазин на проверенной платформе электронной коммерции: витрина, товары, оплата, доставка и обучение, стоимость от {store}. Нестандартные правила заказа, индивидуальные интеграции или сложный склад и обработка заказов требуют индивидуальной электронной коммерции, которая начинается с исследования и письменной сметы. Подписки на платформу и комиссии за транзакции оплачиваются отдельно.",
         "draft": "Хочу обсудить индивидуальный интернет-магазин, выбор платформы и состав настройки."
       },
       "self-editing": {
@@ -636,8 +636,8 @@
         "draft": "Хочу обсудить самостоятельное обновление сайта, редактор контента и обучение."
       },
       "existing-website": {
-        "question": "Можете ли вы заменить мой нынешний сайт?",
-        "answer": "Да. Пришлите ссылку и опишите проблемы. Можно оценить полную переработку или точечные изменения. Доступ к домену, действующая почта, важные URL и поисковые перенаправления включаются в план миграции до переключения.",
+        "question": "Можете ли вы исправить или заменить мой текущий сайт?",
+        "answer": "Да. Пришлите ссылку и опишите, что не работает. Одну конкретную проблему часто можно решить в рамках доработки сайта, от {fix}; более широкая проблема может потребовать переделки. Доступ к домену, действующая почта, важные URL и поисковые перенаправления включаются в объём любой миграции до переключения.",
         "draft": "Хочу обсудить обновление или замену существующего сайта и план миграции."
       },
       "ai-process": {
@@ -673,7 +673,7 @@
     "projects": {
       "emerald": {
         "category": "建筑咨询 · 怀赫科岛与奥克兰",
-        "brief": "为建筑管理与咨询企业开发中的网站，以两项核心服务和当地联系为重点。",
+        "brief": "面向建筑管理与咨询企业的网站，以两项核心服务和当地联系为重点。",
         "approach": "保留 Emerald 原有标志和文字商标，结合建筑与海岸图像，并在创始人的职业经历背景下介绍精选项目。",
         "build": "清晰呈现项目管理和咨询服务的设计方向，包含有背景说明的项目资料和专门的项目咨询页面。"
       },
@@ -756,8 +756,8 @@
     },
     "faq": {
       "online-store": {
-        "question": "可以定制网上商店吗？",
-        "answer": "可以。商品结构、店面、结账、支付和配送都根据业务需求确定。平台选择以需求为依据。复杂集成及完全定制的电商系统需要单独调研；平台订阅和交易费用另计。",
+        "question": "可以搭建网上商店吗？",
+        "answer": "可以。大多数商店适合在成熟电商平台上配置的商店：店面、商品、支付、配送和培训，报价 {store} 起。特殊下单规则、定制集成或复杂的库存与履约需要定制电商，从前期调研和书面报价开始。平台订阅费和交易费另计。",
         "draft": "我想讨论定制网上商店、平台选择以及搭建范围。"
       },
       "self-editing": {
@@ -766,8 +766,8 @@
         "draft": "我想了解自行更新网站内容的方式，包括编辑系统和培训。"
       },
       "existing-website": {
-        "question": "可以替换我现有的网站吗？",
-        "answer": "可以。请提供链接并说明问题。我们可以评估重建或针对性调整，并在切换前将域名访问、现有邮件、重要网址和搜索重定向纳入迁移范围。",
+        "question": "可以修复或替换我现有的网站吗？",
+        "answer": "可以。请提供链接并说明哪里有问题。单个明确的问题通常可以作为网站改进处理，{fix} 起；范围更广的问题可能需要重建。切换前，域名访问、现有邮件、重要网址和搜索重定向都会纳入迁移范围。",
         "draft": "我想讨论更新或替换现有网站，以及如何规划迁移。"
       },
       "ai-process": {
@@ -803,7 +803,7 @@
     "projects": {
       "emerald": {
         "category": "建設コンサルティング · ワイヘキ島・オークランド",
-        "brief": "建設管理とコンサルティングの企業向けに開発中のサイト。二つの主要サービスと地域とのつながりを中心に据えています。",
+        "brief": "建設管理とコンサルティングの企業向けサイト。二つの主要サービスと地域とのつながりを中心に据えています。",
         "approach": "Emerald の既存のマークとロゴタイプを継承。建築と海岸の写真を取り入れ、創業者の職務経験という文脈で代表的なプロジェクトを紹介します。",
         "build": "プロジェクト管理とコンサルティングを明確に示し、背景を添えた事例と専用の問い合わせページを備えたデザイン案です。"
       },
@@ -886,8 +886,8 @@
     },
     "faq": {
       "online-store": {
-        "question": "オーダーメイドのオンラインストアは作れますか？",
-        "answer": "はい。商品構成、店舗画面、購入手続き、決済、配送を事業に合わせて定義します。プラットフォームは要件に応じて選びます。複雑な連携や完全な独自開発には別途調査が必要で、プラットフォーム利用料や取引手数料は別途です。",
+        "question": "オンラインストアは作れますか？",
+        "answer": "はい。多くのお店には、実績あるECプラットフォーム上に設定するストアが適しています。ストア画面、商品、決済、配送、研修を含み、お見積もりは{store}からです。独自の注文ルール、個別の外部連携、複雑な在庫や出荷にはオーダーメイドのEC構築が必要で、初期調査と書面でのお見積もりから始めます。プラットフォーム利用料と決済手数料は別途です。",
         "draft": "オーダーメイドのオンラインストア、プラットフォームの選択肢、構築範囲について相談したいです。"
       },
       "self-editing": {
@@ -896,8 +896,8 @@
         "draft": "編集システムやトレーニングを含め、自分でサイトの内容を更新する方法を相談したいです。"
       },
       "existing-website": {
-        "question": "今あるサイトを置き換えられますか？",
-        "answer": "はい。URL と問題点を共有してください。全面改修か部分的な変更かを検討し、切り替え前にドメインへのアクセス、既存メール、重要な URL、検索向けリダイレクトを移行範囲に含めます。",
+        "question": "今あるサイトを修正または置き換えられますか？",
+        "answer": "はい。URLと、うまく動いていない点を共有してください。特定の問題一つであれば、ウェブサイト改善として{fix}から対応できることが多く、より広い問題には作り直しが必要な場合があります。切り替え前に、ドメインへのアクセス、既存のメール、重要なURL、検索向けリダイレクトを移行範囲に含めます。",
         "draft": "既存サイトの更新や置き換えと、移行計画について相談したいです。"
       },
       "ai-process": {
@@ -933,7 +933,7 @@
     "projects": {
       "emerald": {
         "category": "건설 컨설팅 · 와이헤케와 오클랜드",
-        "brief": "건설 관리 및 컨설팅 기업을 위해 개발 중인 웹사이트로, 두 핵심 서비스와 지역과의 연결을 중심에 둡니다.",
+        "brief": "건설 관리 및 컨설팅 기업을 위한 웹사이트로, 두 핵심 서비스와 지역과의 연결을 중심에 둡니다.",
         "approach": "Emerald의 기존 심벌과 워드마크를 유지합니다. 건축·해안 이미지를 통합하고 창업자의 경력이라는 맥락 안에서 주요 프로젝트를 소개합니다.",
         "build": "프로젝트 관리와 컨설팅을 명확히 구분하고, 배경 설명이 있는 프로젝트 정보와 전용 문의 페이지를 갖춘 디자인 방향입니다."
       },
@@ -1016,8 +1016,8 @@
     },
     "faq": {
       "online-store": {
-        "question": "맞춤형 온라인 스토어를 만들 수 있나요?",
-        "answer": "네. 상품 구조, 스토어 화면, 주문, 결제와 배송 범위를 비즈니스에 맞게 정합니다. 플랫폼은 요구사항에 따라 선택합니다. 복잡한 통합과 완전 맞춤형 커머스는 별도 조사가 필요하며, 플랫폼 구독료와 거래 수수료는 별도입니다.",
+        "question": "온라인 스토어를 만들 수 있나요?",
+        "answer": "네. 대부분의 매장에는 검증된 커머스 플랫폼 위의 설정형 스토어가 적합합니다. 스토어 화면, 제품, 결제, 배송, 교육을 포함하며 견적은 {store}부터입니다. 특수한 주문 규칙, 맞춤 연동, 복잡한 재고와 주문 처리가 있다면 맞춤형 이커머스가 필요하며, 사전 분석과 서면 견적으로 시작합니다. 플랫폼 구독료와 거래 수수료는 별도입니다.",
         "draft": "맞춤형 온라인 스토어, 플랫폼 선택지와 구축 범위에 대해 상담하고 싶습니다."
       },
       "self-editing": {
@@ -1026,8 +1026,8 @@
         "draft": "편집 시스템과 교육을 포함해 웹사이트 콘텐츠를 직접 업데이트하는 방법을 상담하고 싶습니다."
       },
       "existing-website": {
-        "question": "기존 웹사이트를 교체할 수 있나요?",
-        "answer": "네. 링크와 현재 문제를 알려 주세요. 전면 재구축이나 필요한 부분의 개선을 검토할 수 있으며, 전환 전에 도메인 접근, 기존 이메일, 주요 URL과 검색 리디렉션을 이전 범위에 포함합니다.",
+        "question": "기존 웹사이트를 수정하거나 교체할 수 있나요?",
+        "answer": "네. 링크와 작동하지 않는 부분을 알려 주세요. 정해진 문제 하나는 웹사이트 개선 서비스로 {fix}부터 해결할 수 있는 경우가 많고, 더 넓은 문제는 재구축이 필요할 수 있습니다. 전환 전에 도메인 접근, 기존 이메일, 주요 URL, 검색 리디렉션을 모든 이전 범위에 포함합니다.",
         "draft": "기존 웹사이트 업데이트 또는 교체와 이전 계획에 대해 상담하고 싶습니다."
       },
       "ai-process": {
@@ -1063,7 +1063,7 @@
     "projects": {
       "emerald": {
         "category": "Tư vấn xây dựng · Waiheke và Auckland",
-        "brief": "Website đang phát triển cho doanh nghiệp quản lý và tư vấn xây dựng, tập trung vào hai dịch vụ chính và mối liên hệ với địa phương.",
+        "brief": "Website cho doanh nghiệp quản lý và tư vấn xây dựng, tập trung vào hai dịch vụ chính và mối liên hệ với địa phương.",
         "approach": "Giữ lại biểu tượng và tên thương hiệu Emerald. Kết hợp hình ảnh kiến trúc, ven biển và giới thiệu các dự án trong bối cảnh kinh nghiệm nghề nghiệp của người sáng lập.",
         "build": "Định hướng thiết kế làm rõ dịch vụ Quản lý dự án và Tư vấn, thông tin dự án có bối cảnh và trang yêu cầu tư vấn riêng."
       },
@@ -1146,8 +1146,8 @@
     },
     "faq": {
       "online-store": {
-        "question": "Bạn có xây dựng cửa hàng trực tuyến theo yêu cầu không?",
-        "answer": "Có. Cấu trúc sản phẩm, giao diện cửa hàng, thanh toán và giao hàng được xác định theo doanh nghiệp. Nền tảng được chọn theo yêu cầu. Tích hợp phức tạp và hệ thống hoàn toàn tùy chỉnh cần khảo sát riêng; phí nền tảng và giao dịch được tính riêng.",
+        "question": "Bạn có xây dựng cửa hàng trực tuyến không?",
+        "answer": "Có. Phần lớn cửa hàng phù hợp với cửa hàng trực tuyến trên nền tảng thương mại điện tử sẵn có: giao diện cửa hàng, sản phẩm, thanh toán, giao hàng và đào tạo, báo giá từ {store}. Quy tắc đặt hàng đặc thù, tích hợp riêng hoặc tồn kho và xử lý đơn phức tạp cần thương mại điện tử theo yêu cầu, bắt đầu bằng khảo sát và báo giá bằng văn bản. Phí thuê bao nền tảng và phí giao dịch được tính riêng.",
         "draft": "Tôi muốn trao đổi về cửa hàng trực tuyến theo yêu cầu, lựa chọn nền tảng và phạm vi thiết lập."
       },
       "self-editing": {
@@ -1156,8 +1156,8 @@
         "draft": "Tôi muốn trao đổi về việc tự cập nhật nội dung website, bao gồm hệ thống biên tập và đào tạo."
       },
       "existing-website": {
-        "question": "Bạn có thể thay thế website hiện tại của tôi không?",
-        "answer": "Có. Hãy gửi đường dẫn và vấn đề hiện tại. Chúng ta có thể đánh giá việc xây lại hoặc chỉnh sửa có mục tiêu, với quyền truy cập tên miền, email hiện có, URL quan trọng và chuyển hướng tìm kiếm được xác định trước khi chuyển đổi.",
+        "question": "Bạn có thể sửa hoặc thay thế website hiện tại của tôi không?",
+        "answer": "Có. Hãy gửi đường dẫn và vấn đề hiện tại. Một vấn đề cụ thể thường có thể xử lý theo gói Cải thiện website, từ {fix}; vấn đề rộng hơn có thể cần xây lại. Quyền truy cập tên miền, email hiện có, URL quan trọng và chuyển hướng tìm kiếm được đưa vào phạm vi chuyển đổi trước khi chuyển sang website mới.",
         "draft": "Tôi muốn trao đổi về cập nhật hoặc thay thế website hiện tại và lập kế hoạch chuyển đổi."
       },
       "ai-process": {

@@ -3,6 +3,10 @@ const catalogue = require('../premium/catalogue.json');
 const MAX_BYTES = 32768;
 const WINDOW_MS = 10 * 60 * 1000;
 const services = new Set(catalogue.offers.filter(x => x.brand === 'stack').map(x => x.id).concat('unsure'));
+// Budget bands come from the shared catalogue so a USD 500 enquiry is never forced into a larger band.
+const money = n => 'USD ' + Number(n).toLocaleString('en-US');
+const budgetLabels = new Map(catalogue.budgets.stack.map(b => [b.id, b.upTo ? 'Up to ' + money(b.max) : b.plus ? money(b.min) + '+' : money(b.min) + '–' + b.max.toLocaleString('en-US')])
+  .concat([['monthly','Monthly support'],['hourly','Hourly consultancy'],['unsure','Not sure yet']]));
 const currencies = new Set(['USD', 'EUR', 'NZD', 'AUD', 'VND']);
 const escapeHtml = value => value.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
@@ -53,7 +57,7 @@ function createHandler({sendEmail, env = process.env, now = Date.now} = {}) {
     const service = fields.service || fields.helpType;
     if (!fields.name || !fields.email || !service || fields.message.length < 10 || fields.website) return fail(400, 'invalid');
     if (!/^[^\s@<>"(),;:\\]+@[^\s@<>"(),;:\\]+\.[^\s@<>"(),;:\\]+$/.test(fields.email)) return fail(400, 'emailInvalid');
-    if (!services.has(service) || (fields.budget && !services.has(fields.budget)) || (fields.currency && !currencies.has(fields.currency))) return fail(400, 'invalid');
+    if (!services.has(service) || (fields.budget && !budgetLabels.has(fields.budget)) || (fields.currency && !currencies.has(fields.currency))) return fail(400, 'invalid');
     if (raw.onsite !== undefined && typeof raw.onsite !== 'boolean') return fail(400, 'invalid');
     if (raw.onsite && !fields.country) return fail(400, 'invalid');
     const time = now();
@@ -68,7 +72,7 @@ function createHandler({sendEmail, env = process.env, now = Date.now} = {}) {
     rate.count += 1;
     const rows = [
       ['Name',fields.name],['Email',fields.email],['Organisation',fields.business || fields.company],
-      ['Service',service],['Budget selection',fields.budget],['Display currency',fields.currency],
+      ['Service',service],['Budget selection',fields.budget ? budgetLabels.get(fields.budget) + ' (' + fields.budget + ')' : ''],['Display currency',fields.currency],
       ['Language',fields.locale || 'en'],['Timing',fields.timing],['Location',fields.country],
       ['Team',fields.team],['Dates',fields.dates],['Duration',fields.duration],['Systems and access',fields.systems],
       ['Confidentiality summary',fields.confidentiality],['On-site',raw.onsite?'Yes':''],['Brief',fields.message],
