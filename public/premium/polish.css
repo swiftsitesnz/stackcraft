@@ -763,7 +763,7 @@ html[lang="ja"] .hero.swift h1{word-break:keep-all;font-size:clamp(36px,4.3vw,62
  .pathway{padding:22px}
  .pathway-after{padding:20px}
  .offer-row--product,.stack .offer-row--product{grid-template-columns:1fr;gap:10px}
- .offer-row--product .offer-price{text-align:left;align-items:flex-start}
+ .offer-row--product .offer-price{text-align:left;align-items:flex-start;grid-column:1}
  .price-group-visual{display:none}
  .catalogue .price-group>*,.offer-row--product>*,.offer-row--product .offer-price{min-width:0}
  .offer-row--product .offer-price .amount,.pathway-price,.from-price .amount{white-space:normal;overflow-wrap:anywhere}
